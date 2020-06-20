@@ -1,0 +1,34 @@
+<header class="row">
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <a href="{{ path('homepage') }}" title="Accueil"><img src="{{ asset('logo/logo.svg') }}" alt="Logo" id="logo"></a>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 link">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <a href="{{ path('homepage') }}" title="Présentation"
+                    {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
+                >
+                    Présentation</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <a href="{{ path('portfolio') }}" 
+                    {% if app.request.get('_route') == 'portfolio' %}class="active"{% endif %}
+                >
+                    Portfolio</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <a href="{{ path('homepage') }}#contact">Contact</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12" id="menu-rs">
+                <a href="https://fr.linkedin.com/in/marine-lancelin-a4b25389" target="_blank" title="Linkedin"><img src="{{ asset('picto/linkedin.svg') }}" alt="LinkedIn"></a>
+                <a href="https://github.com/marinesl" target="_blank" title="Github"><img src="{{ asset('picto/github.svg') }}" alt="Github"></a>
+                <a href="https://www.instagram.com/marines_l/?hl=fr" target="_blank" title="Instragram"><img src="{{ asset('picto/instagram.svg') }}" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<img src="{{ asset('forme/blob-header-home.svg') }}" alt="Tâche verte en fond" id="header-forme">

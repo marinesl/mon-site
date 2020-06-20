@@ -1,0 +1,57 @@
+{% extends 'base_back.html.twig' %}
+
+{% block title %}Les contacts{% endblock %}
+
+{% block body_class %}app contact{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h1>Les contacts</h1>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-lg-11 col-md-11 col-sm-12">
+
+            <table class="table">
+
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Informations</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for contact in contacts %}
+                        <tr>
+                            <td>{{ contact.date|date('d/m/Y') }} à {{ contact.date|date('H:i') }}</td>
+                            <td>
+                                {{ contact.nom|upper }} {{ contact.prenom }}
+                                <br>{{ contact.email }}
+                                {% if contact.telephone != null %}<br>{{ contact.telephone }}{% endif %}
+                            </td>
+                            <td>{{ contact.message }}</td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="3">Aucune donnée dans le tableau</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+
+        </div>
+        <div class="col"></div>
+    </div>
+
+    
+
+{% endblock %}

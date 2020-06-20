@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="907px" height="733px" viewBox="0 0 907 733" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="53.921169%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2FAE9A" offset="0%"></stop>
+            <stop stop-color="#41B591" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.19842375%" y1="33.1876434%" x2="42.1036299%" y2="40.4386004%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-533.000000, 0.000000)">
+            <g id="Group-16" transform="translate(480.565645, -703.000000)">
+                <rect id="Rectangle" fill="url(#linearGradient-1)" transform="translate(800.093351, 745.000000) rotate(54.000000) translate(-800.093351, -745.000000) " x="373.593351" y="66" width="853" height="1358" rx="134"></rect>
+                <rect id="Rectangle-Copy" fill="url(#linearGradient-2)" opacity="0.31733631" transform="translate(263.000000, 1092.966283) rotate(52.000000) translate(-263.000000, -1092.966283) " x="46" y="958.966283" width="434" height="268" rx="123"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

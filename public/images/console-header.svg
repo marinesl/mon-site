@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="341px" height="269px" viewBox="0 0 341 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="301" height="229" rx="4"></rect>
+        <filter x="-11.6%" y="-10.9%" width="123.3%" height="130.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.398410184 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-637.000000, -237.000000)">
+            <g id="Group" transform="translate(657.000000, 247.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#171717" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="symfony-new---demo-s" font-family="Menlo-Regular, Menlo" font-size="10" font-weight="normal">
+                    <tspan x="8" y="36" fill="#B2B2B2">symfony new --demo symfony_demo                                               </tspan>
+                    <tspan x="8" y="47" fill="#B2B2B2">* Creating a new Symfony Demo project with </tspan>
+                    <tspan x="8" y="58" fill="#B2B2B2">Composer </tspan>
+                    <tspan x="62.1845703" y="58" fill="#FFFFFF">                            </tspan>
+                    <tspan x="8" y="69" fill="#FFFFFF">  </tspan>
+                    <tspan x="20.0410156" y="69" fill="#987631">(running /Users/marine/bin/composer create-</tspan>
+                    <tspan x="8" y="80" fill="#987631">project symfony/symfony-demo symf</tspan>
+                    <tspan x="8" y="91" fill="#987631">ony_demo)</tspan>
+                    <tspan x="62.1845703" y="91" fill="#FFFFFF">                                                                       </tspan>
+                    <tspan x="8" y="102" fill="#FFFFFF">                                                                                </tspan>
+                    <tspan x="8" y="113" fill="#B2B2B2">* Setting up the project under Git version </tspan>
+                    <tspan x="8" y="124" fill="#B2B2B2">control</tspan>
+                    <tspan x="50.1435547" y="124" fill="#FFFFFF">                              </tspan>
+                    <tspan x="8" y="135" fill="#FFFFFF">  </tspan>
+                    <tspan x="20.0410156" y="135" fill="#A28138">(running git init symfony_demo)</tspan>
+                    <tspan x="206.676758" y="135" fill="#FFFFFF">                                               </tspan>
+                    <tspan x="8" y="146" fill="#FFFFFF">                                                                                </tspan>
+                    <tspan x="8" y="157" fill="#B2B2B2">* Adding SymfonyCloud support to the project                                    </tspan>
+                    <tspan x="8" y="168" fill="#FFFFFF">  </tspan>
+                    <tspan x="20.0410156" y="168" fill="#A28138">(running symfony project:init --dir </tspan>
+                    <tspan x="8" y="179" fill="#A28138">symfony_demo)</tspan>
+                    <tspan x="86.2666016" y="179" fill="#FFFFFF">                                                                                                            </tspan>
+                    <tspan x="8" y="190" fill="#FFFFFF">                                                                               </tspan>
+                    <tspan x="8" y="201" fill="#3A9C2C">[OK]</tspan>
+                    <tspan x="32.0820312" y="201" fill="#FFFFFF"> Your project is now ready in /tmp/</tspan>
+                    <tspan x="8" y="212" fill="#FFFFFF">symfony_demo                            </tspan>
+                    <tspan x="8" y="223" fill="#FFFFFF">                                        </tspan>
+                </text>
+                <circle id="Oval" fill="#ED6C61" cx="12" cy="12" r="4"></circle>
+                <circle id="Oval-Copy" fill="#F5BF50" cx="25" cy="12" r="4"></circle>
+                <circle id="Oval-Copy-2" fill="#62C554" cx="38" cy="12" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

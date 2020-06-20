@@ -1,20 +1,24 @@
-<header>
-    <div class="row">
+<header class="row">
 
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <img src="{{ asset('logo/logo.svg') }}" alt="Logo" id="logo">
-        </div>
+    <div class="col-lg-4 col-md-4 col-sm-4">
+        <img src="{{ asset('logo/logo.svg') }}" alt="Logo" id="logo">
+    </div>
 
-        <div class="col-lg-4 col-md-4 col-sm-4 link">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <a href="">Projet</a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <a href="">Contact</a>
-                </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 link">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <a href="{{ path('app_projet') }}" 
+                    {% if app.request.get('_route') == 'app_projet' %}class="active"{% endif %}
+                >
+                    Projet</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <a href="{{ path('app_contact') }}" 
+                    {% if app.request.get('_route') == 'app_contact' %}class="active"{% endif %}
+                >
+                    Contact</a>
             </div>
         </div>
-
     </div>
+
 </header>

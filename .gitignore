@@ -8,3 +8,13 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+public/css/.DS_Store
+
+public/.DS_Store
+
+.DS_Store
+
+.env
+
+composer.phar

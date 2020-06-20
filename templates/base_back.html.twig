@@ -9,16 +9,17 @@
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
         {% block stylesheets %}{% endblock %}
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
         {% include "back/menu.html.twig" %}
 
+        <section>
+            {% block body %}{% endblock %}
+        </section>
 
-
-        {% block body %}{% endblock %}
+        {% include "back/footer.html.twig" %}
 
         <script src="{{ asset('js/jquery-3.5.0.min.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>

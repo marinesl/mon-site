@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
+
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/site.css') }}">
+        {% block stylesheets %}{% endblock %}
+    </head>
+
+    <body class="{% block body_class %}{% endblock %}">
+        {% include "site/menu.html.twig" %}
+
+        <section>
+            {% block body %}{% endblock %}
+        </section>
+
+        {% include "site/footer.html.twig" %}
+
+        <script src="{{ asset('js/jquery-3.5.0.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

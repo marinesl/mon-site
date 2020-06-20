@@ -1,0 +1,43 @@
+{% extends 'base_back.html.twig' %}
+
+{% block title %}Les projets{% endblock %}
+
+{% block body_class %}app projet{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <h1>{% if projet is defined %}Modifier{% else %}Créer{% endif %} un projet</h1>
+        </div>
+    </div>
+
+    {% if projet is defined and projet.couverture != null %}
+
+        <br>
+
+        <div class="row" id="img-couverture">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <img src="{{ asset( projet_couverture_local ~ '/' ~ projet.couverture ) }}" alt="Couverture">
+            </div>
+        </div>
+
+    {% endif %}
+
+    <br>
+
+    {{ form(form) }}
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script>
+        
+        $('#projet_couverture').change(function() {
+            $('#couverture label.custom-file-label').html($('#projet_couverture').val())
+        })
+
+    </script>
+
+{% endblock %}

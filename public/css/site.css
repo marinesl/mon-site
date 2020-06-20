@@ -1,0 +1,38 @@
+/*******************************
+ * SITE
+ *******************************/
+
+body section > .row { padding: 0 100px; }
+.spacer { height: 15rem; }
+
+/* Menu */
+.site header { padding: 4rem 100px; }
+.site header #logo { width: 6rem; }
+.site header .link a { color: #fff; }
+.site header .link a.active { border-bottom-color: rgba(255,255,255,0.5); border-bottom-width: 2px; }
+.site header #menu-rs img { width: 15%; margin-right: 15px; }
+
+/* Forme */
+img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
+
+/* Introduction */
+.site #introduction { padding-top: 4rem; }
+.site #introduction div:first-child { padding-right: 5rem; } 
+.site #introduction h1 { font-family: 'Sarabun-Regular'; font-size: 26px; margin-bottom: 2rem; }
+.site #introduction #introduction-mac { width: 110%; position: absolute; right: -6rem; top: -3rem; }
+.site #introduction #introduction-console { position: absolute; top: -8rem; left: -4rem; }
+.site #introduction #introduction-photo { position: absolute; bottom: -7rem; right: 6rem; width: 30%; }
+.site #introduction button { float: left; margin-top: 1rem; }
+
+/* A propos */
+#apropos #apropos-bloc { position: relative; top: 50%; transform: translateY(-50%); }
+#apropos #apropos-quote { font-family: 'PTSerif-Italic'; font-size: 41px; color: #41B591; margin-bottom: 0; position: relative; }
+#apropos #apropos-guillemet { position: absolute; top: -20px; left: 0; }
+#apropos #apropos-soulignement { position: absolute; bottom: 0; right: 9rem; }
+
+/* Compétences */
+#competences #competences-macbook { width: 110%; }
+#competences #competences-forme { position: absolute; right: -6rem; top: -10rem; z-index: -1; }
+#competences ul { list-style: none; }
+#competences ul li::before { content: "\2022"; color: #41B591; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+#competences .competences-certif { width: 30%; float: left; margin-right: 10px; margin-top: 5px; }
