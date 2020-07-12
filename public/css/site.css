@@ -36,3 +36,34 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 #competences ul { list-style: none; }
 #competences ul li::before { content: "\2022"; color: #41B591; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
 #competences .competences-certif { width: 30%; float: left; margin-right: 10px; margin-top: 5px; }
+
+/* Parcours scolaire */
+/* TODO: separator en CSS */
+#scolaire { background-image: url('../forme/blob-parcours-scolaire.svg'); padding: 6rem 0; }
+#scolaire #scolaire-intro { text-align: center; color: #fff; margin-bottom: 2rem; }
+#scolaire #scolaire-intro h2 { color: #fff; }
+#scolaire #scolaire-parcours { position: relative; }
+#scolaire #scolaire-parcours hr { border-top-color: #fff; border-top-width: 2px; width: 60%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+#scolaire #scolaire-parcours .parcours > div { background-color: #fff; padding: 1.5rem; border-radius: 5px; }
+#scolaire .parcours p:nth-child(1) { font-family: 'Sarabun-SemiBold'; font-size: 20px; line-height: 22px; color: #41B591; margin-bottom: 5px; }
+#scolaire .parcours p:nth-child(2) { font-family: 'Sarabun-Regular'; font-size: 14px; color: #41B591; margin-bottom: 5px; }
+#scolaire .parcours p:nth-child(3) { font-family: 'Sarabun-Regular'; font-size: 14px; }
+#scolaire .parcours p:nth-child(4) { font-family: 'Sarabun-Bold'; font-size: 14px; }
+#scolaire .parcours p:nth-child(4) span { font-family: 'Sarabun-LightItalic'; color: #AAAAAA; }
+
+/* Parcours professionnel */
+#professionnel { margin-top: 5rem; }
+
+#professionnel-2 { padding-left: 0; margin-top: 3rem; }
+#professionnel-2 .left img.forme { width: 100%; } 
+#professionnel-2 .left > div { position: absolute; top: 50%; transform: translateY(-50%); }
+#professionnel-2 .left > div p { font-size: 20px; text-align: center; color: #fff; padding: 0 5rem; margin-bottom: 2rem; }
+#professionnel-2 .left button { background-color: transparent; border: 1px solid #fff; }
+
+#professionnel-2 .right td:first-child { text-align: right; width: 80%; padding-right: 2rem; padding-left: 5rem; }
+#professionnel-2 .right td:first-child p:nth-child(1) { font-size: 22px; margin-bottom: 0; }
+#professionnel-2 .right td:first-child p:nth-child(2) { font-family: 'Sarabun-Bold'; margin-bottom: 0; }
+#professionnel-2 .right td:first-child p:nth-child(2) span { font-family: 'Sarabun-LightItalic'; color: #41B591; }
+#professionnel-2 .right td:first-child p:nth-child(3) { font-size: 14px; }
+#professionnel-2 .right td:last-child { font-size: 18px; line-height: 35px; color: #41B591; vertical-align: top; border-left: 1px solid #D9D9D9; position: relative; padding-left: 20px }
+#professionnel-2 .right td.bullet::before { content: "•"; color: #41B591; background-color: #fff; width: 20px; height: 45px; border-radius: 100%; font-size: 25px; position: absolute; left: -4px; top: 0; }
