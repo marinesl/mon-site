@@ -12,6 +12,17 @@ body section > .row { padding: 0 100px; }
 .site header .link a.active { border-bottom-color: rgba(255,255,255,0.5); border-bottom-width: 2px; }
 .site header #menu-rs img { width: 15%; margin-right: 15px; }
 
+/* Footer */
+.site footer { color: #fff; background-color: #41B591; }
+.site footer a, .site footer a:hover, .site footer a:focus { color: rgba(255,255,255, 0.25); }
+.site footer #footer-left, .site footer #footer-right { border-top : 1px solid rgba(255,255,255, 0.25); padding-top: 1rem; }
+.site footer #footer-right p, .site footer #footer-right div { display: inline-block; }
+.site footer #footer-left { padding-left: 0; }
+.site footer #footer-right { text-align: right; padding-right: 0; }
+.site footer #footer-right p { margin-right: 3rem; color: rgba(255,255,255, 0.25); }
+.site footer #footer-right #footer-rs img { width: 30px; margin-right: 15px; }
+.site footer #footer-right #footer-rs a:last-child img { margin-right: 0; }
+
 /* Forme */
 img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
@@ -39,7 +50,7 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 /* Parcours scolaire */
 /* TODO: separator en CSS */
-#scolaire { background-image: url('../forme/blob-parcours-scolaire.svg'); padding: 6rem 0; }
+#scolaire { background-image: url('../forme/blob-parcours-scolaire.svg'); background-size: cover; padding: 6rem 0; }
 #scolaire #scolaire-intro { text-align: center; color: #fff; margin-bottom: 2rem; }
 #scolaire #scolaire-intro h2 { color: #fff; }
 #scolaire #scolaire-parcours { position: relative; }
@@ -56,9 +67,11 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 #professionnel-2 { padding-left: 0; margin-top: 3rem; }
 #professionnel-2 .left img.forme { width: 100%; } 
-#professionnel-2 .left > div { position: absolute; top: 50%; transform: translateY(-50%); }
-#professionnel-2 .left > div p { font-size: 20px; text-align: center; color: #fff; padding: 0 5rem; margin-bottom: 2rem; }
-#professionnel-2 .left button { background-color: transparent; border: 1px solid #fff; }
+#professionnel-2 .left img.forme-2 { position: absolute; left: 0; top: 50%; transform: translateY(-50%); }
+#professionnel-2 .left > div { position: absolute; top: 50%; transform: translateY(-50%); text-align: center; }
+#professionnel-2 .left > div > img:first-child { margin-bottom: 1rem; }
+#professionnel-2 .left > div p { font-size: 20px; color: #fff; padding: 0 5rem; margin-bottom: 1rem; }
+#professionnel-2 .left button { background-color: transparent; border: 1px solid #fff; box-shadow: inherit; }
 
 #professionnel-2 .right td:first-child { text-align: right; width: 80%; padding-right: 2rem; padding-left: 5rem; }
 #professionnel-2 .right td:first-child p:nth-child(1) { font-size: 22px; margin-bottom: 0; }
@@ -67,3 +80,27 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 #professionnel-2 .right td:first-child p:nth-child(3) { font-size: 14px; }
 #professionnel-2 .right td:last-child { font-size: 18px; line-height: 35px; color: #41B591; vertical-align: top; border-left: 1px solid #D9D9D9; position: relative; padding-left: 20px }
 #professionnel-2 .right td.bullet::before { content: "•"; color: #41B591; background-color: #fff; width: 20px; height: 45px; border-radius: 100%; font-size: 25px; position: absolute; left: -4px; top: 0; }
+
+/* Fun facts */
+#fun-facts { margin-top: 5rem; }
+
+#fun-facts .right .row { text-align: center; margin-bottom: 2rem; }
+#fun-facts .right .fact { position: absolute; left: 50%; transform: translateX(-50%); }
+#fun-facts .right p { line-height: 22px; margin-top: 1rem; }
+#fun-facts .right p span { font-family: 'Sarabun-Bold'; }
+
+/* Contact */
+/* TODO: separator en CSS */
+#contact { background-image: url('../forme/blob-parcours-scolaire.svg'); background-size: cover; padding: 6rem 0; margin-top: 2rem; }
+#contact #contact-intro { text-align: center; color: #fff; margin-bottom: 2rem; }
+#contact #contact-intro h2 { color: #fff; }
+#contact form label { color: #fff; } 
+#contact form .label-block { margin-bottom: 1rem; }  
+#contact form .label-block label { float: none; display: block; }
+#contact form .label-block input, #contact form .label-block textarea { width: 100%; }
+#contact form .btn { color: #41B591; border: none; background-color: #fff; margin-top: 1rem; }
+#row-message, #row-message > div { height: 100%; }
+#row-message textarea { height: calc(100% - 46px); }
+#contact .alert { text-align: center; }
+#contact .alert.alert-success { color: #fff; background-color: #36d65d; border-color: #36d65d; }
+#contact .alert.alert-fail { color: #fff; background-color: #F42626; border-color: #F42626; }

@@ -7,16 +7,20 @@
     <div class="col-lg-6 col-md-6 col-sm-12 link">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12">
+                {# <a href="{{ path('homepage') }}" title="Présentation"
+                    {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
+                >
+                    Présentation</a> #}
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
                 <a href="{{ path('homepage') }}" title="Présentation"
                     {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
                 >
                     Présentation</a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <a href="{{ path('portfolio') }}" 
+                {# <a href="{{ path('portfolio') }}" 
                     {% if app.request.get('_route') == 'portfolio' %}class="active"{% endif %}
                 >
-                    Portfolio</a>
+                    Portfolio</a> #}
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <a href="{{ path('homepage') }}#contact">Contact</a>

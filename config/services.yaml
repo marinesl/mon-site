@@ -7,6 +7,12 @@ parameters:
     projet_couverture_directory: '%kernel.project_dir%/public/projet_couverture'
     projet_couverture_local: 'projet_couverture'
 
+    MAILER_PASSWORD: '%env(MAILER_PASSWORD)%'
+    MAILER_EMAIL: '%env(MAILER_EMAIL)%'
+    MAILER_SMTP: '%env(MAILER_SMTP)%'
+    MAILER_PORT: '%env(MAILER_PORT)%'
+    MAILER_ENCRYPTION: '%env(MAILER_ENCRYPTION)%'
+
 services:
     # default configuration for services in *this* file
     _defaults:
@@ -27,3 +33,5 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    

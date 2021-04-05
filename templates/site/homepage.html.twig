@@ -1,6 +1,6 @@
 {% extends 'base_site.html.twig' %}
 
-{% block title %}Présentation{% endblock %}
+{% block title %}Marine LANCELIN - Présentation{% endblock %}
 
 {% block body_class %}site homepage{% endblock %}
 
@@ -9,10 +9,10 @@
     {# Introduction #}
     <div class="row" id="introduction">
         <div class="col-lg-6 col-md-6 col-sm-12">
-            <h1>Hello, je m'appelle Marine Lancelin<br>et je suis développeuse PHP Symfony</h1>
-            <p>Diplomée d’un master <span class="bold">Développement Web</span> en&nbsp;2019, je suis actuellement à&nbsp;la&nbsp;<span class="bold">recherche d’un&nbsp;CDI</span>, n’hésitez pas à&nbsp;me&nbsp;contacter.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet augue.</p>
-            <button class="btn"> <img src="{{ asset('picto/download.svg') }}" alt="Télécharger"> Télécharger mon CV</button>
+            <h1>Hello, je m'appelle Marine LANCELIN<br>et je suis développeuse PHP Symfony</h1>
+            <p>Diplomée d’un master <span class="bold">Développement Web</span> en&nbsp;2019, je suis actuellement <span class="bold">en&nbsp;CDI</span> dans une agence de&nbsp;communication éditoriale.</p>
+            <p>Je suis aussi en&nbsp;<span class="bold">freelance</span> et&nbsp;je&nbsp;réalise des&nbsp;sites internet vitrines.</p>
+            {# TODO: <button class="btn"> <img src="{{ asset('picto/download.svg') }}" alt="Télécharger"> Télécharger mon CV</button> #}
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
             <img src="{{ asset('images/mac-header.png') }}" alt="Mac avec Captain America en background de bureau et une bière sur le côté droit" id="introduction-mac">
@@ -33,8 +33,9 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
             <h2>À propos de moi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet augue.</p>
-            <p>Morbi imperdiet in odio ac tincidunt. Mauris rutrum accumsan justo id ornare. Etiam gravida magna rutrum, aliquet ante vitae, pellentesque eros. Etiam finibus libero elit, non posuere eros cursus nec. Nulla sem lorem, suscipit vitae metus vitae.</p>
+            <p>J'ai découvert les algorithmes et&nbsp;le&nbsp;code en&nbsp;Terminale&nbsp;S en&nbsp;suivant la&nbsp;spécialité <span class="bold">Informatique et&nbsp;Science du&nbsp;Numérique</span>, pendant laquelle j'ai développé un&nbsp;Puissance&nbsp;4 en&nbsp;C#.</p>
+            <p>Durant mes cinq années d'études, le&nbsp;<span class="bold">Back-End</span> est dévenu ma&nbsp;prédilection, le&nbsp;<span class="bold">PHP</span> ma&nbsp;spécialité et&nbsp;<span class="bold">Symfomy</span> mon&nbsp;coup de&nbsp;c&#339;ur.</p>
+            <p>Ma citation me définit comme une&nbsp;personne qui assume <span class="bold">ses&nbsp;choix et&nbsp;ses&nbsp;goûts&nbsp;</span>: la&nbsp;Chouffe est ma&nbsp;bière préférée, Captain American est mon&nbsp;Avenger adoré et&nbsp;PHP mon&nbsp;langage choisi.</p>
         </div>
     </div>
 
@@ -44,7 +45,7 @@
     <div class="row" id="competences">
         <div class="col-lg-6 col-md-6 col-sm-12">
             <h2>Mes compétences</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet.</p>
+            <p>J'ai eu la chance durant mes&nbsp;études de&nbsp;ne&nbsp;pas&nbsp;seulement me&nbsp;focaliser sur un&nbsp;langage ou&nbsp;sur un&nbsp;outil&nbsp;:</p>
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -129,7 +130,7 @@
                 <div class="col"></div>
                 <div class="col-lg-6 col-md-12 col-sm-12" id="scolaire-intro">
                     <h2>Mon parcours scolaire</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet.</p>
+                    <p>Il était important pour moi d'aller au&nbsp;plus loin dans mes&nbsp;études, de&nbsp;me&nbsp;challenger.</p>
                 </div>
                 <div class="col"></div>
             </div>
@@ -142,7 +143,7 @@
                     <div>
                         <p>BTS Services informatiques<br>aux&nbsp;organisations</p>
                         <p>de 2013 à 2015</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet.</p>
+                        <p>Découvrir le Front-End, le&nbsp;Back-End, de&nbsp;l'algorithmie, Wamp et&nbsp;Notepad, le&nbsp;droit, l'alternance, les&nbsp;soirées étudiantes et&nbsp;ma&nbsp;meilleure amie.</p>
                         <p>ITIC PARIS<br><span>Paris, France</span></p>
                     </div>
                 </div>
@@ -150,7 +151,7 @@
                     <div>
                         <p>Licence Pro. Systèmes<br>Informatiques et&nbsp;Logiciel</p>
                         <p>de 2015 à 2016</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet.</p>
+                        <p>Aller plus loin dans les&nbsp;métiers du&nbsp;numérique, réalisation de&nbsp;wireframe, d'une&nbsp;charte graphique, d'une&nbsp;vidéo, du&nbsp;premier projet Symfony et&nbsp;première rupture de&nbsp;contrat.</p>
                         <p>CFA UPMC<br><span>Paris, France</span></p>
                     </div>
                 </div>
@@ -158,7 +159,7 @@
                     <div>
                         <p>Master<br>Développement Web</p>
                         <p>de 2017 à 2019</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet.</p>
+                        <p>S'ouvrir à tous les langages&nbsp;: CSS, JS, React, Angular, PHP. Participer à&nbsp;des&nbsp;Hackathons. Devenir plus professionnelle avec les&nbsp;bons outils, le&nbsp;bon réseau et&nbsp;les&nbsp;bons amis.</p>
                         <p>ECV Digital<br><span>Paris, France</span></p>
                     </div>
                 </div>
@@ -171,10 +172,9 @@
 
     {# Parcours professionnel #}
     <div class="row" id="professionnel">
-
         <div class="col-lg-6 col-md-6 col-sm-12 left">
             <h2>Mon parcours pro</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet.</p>
+            <p>L'alternance a été un&nbsp;bénéfice dans mes&nbsp;études et&nbsp;dans mon&nbsp;apprentissage professionnel. C'est un&nbsp;atout dans mon&nbsp;métier.</p>
         </div>
     </div>
 
@@ -182,11 +182,12 @@
 
         <div class="col-lg-6 col-md-6 col-sm-12 left">
             <img src="{{ asset('images/parcours-pro.png') }}" alt="Forme verte sur un écran d'ordinateur portable" class="forme">
+            {# TODO: <img src="{{ asset('forme/blob-parcours-pro.svg') }}" alt="Forme grise avec opacité" class="forme-2"> #}
 
             <div>
-                {# TODO: Demander picto à Pierre #}
-                <p>Bla bla pour en savoir plus sur moi, n’hésitez pas à&nbsp;télécharger mon&nbsp;CV complet au&nbsp;format PDF (et&nbsp;à&nbsp;l’accrocher au-dessus de&nbsp;votre bureau)&nbsp;:</p>
-                <button class="btn"> <img src="{{ asset('picto/download.svg') }}" alt="Télécharger"> Télécharger mon CV</button>
+                {# TODO: <img src="{{ asset('picto/cv.svg') }}" alt="Un CV en filaire blanc">
+                <p>Pour en&nbsp;savoir plus sur&nbsp;moi, n’hésitez pas à&nbsp;télécharger mon&nbsp;CV complet au&nbsp;format PDF (et&nbsp;à&nbsp;l’accrocher au-dessus de&nbsp;votre bureau)&nbsp;:</p>
+                <button class="btn"> <img src="{{ asset('picto/download.svg') }}" alt="Télécharger"> Télécharger mon CV</button> #}
             </div>
         </div>
 
@@ -197,15 +198,15 @@
                         <td>
                             <p>Développeuse web freelance</p>
                             <p>Paris (75) &#149; <span>de septembre 2019 à aujourd’hui</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum blabla bla bum.</p>
+                            <p>Première aventure. Réalisation de&nbsp;sites vitrines pour G2F&nbsp;Solutions,&nbsp;...</p>
                         </td>
                         <td class="bullet">2019</td>
                     </tr>
                     <tr>
                         <td>
                             <p>CIMAYA</p>
-                            <p>Paris (75) &#149; <span>de février 2019 à août 2019</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum blabla bla bum.</p>
+                            <p>Paris (75) &#149; <span>de février 2019 à aujourd'hui</span></p>
+                            <p>Premier emploi à responsabilité. Développement l'intranet - Symfony. Réalisation de&nbsp;sites vitrines clients - WordPress.</p>
                         </td>
                         <td class="bullet">2016</td>
                     </tr>
@@ -213,7 +214,7 @@
                         <td>
                             <p>Emedia Communication</p>
                             <p>Saint-Maur (94) &#149; <span>de octobre 2015 à novembre 2015</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum blabla bla bum.</p>
+                            <p>Première mauvaise expérience. Débug d’une application développée en&nbsp;interne HTML/PHP/JS.</p>
                         </td>
                         <td class="bullet">2015</td>
                     </tr>
@@ -221,15 +222,15 @@
                         <td>
                             <p>Banque de gestion Edmond de Rothschild</p>
                             <p>Paris (75) &#149; <span>août 2015</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum blabla bla bum.</p>
+                            <p>Première digitalisation. Archivage et suivi des dossiers sur 10 ans dans le Service Succession.</p>
                         </td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>
-                            <p>Hôpital Necker-Enfants malades &amp; Hôpital Saint-Louis</p>
+                            <p>Hôpital Necker-Enfants malades<br>&amp; Hôpital Saint-Louis</p>
                             <p>Paris (75) &#149; <span>octobre 2014 à juin 2014</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum blabla bla bum.</p>
+                            <p>Première collaboration utilisateur. Participation au&nbsp;projet AGHATE (Agenda de&nbsp;Gestion des&nbsp;Hospitalisations Ambulatoires et&nbsp;ThErapeutiques) – HTML/PHP/SQL/JQuery/JavaScript.</p>
                         </td>
                         <td class="bullet">2014</td>
                     </tr>
@@ -237,7 +238,7 @@
                         <td>
                             <p>Hôpital Necker-Enfants malades</p>
                             <p>Paris (75) &#149; <span>juin 2014 à juillet 2014</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum blabla bla bum.</p>
+                            <p>Premier projet PHP. Réalisation de&nbsp;l’annuaire électronique de&nbsp;l’hôpital HTML/CSS/Bootstrap/PHP/SQL.</p>
                         </td>
                         <td></td>
                     </tr>
@@ -245,7 +246,7 @@
                         <td>
                             <p>HSBC</p>
                             <p>Paris (75) &#149; <span>août 2013</span></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum blabla bla bum.</p>
+                            <p>Première expérience professionnelle. Relance régulière des&nbsp;chefs de&nbsp;projet sur&nbsp;l’état d’avancement des&nbsp;projets.</p>
                         </td>
                         <td class="bullet">2013</td>
                     </tr>
@@ -254,6 +255,131 @@
         </div>
 
 
+    </div>
+
+    {# Fun facts #}
+    <div class="row" id="fun-facts">
+
+        <div class="col-lg-4 col-md-6 col-sm-6 left align-self-center">
+            <h2>Fun facts</h2>
+            <p>Et non, les développeurs ne&nbsp;font pas&nbsp;que&nbsp;coder à&nbsp;longueur de&nbsp;temps, enfermés dans un&nbsp;sous-sol. Certains voyagent, découvrent, lisent, binge watch, sortent se&nbsp;balader, prennent des&nbsp;photos, sociabilisent aussi.</p>
+            <p>Personnelement, je ne&nbsp;râte pas un&nbsp;match du&nbsp;XV de&nbsp;France, je&nbsp;lis dans le&nbsp;métro, je&nbsp;ne&nbsp;passe pas un&nbsp;été sans prendre un&nbsp;avion, j'adore retrouver mes&nbsp;amis dans un&nbsp;bar ou&nbsp;à&nbsp;Disneyland Paris, et&nbsp;les&nbsp;prendre en photo pour alimenter le&nbsp;panorama photos que je&nbsp;prépare pour leur mariage...</p>
+        </div>
+
+        <div class="col-lg-8 col-md-6 col-sm-6 right">
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="{{ asset('forme/blob-fun-fact-1.svg') }}" alt="Forme verte" class="forme">
+                    <img src="{{ asset('picto/fun-fact-1.svg') }}" alt="Deux passeports" class="fact">
+                    <p><span>30 pays visités</span><br>le plus beau : la Thaïlande</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="{{ asset('forme/blob-fun-fact-2.svg') }}" alt="Forme verte" class="forme">
+                    <img src="{{ asset('picto/fun-fact-2.svg') }}" alt="Un appareil photo et une lune" class="fact">
+                    <p><span>Photographe amatrice</span><br>Paris, la nuit et les voyages</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="{{ asset('forme/blob-fun-fact-3.svg') }}" alt="Forme verte" class="forme">
+                    <img src="{{ asset('picto/fun-fact-3.svg') }}" alt="Un ballon de rugby" class="fact">
+                    <p><span>Fan de rugby</span><br>supportrice du Stade Français et&nbsp;du&nbsp;XV de France</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="{{ asset('forme/blob-fun-fact-4.svg') }}" alt="Forme verte" class="forme">
+                    <img src="{{ asset('picto/fun-fact-4.svg') }}" alt="La tête de Mickey" class="fact">
+                    <p><span>Parc Disneyland</span><br>détentrice d’un pass annuel</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="{{ asset('forme/blob-fun-fact-5.svg') }}" alt="Forme verte" class="forme">
+                    <img src="{{ asset('picto/fun-fact-5.svg') }}" alt="Un pot de pop-corn et un écran télé avec le logo de Netflix" class="fact">
+                    <p><span>100 séries regardées</span><br>plus de 5 100 épisodes !</p>
+                </div>
+                {# TODO: <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img src="{{ asset('forme/blob-fun-fact-6.svg') }}" alt="Forme verte" class="forme">
+                    <p><span>Lectrice quotidienne</span><br>record de 2 livres par semaine (en vacances)</p>
+                </div> #}
+            </div>
+        </div>
+
+    </div>
+    
+    {# Contact #}
+    <div class="row" id="contact">
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12" id="contact-intro">
+                    <h2>Contact</h2>
+                    {# TODO:<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet.</p> #}
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row">
+                <div class="col"></div>
+
+                {{ form_start(form, {'attr': {'class': 'col-lg-8 col-md-8 col-sm-12'}}) }}
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row">
+                            {{ form_row(form.prenom) }}
+                            {{ form_row(form.nom) }}
+                        </div>
+
+                        <div class="row">
+                            {{ form_row(form.email) }}
+                        </div>
+
+                        <div class="row">
+                            {{ form_row(form.telephone) }}
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row" id="row-message">
+                            {{ form_row(form.message) }}
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <button type="submit" id="contact_save" name="contact[save]" class="btn-primary btn"> <img src="{{ asset('picto/send.svg') }}" alt="Envoyer"> Envoyer</button>
+                    </div>
+                </div>
+
+                {{ form_end(form) }}
+
+                <div class="col"></div>
+
+            </div>
+
+            <div class="row">
+                
+                <div class="col"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    {% for message in app.flashes('success') %}
+                        <div class="alert alert-success">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                    {% for message in app.flashes('fail') %}
+                        <div class="alert alert-fail">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="col"></div>
+            </div>
+
+        </div>
     </div>
 
 {% endblock %}
