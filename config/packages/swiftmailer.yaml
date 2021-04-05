@@ -1,10 +1,2 @@
 swiftmailer:
     url: '%env(MAILER_URL)%'
-    # spool: { type: 'memory' }
-    # transport:  smtp
-    # encryption: ssl
-    # auth_mode:  login
-    # host:       mail.pierrepineau.fr
-    # username:   hello@pierrepineau.fr
-    # password:   YQykPm~KDt*H
-    # port:       465
