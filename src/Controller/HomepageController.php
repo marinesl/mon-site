@@ -63,7 +63,7 @@ class HomepageController extends AbstractController
                         // On crée le mail
                         $message->setSubject( 'Site - Demande de contact' )
                                 ->setFrom( $this->getParameter('MAILER_EMAIL') )
-                                ->setTo( 'lancelinmarine@gmail.com' )
+                                ->setTo( $this->getParameter('MAILER_EMAIL_DEST') )
                                 ->setBody( '<p>Bonjour,</p><p>Vous avez une nouvelle demande de contact :</p>'.
                                             '<ul>'.
                                             '<li>Nom : '.$contact->getPrenom().' '.$contact->getNom().'</li>'.
