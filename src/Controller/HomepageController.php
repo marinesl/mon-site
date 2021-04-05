@@ -19,7 +19,6 @@ class HomepageController extends AbstractController
      * @Route("/", name="homepage")
      * Page d'accueil du site internet
      */
-    // public function index(Request $request, \Swift_Mailer $mailer): Response
     public function index(Request $request): Response
     {
         /**

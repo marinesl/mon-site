@@ -18,3 +18,5 @@ public/.DS_Store
 .env
 
 composer.phar
+
+composer.lock
