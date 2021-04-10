@@ -4,6 +4,7 @@
 
 body section > .row { padding: 0 100px; }
 .spacer { height: 15rem; }
+p a { color: #41B591; }
 
 /* Menu */
 .site header { padding: 4rem 100px; }
@@ -24,18 +25,22 @@ body section > .row { padding: 0 100px; }
 .site footer #footer-right #footer-rs a:last-child img { margin-right: 0; }
 
 /* Forme */
-img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
+img#header-forme, img#header-forme-header { position: absolute; top: 0; right: 0; z-index: -1; }
+img#header-forme-header { display: none; }
+.homepage img#header-forme-header { display: block; }
+.homepage img#header-forme { display: none; }
 
 /* Introduction */
 .site #introduction { padding-top: 4rem; }
 .site #introduction div:first-child { padding-right: 5rem; } 
 .site #introduction h1 { font-family: 'Sarabun-Regular'; font-size: 26px; margin-bottom: 2rem; }
-.site #introduction #introduction-mac { width: 110%; position: absolute; right: -6rem; top: -3rem; }
+.site #introduction #introduction-mac { width: 140%; position: absolute; right: -17rem; top: -3rem; }
 .site #introduction #introduction-console { position: absolute; top: -8rem; left: -4rem; }
-.site #introduction #introduction-photo { position: absolute; bottom: -7rem; right: 6rem; width: 30%; }
+.site #introduction #introduction-photo { position: absolute; bottom: -12rem; right: 8rem; width: 30%; }
 .site #introduction button { float: left; margin-top: 1rem; }
 
 /* A propos */
+#apropos { margin-top: 6rem; }
 #apropos #apropos-bloc { position: relative; top: 50%; transform: translateY(-50%); }
 #apropos #apropos-quote { font-family: 'PTSerif-Italic'; font-size: 41px; color: #41B591; margin-bottom: 0; position: relative; }
 #apropos #apropos-guillemet { position: absolute; top: -20px; left: 0; }
@@ -58,7 +63,7 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 #scolaire .parcours p:nth-child(1) { font-family: 'Sarabun-SemiBold'; font-size: 20px; line-height: 22px; color: #41B591; margin-bottom: 5px; }
 #scolaire .parcours p:nth-child(2) { font-family: 'Sarabun-Regular'; font-size: 14px; color: #41B591; margin-bottom: 5px; }
 #scolaire .parcours p:nth-child(3) { font-family: 'Sarabun-Regular'; font-size: 14px; }
-#scolaire .parcours p:nth-child(4) { font-family: 'Sarabun-Bold'; font-size: 14px; }
+#scolaire .parcours p:nth-child(4) { font-family: 'Sarabun-Bold'; font-size: 14px; margin-bottom: 0; }
 #scolaire .parcours p:nth-child(4) span { font-family: 'Sarabun-LightItalic'; color: #AAAAAA; }
 
 /* Parcours professionnel */
