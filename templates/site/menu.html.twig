@@ -1,18 +1,57 @@
 <header class="row">
 
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="col-xxl-7 col-xl-6 col-lg-4 col-md-3 col-sm-3 col-3">
         <a href="{{ path('homepage') }}" title="Accueil"><img src="{{ asset('logo/logo.svg') }}" alt="Logo" id="logo"></a>
     </div>
 
-    <div class="col-lg-6 col-md-6 col-sm-12 link">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-12">
+    <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9 col-sm-9 col-9 link">
+        {# Mobile + Tablette #}
+        <button class="burger">
+            <svg class="is-open" xmlns="http://www.w3.org/2000/svg" width="27" height="17" stroke="#41B591" fill="none" stroke-linecap="round" stroke-width="2" xmlns:v="https://vecta.io/nano">
+                <path d="M1 1.5h25m-25 7h25m-25 7h25"></path>
+            </svg>            
+            <svg class="is-close" xmlns="http://www.w3.org/2000/svg" width="21" height="21" stroke="#41B591" fill="none" stroke-linecap="round" stroke-width="2" xmlns:v="https://vecta.io/nano">
+                <path d="M1.662 1.662l17.678 17.678"></path>
+                <path d="M1.662 19.339L19.339 1.662"></path>
+            </svg>        
+        </button>
+
+        <ul class="menu-mobile">
+            {# <li><a href="{{ path('homepage') }}" title="Présentation"
+                class="nav-link{% if app.request.get('_route') == 'homepage' %} active{% endif %}""
+            >
+                Présentation</a></li> #}
+
+            <li>
+                <a href="{{ path('homepage') }}" title="Présentation"
+                class="nav-link{% if app.request.get('_route') == 'homepage' %} active{% endif %}"
+                >
+                Présentation</a>
+
+                {# <a href="{{ path('portfolio') }}" 
+                    class="nav-link {% if app.request.get('_route') == 'portfolio' %} active{% endif %}"
+                >
+                    Portfolio</a> #}
+            </li>
+
+            <li><a href="{{ path('homepage') }}#contact" class="nav-link">Contact</a></li>
+
+            <li class="nav-socials">
+                <a href="https://fr.linkedin.com/in/marine-lancelin-a4b25389" target="_blank" title="Linkedin"><img src="{{ asset('picto/linkedin-vert.svg') }}" alt="LinkedIn"></a>
+                <a href="https://github.com/marinesl" target="_blank" title="Github"><img src="{{ asset('picto/github-vert.svg') }}" alt="Github"></a>
+                <a href="https://www.instagram.com/marines_l/?hl=fr" target="_blank" title="Instragram"><img src="{{ asset('picto/instagram-vert.svg') }}" alt="Instagram"></a>
+            </li>
+        </ul>
+
+        {# Desktop #}
+        <div class="row menu-desktop">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
                 {# <a href="{{ path('homepage') }}" title="Présentation"
                     {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
                 >
                     Présentation</a> #}
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
                 <a href="{{ path('homepage') }}" title="Présentation"
                     {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
                 >
@@ -22,10 +61,10 @@
                 >
                     Portfolio</a> #}
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-4">
                 <a href="{{ path('homepage') }}#contact">Contact</a>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12" id="menu-rs">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12" id="menu-rs">
                 <a href="https://fr.linkedin.com/in/marine-lancelin-a4b25389" target="_blank" title="Linkedin"><img src="{{ asset('picto/linkedin.svg') }}" alt="LinkedIn"></a>
                 <a href="https://github.com/marinesl" target="_blank" title="Github"><img src="{{ asset('picto/github.svg') }}" alt="Github"></a>
                 <a href="https://www.instagram.com/marines_l/?hl=fr" target="_blank" title="Instragram"><img src="{{ asset('picto/instagram.svg') }}" alt="Instagram"></a>

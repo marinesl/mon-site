@@ -82,6 +82,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src:    url('fonts/OpenSans-Regular.woff2') format('woff2'),
+            url('fonts/OpenSans-Regular.woff') format('woff'),
+            url('fonts/OpenSans-Regular.ttf')  format('truetype'), 
+            url('fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 /*******************************
@@ -89,13 +99,14 @@
  *******************************/
 
 /* Body */
-body { font-family: 'Sarabun-Regular'; font-size: 16px; color: #373737; overflow-x: hidden; }
+body { font-family: 'OpenSans-Regular'; font-size: 16px; color: #373737; }
+body, html{ overflow-x: hidden; }
 
 /* Text */
 h2 { font-family: 'Sarabun-Regular'; font-size: 24px; text-transform: uppercase; color: #41B591; margin-bottom: 1.5rem; }
 h3 { font-family: 'Sarabun-Bold'; font-size: 16px; text-transform: uppercase; color: #41B591; margin-top: 1rem; }
 .bold { font-family: 'Sarabun-Bold'; }
-a { color: #373737; }
+a { color: #373737; text-decoration: none; }
 a:hover { text-decoration: none; color: #41B591; }
 
 /* Button */
@@ -106,6 +117,7 @@ button.btn { background-color: #41B591; color: #ffffff; font-family: 'Sarabun-Bo
 }
 button.btn:hover { color: #ffffff; }
 button.btn img { width: 15px; margin-right: 10px; }
+button.btn a, button.btn a:focus, button.btn a:hover { color: #ffffff; }
 
 /* Form */
 input[type=text] { color: #373737; }
@@ -122,7 +134,7 @@ input:-moz-placeholder { /* Firefox 18- */
     color: #AAAAAA !important;
 }
 
-.form-group { width: 60%; margin: auto; margin-bottom: 3rem; }
+.form-group { margin: auto; margin-bottom: 3rem; }
 .form-control, .form-group .custom-file-label { width: 70%; }
 .form-group label:not(.form-check-label), .form-group legend { float: left; width: 30%; }
 .form-check { display: inline-block; padding-right: 1rem; }
@@ -136,6 +148,19 @@ header #logo { width: 3rem; position: relative; top: 50%; transform: translateY(
 
 header .link { text-align: center; }
 header .link .row { position: relative; top: 50%; transform: translateY(-50%); }
-header .link a { font-family: 'Sarabun-Regular'; font-size: 18px; }
+header .link a { font-family: 'Sarabun-Regular'; }
 header .link a.active { border-bottom: 1px solid #41B591; padding-bottom: 5px; }
+
+@media (min-width: 414px)  {
+    header .link a { font-size: 16px; }
+}
+@media (min-width: 480px)  {
+    header .link a { font-size: 16px; }
+}
+@media (min-width: 600px)  {
+    header .link a { font-size: 16px; }
+}
+@media (min-width: 1280px)  {
+    header .link a { font-size: 18px; }
+}
 
