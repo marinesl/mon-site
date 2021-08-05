@@ -54,6 +54,11 @@ class ContactType extends AbstractType
                 'attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12'],
                 'row_attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12 label-block', 'id' => '']
             ])
+
+            ->add('save',SubmitType::class, [
+                'attr' => ['class' => 'btn-primary'],
+                'label_format' => 'Envoyer'
+            ])
         ;
     }
 

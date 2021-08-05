@@ -351,7 +351,9 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-11 col-11">
-                        <button type="submit" id="contact_save" name="contact[save]" class="btn-primary btn"> <img src="{{ asset('picto/send.svg') }}" alt="Envoyer"> Envoyer</button>
+                        {# TODO: Mettre le picto dans le bouton <button type="submit" id="contact_save" name="contact[save]" class="btn-primary btn"> <img src="{{ asset('picto/send.svg') }}" alt="Envoyer"> Envoyer</button> #}
+
+                        {{ form_row(form.save) }}
                     </div>
                 </div>
 
