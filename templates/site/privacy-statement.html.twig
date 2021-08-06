@@ -1,0 +1,55 @@
+{% extends 'base_site.html.twig' %}
+
+{% block title %}Marine LANCELIN - Politique de Confidentialité{% endblock %}
+
+{% block body_class %}site mentions_legales{% endblock %}
+
+{% block body %}
+
+    {% set nom = 'Marine LANCELIN' %}
+    {% set url = 'www.marinelancelin.fr' %}
+    {% set email = 'contact@marinelancelin.fr' %}
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+
+            <h1>Politique de confidentialité</h1>
+
+            <h2>1. Qui sommes nous ?</h2>
+            <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site <a href="https://{{ url }}/" target="_blank">{{ url }}</a> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
+            <p><span class="bold">Propriétaire</span> : {{ nom }} – 854 054 707 00013 – 168 boulevard Diderot, 75012 Paris<br />
+            <span class="bold">Créateur</span>  : <a href="www.marinelancelin.fr">{{ nom }}</a><br />
+            <span class="bold">Responsable publication</span> : {{ nom }} – <a href="mailto:{{ email }}">{{ email }}</a><br />
+            Le responsable publication est une personne physique.<br />
+            <span class="bold">Webmaster</span> : {{ nom }} – <a href="mailto:{{ email }}">{{ email }}</a><br />
+            <span class="bold">Design</span> : <a href="https://pierrepineau.fr" target="_blank">Pierre PINEAU</a><br />
+            <span class="bold">Hébergeur</span> : o2switch – 222 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand<br />
+            <span class="bold">Crédits</span> : <a href="https://flaticon.com" target="_blank">Flaticon</a> - <a href="https://unsplash.com/" target="_blank">Unsplash</a><br />
+            Le modèle de mentions légales est offert par <a target="_blank" href="https://www.subdelirium.com/generateur-de-mentions-legales/" alt="generateur de mentions légales">Subdelirium.com</a>.</p>
+
+
+            <h2>2. Cookies</h2>
+            <p>La navigation sur le site <a href="https://{{ url }}/" target="_blank">{{ url }}</a> est susceptible de provoquer l’installation de cookie(s) sur l’ordinateur de l’utilisateur. Un cookie est un fichier de petite taille, qui ne permet pas l’identification de l’utilisateur, mais qui enregistre des informations relatives à la navigation d’un ordinateur sur un site. Les données ainsi obtenues visent à faciliter la navigation ultérieure sur le site, et ont également vocation à permettre diverses mesures de fréquentation.</p>
+            <p>Nous utilisons les outils suivants pour analyser le trafic présent sur le site et personnaliser l’expérience :</p>
+            <ul>
+                <li>Google Analytics</li>
+                <li>Cookie Consent Bundle</li>
+            </ul>
+
+            <h2>3. Contenu embarqué depuis d’autres sites</h2>
+            <p>Le contenu de ce site peut inclure des contenus intégrés (par exemple des vidéos, images, articles…). Le contenu intégré depuis d’autres sites se comporte de la même manière que si le visiteur se rendait sur cet autre site.</p>
+            <p>Ces sites web pourraient collecter des données sur vous, utiliser des cookies, embarquer des outils de suivis tiers, suivre vos interactions avec ces contenus embarqués si vous disposez d’un compte connecté sur leur site web.</p>
+
+            <h2>4. Durées de stockage de vos données</h2>
+            <p>Vos informations (e-mail, prénom, nom, téléphone) pourront être conservées pour une durée indéfinie.</p>
+
+            <h2>5. Les droits que vous avez sur vos données</h2>
+            <p>Vous garderez un droit de regard sur vos informations. Vous pourriez y accéder, les rectifier, demander leur modification et suppression et exercer votre droit à la limitation du traitement. Vous pourrez exercer ces droits à tout moment. Pour cela, vous pourriez nous contacter par e-mail à l’adresse <a href="mailto:{{ email }}">{{ email }}</a>.</p>
+            <p>Aussi, vous pouvez retirer votre consentement au traitement de vos données à tout moment ou vous opposer au traitement de vos données. Vous pouvez également exercer un droit à la portabilité sur vos données personnelles.</p>
+            <p>Si après nous avoir contacté, vous constatez que vos droits « Informatiques et Libertés » ne sont pas respectés, vous pourrez adresser une réclamation à la Commission nationale de l’Informatique et des Libertés ou CNIL, 3 Places de Fontenoy, 75007 Paris.</p>
+            <p>{{ nom }} se réserve le droit de faire évoluer la présente Politique de confidentialité afin de se conformer aux modifications des lois et règlementations en vigueur.</p>
+
+        </div>
+    </div>
+
+{% endblock %}

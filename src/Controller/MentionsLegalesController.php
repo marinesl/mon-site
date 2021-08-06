@@ -42,4 +42,36 @@ class MentionsLegalesController extends AbstractController
                 array());
         //
     }
+
+
+    /**
+     * @Route("/privacy-statement", name="privacy-statement")
+     * Page des mentions légales
+     */
+    public function privacy(Request $request): Response
+    {
+        /**
+         * CONFIG
+         */
+            $em = $this->getDoctrine()->getManager();
+        //
+
+        /**
+         * ELEMENTS
+         */
+        //
+
+        /**
+         * TRAITEMENT
+         */
+        //
+
+        /**
+         * VUE
+         */
+            return $this->render(
+                'site/privacy-statement.html.twig' ,
+                array());
+        //
+    }
 }

@@ -49,5 +49,9 @@
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/site.js') }}"></script>
         {% block javascripts %}{% endblock %}
+
+        {{ render_esi(path('ch_cookie_consent.show_if_cookie_consent_not_set', { 'locale' : app.request.locale })) }}
+        {% include "@CHCookieConsent/cookie_consent_styling.html.twig" %}
+
     </body>
 </html>

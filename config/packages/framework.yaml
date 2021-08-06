@@ -12,6 +12,8 @@ framework:
         cookie_samesite: lax
 
     #esi: true
+    esi: { enabled: true } # Pour Cookie consent bundle
+
     #fragments: true
     php_errors:
         log: true

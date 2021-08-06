@@ -2,6 +2,15 @@
     "beberlei/assert": {
         "version": "v3.2.7"
     },
+    "connectholland/cookie-consent-bundle": {
+        "version": "0.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.4",
+            "ref": "9725d24dc996a1041f25b9e29fc1567a861f98e4"
+        }
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -194,6 +203,9 @@
     "symfony/event-dispatcher-contracts": {
         "version": "v2.0.1"
     },
+    "symfony/expression-language": {
+        "version": "v5.0.11"
+    },
     "symfony/filesystem": {
         "version": "v5.0.7"
     },
@@ -366,6 +378,9 @@
             "config/packages/swiftmailer.yaml",
             "config/packages/test/swiftmailer.yaml"
         ]
+    },
+    "symfony/templating": {
+        "version": "v5.0.11"
     },
     "symfony/translation": {
         "version": "3.3",

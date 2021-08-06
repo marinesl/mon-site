@@ -165,13 +165,10 @@ p a { color: #41B591; }
 
 
 /* Forme */
-img#header-forme, img#header-forme-header { position: absolute; top: 0; right: 0; z-index: -1; }
-img#header-forme-header { display: none; }
-.homepage img#header-forme-header { display: block; }
-.homepage img#header-forme { display: none; }
+img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 @media (min-width: 320px) {
-    .homepage img#header-forme-header { display: none; }
+    img#header-forme { display: none; }
 }
 @media (min-width: 414px) {
 }
@@ -180,10 +177,10 @@ img#header-forme-header { display: none; }
 @media (min-width: 600px) {
 }
 @media (min-width: 768px) {
-    .homepage img#header-forme-header { display: block; width: 60%; }
+    img#header-forme { display: block; width: 60%; }
 }
 @media (min-width: 1366px) {
-    .homepage img#header-forme-header { width: auto; }
+    img#header-forme { width: auto; }
 }
 
 
@@ -673,3 +670,24 @@ img#header-forme-header { display: none; }
 /* Mentions légales */
 .site.mentions_legales h1 { font-size: 24px; text-transform: uppercase; color: #41B591; margin-bottom: 3rem; }
 .site.mentions_legales h2 { font-family: 'Sarabun-Bold'; font-size: 16px; text-transform: inherit; color: #000; margin-bottom: 0; }
+
+
+
+/* Cookie Consent Bundle */
+.site { margin-bottom: 0 !important; }
+.site .ch-cookie-consent { padding: 10px; right: 0; left: initial !important; -webkit-box-shadow: 4px 5px 16px 5px #000000; box-shadow: 4px 5px 16px 5px #000000; }
+.site .ch-cookie-consent .ch-cookie-consent__form { margin-top: 10px; }
+.site .ch-cookie-consent .ch-cookie-consent__category { padding: 10px 0; border: none; align-items: center; }
+.site .ch-cookie-consent .ch-cookie-consent__category:first-child { border: none; }
+.site .ch-cookie-consent .form-check { margin-bottom: 0; padding: 0; }
+.site .ch-cookie-consent .form-check-label { font-family: 'OpenSans-Regular'; font-size: 14px; text-align: center; color: #41B591; border-color: #41B591; padding: 1px; width: 50px; }
+.site .ch-cookie-consent .ch-cookie-consent__category-toggle input:checked+label, .site .ch-cookie-consent .ch-cookie-consent__category-toggle input+label:hover { font-size: 14px; background-color: #41B591; color: #fff; }
+.site .ch-cookie-consent .ch-cookie-consent__category-title { font-family: 'OpenSans-Regular'; font-size: 14px; }
+.site .ch-cookie-consent .ch-cookie-consent__btn { background-image: none; width: auto; padding: 0.2rem 1rem; }
+
+@media (min-width: 320px) {
+    .site .ch-cookie-consent { width: 100%; }
+}
+@media (min-width: 600px) {
+    .site .ch-cookie-consent { width: auto; }
+}
