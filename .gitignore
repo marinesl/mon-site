@@ -20,3 +20,5 @@ public/.DS_Store
 composer.phar
 
 composer.lock
+
+.php-version
