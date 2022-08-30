@@ -125,7 +125,6 @@ p a { color: #41B591; }
 .site footer { color: #fff; background-color: #41B591; }
 .site footer a, .site footer a:hover, .site footer a:focus { color: rgba(255,255,255, 0.25); }
 .site footer #footer-left, .site footer #footer-right { padding-top: 1rem; }
-.site footer #footer-right p, .site footer #footer-right div { display: inline-block; }
 .site footer #footer-left { padding-left: 0; }
 .site footer #footer-right { padding-right: 0; }
 .site footer #footer-right p { color: rgba(255,255,255, 0.25); }
@@ -137,6 +136,7 @@ p a { color: #41B591; }
     .site footer #footer-left, .site footer #footer-right { text-align: center; }
     .site footer #footer-left { border-top : 1px solid rgba(255,255,255, 0.25); }
     .site footer #footer-right p { margin-right: 1rem; }
+    .site footer #footer-right p, .site footer #footer-right div { display: block; }
 }
 @media (min-width: 414px) {
     .site footer .col { display: none; }
@@ -160,6 +160,7 @@ p a { color: #41B591; }
     .site footer #footer-left { text-align: left; }
     .site footer #footer-right { text-align: right; }
     .site footer #footer-right { border-top : 1px solid rgba(255,255,255, 0.25); }
+    .site footer #footer-right p, .site footer #footer-right div { display: inline-block; }
 }
 
 
