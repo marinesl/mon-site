@@ -193,12 +193,26 @@ header .link a.active { border-bottom: 1px solid #41B591; padding-bottom: 5px; }
  * PAGE 404
  *******************************/
 
+.page-404 {
+    height: 100%;
+}
+
+.page-404 header.row {
+    height: auto;
+}
+
+.page-404 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .page-404 section {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
 }
 
 /* RIGHT */
@@ -215,25 +229,17 @@ header .link a.active { border-bottom: 1px solid #41B591; padding-bottom: 5px; }
     color: #41B591;
 }
 
-.page-404 div {
-    font-family: 'Sarabun-SemiBold';
-    text-transform: uppercase;
-    color: #41B591;
-}
-
 
 @media (min-width: 320px) {
     .page-404 section { flex-direction: column; }
 
     .page-404 h1 { font-size: 110px; }
     .page-404 h2 { font-size: 25px; line-height: 30px; }
-    .page-404 div { font-size: 22px; }
 }
 
 @media (min-width: 768px) {
     .page-404 h1 { font-size: 180px; }
     .page-404 h2 { font-size: 30px; line-height: 35px; }
-    .page-404 div { font-size: 27px; }
 }
 
 @media (min-width: 1024px) {
@@ -243,5 +249,4 @@ header .link a.active { border-bottom: 1px solid #41B591; padding-bottom: 5px; }
 @media (min-width: 1440px) {
     .page-404 h1 { font-size: 240px; }
     .page-404 h2 { font-size: 40px; line-height: 45px; }
-    .page-404 div { font-size: 32px; }
 }
