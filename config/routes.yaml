@@ -1,6 +1,3 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-
-ch_cookie_consent:
-    resource: "@CHCookieConsentBundle/Resources/config/routing.yaml"
