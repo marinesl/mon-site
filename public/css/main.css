@@ -229,14 +229,14 @@ header .link a.active { border-bottom: 1px solid #41B591; padding-bottom: 5px; }
 
 
 @media (min-width: 320px) {
-    .page-404 section { flex-direction: column; top: 50%; transform: translateY(-50%); }
+    .page-404 section { flex-direction: column; top: 30%; transform: translateY(-30%); padding-left: 5px; }
 
     .page-404 h1 { font-size: 110px; }
     .page-404 h2 { font-size: 25px; line-height: 30px; }
 }
 
 @media (min-width: 768px) {
-    .page-404 section { top: 0; transform: none; }
+    .page-404 section { top: 0; transform: none; padding-left: 0; }
     .page-404 h1 { font-size: 180px; }
     .page-404 h2 { font-size: 30px; line-height: 35px; }
 }
