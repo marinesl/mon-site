@@ -3,6 +3,16 @@
 <html lang="fr">
 
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4XKZNVKSN"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-R4XKZNVKSN');
+        </script>
+
         <title>{% block title %}{% endblock %}</title>
         
         <meta charset="UTF-8">
@@ -50,8 +60,20 @@
         <script src="{{ asset('js/site.js') }}"></script>
         {% block javascripts %}{% endblock %}
 
-        {{ render_esi(path('ch_cookie_consent.show_if_cookie_consent_not_set', { 'locale' : app.request.locale })) }}
-        {% include "@CHCookieConsent/cookie_consent_styling.html.twig" %}
+        {# {{ render_esi(path('ch_cookie_consent.show_if_cookie_consent_not_set', { 'locale' : app.request.locale })) }}
+        {% include "@CHCookieConsent/cookie_consent_styling.html.twig" %} #}
+
+        <script>
+            window.axeptioSettings = {
+            clientId: "630dcef37b9b91c4d791fc5d",
+            };
+            
+            (function(d, s) {
+            var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+            e.async = true; e.src = "//static.axept.io/sdk.js";
+            t.parentNode.insertBefore(e, t);
+            })(document, "script");
+        </script>
 
     </body>
 </html>

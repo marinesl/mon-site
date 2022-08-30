@@ -1,0 +1,27 @@
+{% extends 'base_site.html.twig' %}
+
+{% block title %}Marine LANCELIN - 404{% endblock %}
+
+{% block body_class %}site page-404{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        html { height: 100%; }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+    <div id="left">
+        <img src="{{ asset('logo/logo.svg') }}" alt="Logo">
+    </div>
+
+    <div id="right">
+        <h1>OUPS !</h1>
+
+        <h2>La page que vous recherchez<br>semble introuvable.</h2>
+
+        <div>Code erreur : 404</div>
+    </div>
+
+{% endblock %}

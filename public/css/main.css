@@ -95,21 +95,32 @@
 
 
 /*******************************
- * COMMUN
+ * BODY
  *******************************/
 
-/* Body */
 body { font-family: 'OpenSans-Regular'; font-size: 16px; color: #373737; }
 body, html{ overflow-x: hidden; }
 
-/* Text */
+
+
+
+/*******************************
+ * TEXT
+ *******************************/
+
 h2 { font-family: 'Sarabun-Regular'; font-size: 24px; text-transform: uppercase; color: #41B591; margin-bottom: 1.5rem; }
 h3 { font-family: 'Sarabun-Bold'; font-size: 16px; text-transform: uppercase; color: #41B591; margin-top: 1rem; }
 .bold { font-family: 'Sarabun-Bold'; }
 a { color: #373737; text-decoration: none; }
 a:hover { text-decoration: none; color: #41B591; }
 
-/* Button */
+
+
+
+/*******************************
+ * BUTTON
+ *******************************/
+
 button.btn { background-color: #41B591; color: #ffffff; font-family: 'Sarabun-Bold'; font-size: 16px; text-transform: uppercase; border-radius: 29.5px; padding: 0.5rem 2rem; outline-style: none; display: flex; margin: auto; align-items: center;
     -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.25);
@@ -119,7 +130,13 @@ button.btn:hover { color: #ffffff; }
 button.btn img { width: 15px; margin-right: 10px; }
 button.btn a, button.btn a:focus, button.btn a:hover { color: #ffffff; }
 
-/* Form */
+
+
+
+/*******************************
+ * FORM
+ *******************************/
+
 input[type=text] { color: #373737; }
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #AAAAAA !important;
@@ -141,7 +158,12 @@ input:-moz-placeholder { /* Firefox 18- */
 .form-group .custom-file { width: 70%; }
 .form-group label.custom-file-label { width: 100%; }
 
-/* Menu */
+
+
+
+/*******************************
+ * MENU
+ *******************************/
 header.row { height: 100%; }
 
 header #logo { width: 3rem; position: relative; top: 50%; transform: translateY(-50%); }
@@ -164,3 +186,80 @@ header .link a.active { border-bottom: 1px solid #41B591; padding-bottom: 5px; }
     header .link a { font-size: 18px; }
 }
 
+
+
+
+/*******************************
+ * PAGE 404
+ *******************************/
+
+body.page-404 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* RIGHT */
+.page-404 #right h1 {
+    font-family: 'PTSerif-Italic';
+    color: #41B591;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.page-404 #right h2 {
+    font-family: 'Sarabun-SemiBold';
+    text-transform: uppercase;
+    color: #41B591;
+}
+
+.page-404 #right div {
+    font-family: 'Sarabun-SemiBold';
+    text-transform: uppercase;
+    color: #41B591;
+}
+
+
+@media (min-width: 320px) {
+    body.page-404 { flex-direction: column; }
+
+    /* LEFT */
+    .page-404 #left { text-align: center; }
+    .page-404 #left img { width: 50%; }
+
+    /* RIGHT */
+    .page-404 #right { text-align: center; }
+    .page-404 #right h1 { font-size: 110px; }
+    .page-404 #right h2 { font-size: 25px; line-height: 30px; }
+    .page-404 #right div { font-size: 22px; }
+}
+
+@media (min-width: 768px) {
+    /* RIGHT */
+    .page-404 #right h1 { font-size: 180px; }
+    .page-404 #right h2 { font-size: 30px; line-height: 35px; }
+    .page-404 #right div { font-size: 27px; }
+}
+
+@media (min-width: 1024px) {
+    body.page-404 { gap: 3rem; flex-direction: row; }
+
+    /* LEFT */
+    .page-404 #left { text-align: right; }
+    .page-404 #left img { width: 80%; }
+
+    /* RIGHT */
+    .page-404 #right { text-align: left; }
+}
+
+@media (min-width: 1440px) {
+    /* LEFT */
+    .page-404 #left img { width: auto; }
+
+    /* RIGHT */
+    .page-404 #right h1 { font-size: 240px; }
+    .page-404 #right h2 { font-size: 40px; line-height: 45px; }
+    .page-404 #right div { font-size: 32px; }
+}

@@ -78,9 +78,8 @@ class HomepageController extends AbstractController
                             $this->addFlash('success', 'Votre demande de contact a été envoyée !');
                         else
                             $this->addFlash('fail', 'Un problème est survenu, recommencez votre demande.');
-
+                        
                         return $this->redirect($this->generateUrl('homepage').'#contact');
-
                     //
                 }
             }
