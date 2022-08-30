@@ -193,7 +193,7 @@ header .link a.active { border-bottom: 1px solid #41B591; padding-bottom: 5px; }
  * PAGE 404
  *******************************/
 
-body.page-404 {
+.page-404 section {
     display: flex;
     justify-content: center;
     position: relative;
@@ -202,20 +202,20 @@ body.page-404 {
 }
 
 /* RIGHT */
-.page-404 #right h1 {
+.page-404 h1 {
     font-family: 'PTSerif-Italic';
     color: #41B591;
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
-.page-404 #right h2 {
+.page-404 h2 {
     font-family: 'Sarabun-SemiBold';
     text-transform: uppercase;
     color: #41B591;
 }
 
-.page-404 #right div {
+.page-404 div {
     font-family: 'Sarabun-SemiBold';
     text-transform: uppercase;
     color: #41B591;
@@ -223,43 +223,25 @@ body.page-404 {
 
 
 @media (min-width: 320px) {
-    body.page-404 { flex-direction: column; }
+    .page-404 section { flex-direction: column; }
 
-    /* LEFT */
-    .page-404 #left { text-align: center; }
-    .page-404 #left img { width: 50%; }
-
-    /* RIGHT */
-    .page-404 #right { text-align: center; }
-    .page-404 #right h1 { font-size: 110px; }
-    .page-404 #right h2 { font-size: 25px; line-height: 30px; }
-    .page-404 #right div { font-size: 22px; }
+    .page-404 h1 { font-size: 110px; }
+    .page-404 h2 { font-size: 25px; line-height: 30px; }
+    .page-404 div { font-size: 22px; }
 }
 
 @media (min-width: 768px) {
-    /* RIGHT */
-    .page-404 #right h1 { font-size: 180px; }
-    .page-404 #right h2 { font-size: 30px; line-height: 35px; }
-    .page-404 #right div { font-size: 27px; }
+    .page-404 h1 { font-size: 180px; }
+    .page-404 h2 { font-size: 30px; line-height: 35px; }
+    .page-404 div { font-size: 27px; }
 }
 
 @media (min-width: 1024px) {
-    body.page-404 { gap: 3rem; flex-direction: row; }
-
-    /* LEFT */
-    .page-404 #left { text-align: right; }
-    .page-404 #left img { width: 80%; }
-
-    /* RIGHT */
-    .page-404 #right { text-align: left; }
+    .page-404 section { gap: 3rem; flex-direction: row; }
 }
 
 @media (min-width: 1440px) {
-    /* LEFT */
-    .page-404 #left img { width: auto; }
-
-    /* RIGHT */
-    .page-404 #right h1 { font-size: 240px; }
-    .page-404 #right h2 { font-size: 40px; line-height: 45px; }
-    .page-404 #right div { font-size: 32px; }
+    .page-404 h1 { font-size: 240px; }
+    .page-404 h2 { font-size: 40px; line-height: 45px; }
+    .page-404 div { font-size: 32px; }
 }
