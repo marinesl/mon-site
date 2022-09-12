@@ -64,7 +64,7 @@ p a { color: #41B591; }
 
 /* Menu */
 .site header { position: relative; }
-.site header #menu-rs img { margin-right: 15px; }
+.site header #menu-rs img { margin-right: 13px; }
 
 .site header .burger { display: flex; justify-content: center; background-color: #fff; align-items: center; border: 1px solid #41B591; border-radius: 2px; width: 55px; height: 55px; position: relative; left: 76%; }
 .burger .is-close { display: none; }
@@ -301,34 +301,34 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 #apropos #apropos-soulignement { position: absolute; bottom: 0; }
 
 @media (min-height: 533px) {
-    #apropos { margin-top: 0; }
+    /* #apropos { margin-top: 0; } */
 }
 @media (min-height: 600px) {
-    #apropos { margin-top: 0; }
+    /* #apropos { margin-top: 0; } */
 }
 @media (min-width: 1024px) and (min-height: 768px) {
-    #apropos { margin-top: 0; }
+    /* #apropos { margin-top: 0; } */
 }
 @media (min-width: 1366px) and (min-height: 768px) {
-    #apropos { margin-top: 7rem; }
+    /* #apropos { margin-top: 7rem; } */
 }
 @media (min-height: 900px) {
-    #apropos { margin-top: 7rem; }
+    /* #apropos { margin-top: 7rem; } */
 }
 @media (min-height: 1024px) {
-    #apropos { margin-top: 0; }
+    /* #apropos { margin-top: 0; } */
 }
 @media (min-height: 1050px) {
-    #apropos { margin-top: 7rem; }
+    /* #apropos { margin-top: 7rem; } */
 }
 @media (min-height: 1080px) {
-    #apropos { margin-top: 15rem; }
+    /* #apropos { margin-top: 15rem; } */
 }
 @media (min-height: 1280px) {
-    #apropos { margin-top: 0; }
+    /* #apropos { margin-top: 0; } */
 }
 @media (min-height: 1366px) {
-    #apropos { margin-top: 0; }
+    /* #apropos { margin-top: 0; } */
 }
 
 @media (min-width: 320px) {
