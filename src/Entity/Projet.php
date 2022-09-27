@@ -43,6 +43,21 @@ class Projet
      */
     private $tags;
 
+    /**
+     * @ORM\Column(type="string", length=1000, nullable=true)
+     */
+    private $github;
+
+    /**
+     * @ORM\Column(type="integer", length=4)
+     */
+    private $annee;
+
+    /**
+     * @ORM\Column(type="string", length=10000)
+     */
+    private $description;
+
     public function __construct()
     {
         $this->tags = new ArrayCollection();
@@ -123,6 +138,42 @@ class Projet
         if ($this->tags->contains($tag)) {
             $this->tags->removeElement($tag);
         }
+
+        return $this;
+    }
+
+    public function getGithub(): ?string
+    {
+        return $this->github;
+    }
+
+    public function setGithub(string $github): self
+    {
+        $this->github = $github;
+
+        return $this;
+    }
+
+    public function getAnnee(): ?string
+    {
+        return $this->annee;
+    }
+
+    public function setAnnee(string $annee): self
+    {
+        $this->annee = $annee;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
 
         return $this;
     }

@@ -40,9 +40,10 @@
 .app.homepage .content p:last-child { font-size: 25px; }
 
 /* Les projets */
-.app.projet table td.etat span { width: 10px; height: 10px; border-radius: 50%; }
-.app.projet table td.etat span.active { background-color: #3BB540; }
-.app.projet table td.etat span.inactive { background-color: #EC5757; }
+.app.projet table th.center, .app.projet table td.center { text-align: center; }
+.app.projet table td span { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.app.projet table td span.active { background-color: #3BB540; }
+.app.projet table td span.inactive { background-color: #EC5757; }
 .app.projet table td.actions img { width: 20px; }
 .app.projet table tr.deactive { background-color: rgba(206, 206, 206, 0.3); }
 .app.projet .button { margin-top: 1rem; }

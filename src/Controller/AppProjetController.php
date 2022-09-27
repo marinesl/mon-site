@@ -33,7 +33,7 @@ class AppProjetController extends AbstractController
          * ELEMENTS
          */
             // GET les projets
-            $projets = $em->getRepository(Projet::class)->findAll();
+            $projets = $em->getRepository(Projet::class)->findBy(array(), array('annee' => 'DESC'));
         //
 
         /**
@@ -158,7 +158,7 @@ class AppProjetController extends AbstractController
             /** @var UploadedFile $couverture */
             $couverture = $form->get('couverture')->getData();
 
-            // this condition is needed because the 'brochure' field is not required
+            // this condition is needed because the 'couverture' field is not required
             // so the file must be processed only when a file is uploaded
             if ($couverture) {
                 $originalFilename = pathinfo($couverture->getClientOriginalName(), PATHINFO_FILENAME);

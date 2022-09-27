@@ -29,8 +29,11 @@
                 <thead>
                     <tr>
                         <th></th>
+                        <th class="center">Année</th>
                         <th>Titre</th>
                         <th>Tags</th>
+                        <th class="center">Description</th>
+                        <th class="center">Github</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -39,13 +42,27 @@
                     {% for projet in projets %}
                         <tr {% if projet.etat == 0 %}class="deactive"{% endif %}
                         >
-                            <td class="etat"><span class="{% if projet.etat %}active{% else %}inactive{% endif %}"></span></td>
+                            <td class="center"><span class="{% if projet.etat %}active{% else %}inactive{% endif %}"></span></td>
+                            <td class="center">{{ projet.annee }}</td>
                             <td>{{ projet.titre }}</td>
                             <td>
                                 {% for tag in projet.tags %}
                                     {{ tag.libelle }} {% if not loop.last %};{% endif %}
                                 {% endfor %}
                             </td>
+
+                            <td class="center"><span class="{% if projet.description %}active{% else %}inactive{% endif %}"></span></td>
+
+                            <td class="center">
+                                {% if projet.github != null %}
+                                    <a href="{{ projet.github }}" target="_blank" title="Ouvrir le projet">
+                                        <span class="active"></span>
+                                    </a>
+                                {% else %}
+                                    <span class="inactive"></span>
+                                {% endif %}
+                            </td>
+
                             <td class="actions">
                                 <a href="{{ path('app_projet_edit', { 'id' : projet.id }) }}" title="Modifier le projet"><img src="{{ asset('picto/pen.svg') }}" alt="Modifier le projet"></a>
                                 <a href="{{ projet.lien }}" target="_blank" title="Ouvrir le projet"><img src="{{ asset('picto/redirect.svg') }}" alt="Ouvrir le projet"></a>
