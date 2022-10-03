@@ -17,21 +17,21 @@
         </button>
 
         <ul class="menu-mobile">
-            {# <li><a href="{{ path('homepage') }}" title="Présentation"
-                class="nav-link{% if app.request.get('_route') == 'homepage' %} active{% endif %}""
+            <li><a href="{{ path('homepage') }}" title="Présentation"
+                class="nav-link{% if app.request.get('_route') == 'homepage' %} active{% endif %}"
             >
-                Présentation</a></li> #}
+                Présentation</a></li>
 
             <li>
-                <a href="{{ path('homepage') }}" title="Présentation"
+                {# <a href="{{ path('homepage') }}" title="Présentation"
                 class="nav-link{% if app.request.get('_route') == 'homepage' %} active{% endif %}"
                 >
-                Présentation</a>
+                Présentation</a> #}
 
-                {# <a href="{{ path('portfolio') }}" 
+                <a href="{{ path('portfolio') }}" 
                     class="nav-link {% if app.request.get('_route') == 'portfolio' %} active{% endif %}"
                 >
-                    Portfolio</a> #}
+                    Portfolio</a>
             </li>
 
             <li><a href="{{ path('homepage') }}#contact" class="nav-link">Contact</a></li>
@@ -46,21 +46,21 @@
 
         {# Desktop #}
         <div class="row menu-desktop">
-            <div class="col-lg-2 col-md-2 col-sm-4 col-4">
-                {# <a href="{{ path('homepage') }}" title="Présentation"
-                    {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
-                >
-                    Présentation</a> #}
-            </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-4">
                 <a href="{{ path('homepage') }}" title="Présentation"
                     {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
                 >
                     Présentation</a>
-                {# <a href="{{ path('portfolio') }}" 
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+                {# <a href="{{ path('homepage') }}" title="Présentation"
+                    {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
+                >
+                    Présentation</a> #}
+                <a href="{{ path('portfolio') }}" 
                     {% if app.request.get('_route') == 'portfolio' %}class="active"{% endif %}
                 >
-                    Portfolio</a> #}
+                    Portfolio</a>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-4">
                 <a href="{{ path('homepage') }}#contact">Contact</a>

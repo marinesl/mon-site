@@ -1,5 +1,5 @@
 /*******************************
- * SITE
+ * COMMUN
  *******************************/
 
 p a { color: #41B591; }
@@ -61,8 +61,30 @@ p a { color: #41B591; }
 }
 
 
+/* H1 */
+.site h1 { font-family: 'Sarabun-Regular'; margin-bottom: 2rem; }
 
-/* Menu */
+@media (min-width: 320px) {
+    .site h1 { font-size: 24px; }
+}
+@media (min-width: 414px) {
+    .site h1 { font-size: 24px; }
+}
+@media (min-width: 480px) {
+    .site h1 { font-size: 24px; }
+}
+@media (min-width: 600px) {
+    .site h1 { font-size: 24px; }
+}
+
+
+
+
+
+/*******************************
+ * MENU
+ *******************************/
+
 .site header { position: relative; }
 .site header #menu-rs img { margin-right: 13px; }
 
@@ -121,7 +143,11 @@ p a { color: #41B591; }
 
 
 
-/* Footer */
+
+/*******************************
+ * FOOTER
+ *******************************/
+
 .site footer { color: #fff; background-color: #41B591; }
 .site footer a, .site footer a:hover, .site footer a:focus { color: rgba(255,255,255, 0.25); }
 .site footer #footer-left, .site footer #footer-right { padding-top: 1rem; }
@@ -165,7 +191,11 @@ p a { color: #41B591; }
 
 
 
-/* Forme */
+
+/*******************************
+ * MENU - FORME
+ *******************************/
+
 img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 @media (min-width: 320px) {
@@ -187,9 +217,12 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 
 
-/* Introduction */
+/*******************************
+ * PRESENTATION - INTRODUCTION
+ *******************************/
+
 .site #introduction { padding-top: 4rem; }
-.site #introduction h1 { font-family: 'Sarabun-Regular'; margin-bottom: 2rem; }
+.site #introduction h1 { margin-bottom: 2rem; }
 .site #introduction div:last-child { position: relative; }
 /* .site #introduction #introduction-mac { position: absolute; } */
 /* .site #introduction #introduction-console { position: absolute; } */
@@ -243,21 +276,18 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 }
 
 @media (min-width: 320px) {
-    .site #introduction h1 { font-size: 24px; }
     .site #introduction div:last-child { display: none; }
     /* .site #introduction #introduction-mac { width: 140%; right: -11rem; }
     .site #introduction #introduction-console { left: -4rem; width: 60%; }
     .site #introduction #introduction-photo { right: 4rem; } */
 }
 @media (min-width: 414px) {
-    .site #introduction h1 { font-size: 24px; }
     .site #introduction div:last-child { display: none; }
     /* .site #introduction #introduction-mac { width: 140%; right: -11rem; }
     .site #introduction #introduction-console { left: -4rem; width: 60%; }
     .site #introduction #introduction-photo { right: 4rem; } */
 }
 @media (min-width: 480px) {
-    .site #introduction h1 { font-size: 24px; }
     .site #introduction div:last-child { display: none; }
     /* .site #introduction #introduction-mac { width: 140%; right: -11rem; }
     .site #introduction #introduction-console { left: -4rem; width: 60%; }
@@ -265,7 +295,6 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 }
 @media (min-width: 600px) {
     .site #introduction div:first-child { padding-right: 5rem; } 
-    .site #introduction h1 { font-size: 24px; }
     .site #introduction div:last-child { display: none; }
     /* .site #introduction #introduction-mac { width: 140%; right: -11rem; }
     .site #introduction #introduction-console { left: -4rem; width: 60%; }
@@ -294,7 +323,10 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 
 
-/* A propos */
+/*******************************
+ * PRESENTATION - A PROPOS
+ *******************************/
+
 #apropos #apropos-bloc { position: relative; top: 50%; transform: translateY(-50%); }
 #apropos #apropos-quote { font-family: 'PTSerif-Italic'; color: #41B591; margin-bottom: 0; position: relative; }
 #apropos #apropos-guillemet { position: absolute; top: -20px; left: 0; }
@@ -376,7 +408,10 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 
 
-/* Compétences */
+/*******************************
+ * PRESENTATION - COMPETENCES
+ *******************************/
+
 #competences #competences-forme { position: absolute; right: -6rem; z-index: -1; }
 #competences ul { list-style: none; list-style-image: url("../picto/bullet.svg"); }
 #competences .competences-certif { float: left; margin-right: 10px; margin-top: 5px; }
@@ -459,7 +494,10 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 
 
-/* Parcours scolaire */
+/*************************************
+ * PRESENTATION - PARCOURS SCOLAIRE
+ *************************************/
+
 #scolaire { background-image: url('../forme/blob-parcours-scolaire.svg'); background-size: cover; padding: 6rem 0; }
 #scolaire #scolaire-intro { text-align: center; color: #fff; margin-bottom: 2rem; }
 #scolaire #scolaire-intro h2 { color: #fff; }
@@ -534,7 +572,10 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 
 
-/* Parcours professionnel */
+/*******************************************
+ * PRESENTATION - PARCOURS PROFESSIONNEL
+ *******************************************/
+
 #professionnel { margin-top: 5rem; }
 
 #professionnel-2 { margin-top: 3rem; }
@@ -601,7 +642,10 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 
 
-/* Fun facts */
+/*******************************
+ * PRESENTATION - FUN FACTS
+ *******************************/
+
 #fun-facts { margin-top: 5rem; }
 
 #fun-facts .right .row { text-align: center; margin-bottom: 2rem; }
@@ -629,7 +673,10 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 
 
-/* Contact */
+/*******************************
+ * PRESENTATION - CONTACT
+ *******************************/
+
 #contact { background-image: url('../forme/blob-parcours-scolaire.svg'); background-size: cover; padding: 6rem 0; margin-top: 2rem; }
 #contact #contact-intro { text-align: center; color: #fff; margin-bottom: 2rem; }
 #contact #contact-intro h2 { color: #fff; }
@@ -669,27 +716,19 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 
 
-/* Mentions légales */
-.site.mentions_legales h1 { font-size: 24px; text-transform: uppercase; color: #41B591; margin-bottom: 3rem; }
+/*******************************
+ * MENTIONS LEGALES
+ *******************************/
+
+.site.mentions_legales h1 { text-transform: uppercase; color: #41B591; margin-bottom: 3rem; }
 .site.mentions_legales h2 { font-family: 'Sarabun-Bold'; font-size: 16px; text-transform: inherit; color: #000; margin-bottom: 0; }
 
 
 
-/* Cookie Consent Bundle */
-.site { margin-bottom: 0 !important; }
-.site .ch-cookie-consent { padding: 10px; right: 0; left: initial !important; -webkit-box-shadow: 4px 5px 16px 5px #000000; box-shadow: 4px 5px 16px 5px #000000; }
-.site .ch-cookie-consent .ch-cookie-consent__form { margin-top: 10px; }
-.site .ch-cookie-consent .ch-cookie-consent__category { padding: 10px 0; border: none; align-items: center; }
-.site .ch-cookie-consent .ch-cookie-consent__category:first-child { border: none; }
-.site .ch-cookie-consent .form-check { margin-bottom: 0; padding: 0; }
-.site .ch-cookie-consent .form-check-label { font-family: 'OpenSans-Regular'; font-size: 14px; text-align: center; color: #41B591; border-color: #41B591; padding: 1px; width: 50px; }
-.site .ch-cookie-consent .ch-cookie-consent__category-toggle input:checked+label, .site .ch-cookie-consent .ch-cookie-consent__category-toggle input+label:hover { font-size: 14px; background-color: #41B591; color: #fff; }
-.site .ch-cookie-consent .ch-cookie-consent__category-title { font-family: 'OpenSans-Regular'; font-size: 14px; }
-.site .ch-cookie-consent .ch-cookie-consent__btn { background-image: none; width: auto; padding: 0.2rem 1rem; }
 
-@media (min-width: 320px) {
-    .site .ch-cookie-consent { width: 100%; }
-}
-@media (min-width: 600px) {
-    .site .ch-cookie-consent { width: auto; }
-}
+/*******************************
+ * PORTFOLIO
+ *******************************/
+
+.site.portfolio h1 { }
+.site #introduction h1 { font-family: 'Sarabun-Regular'; margin-bottom: 2rem; }

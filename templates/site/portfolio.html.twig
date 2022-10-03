@@ -1,15 +1,77 @@
 {% extends 'base_site.html.twig' %}
 
-{% block title %}Porfolio !{% endblock %}
+{% block title %}Portfolio{% endblock %}
 
-{% block body_class %}site homepage{% endblock %}
+{% block body_class %}site portfolio{% endblock %}
 
 {% block body %}
 
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h1>Bienvenue</h1>
+            <h1>Porfolio</h1>
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <p>Vous pouvez ici découvrir mes projets réalisés pour mon plaisir personnel, pour mes clients et pour les entreprises pour lesquelles j'ai travaillé.<br>Filtrez et naviguez !</p>
+        </div>
+    </div>
+
+    <div class="row" id="filter">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <p>Filtres</p>
+            <hr>
+            <div>
+                <div data-filter="all">Tous</div>
+                {% for tag in tags %}
+                    {% set display_tag = false %}
+
+                    {% for projet in tag.projets %}
+                        {% if projet.etat == 1 %}{% set display_tag = true %}{% endif %}
+                    {% endfor %}
+
+                    {% if display_tag %}
+                        <div data-filter="{{ tag.id }}">{{ tag.libelle }}</div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-container">
+        {% for projet in projets %}
+            <div class="filtr-item" 
+                data-category="{% for tag in projet.tags %}{{ tag.id }}{% if not loop.last %},{% endif %}{% endfor %}">
+
+                <img src="{{ asset('projet_couverture/'~ projet.couverture ~'') }}" alt="{{ projet.titre }}">
+                
+                <div>
+                    {% for tag in projet.tags %}
+                        <div>{{ tag.libelle }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {# Script pour le filtre par tags #}
+    <script src="{{ asset('js/jquery.filterizr.min.js') }}"></script>
+
+    <script>
+        // Library Filterizr
+        // https://yiotis.net/filterizr/#/tutorials/quickstart
+
+        // Configure your options
+        const options = { 
+            layout: 'sameSize' // Layout : https://yiotis.net/filterizr/#/tutorials/layouts
+         };
+
+        // Adjust the CSS selector to match the container where
+        // you set up your image gallery
+        const filterizr = new Filterizr('.filter-container', options);
+    </script>
 {% endblock %}

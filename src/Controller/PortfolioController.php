@@ -10,6 +10,9 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
+use App\Entity\Projet;
+use App\Entity\Tag;
+
 class PortfolioController extends AbstractController
 {
     /**
@@ -27,6 +30,11 @@ class PortfolioController extends AbstractController
         /**
          * ELEMENTS
          */
+            // GET les projets
+            $projets = $em->getRepository(Projet::class)->findBy(array('etat' => '1'), array('annee' => 'DESC'));
+
+            // GET les tags
+            $tags = $em->getRepository(Tag::class)->findBy(array(), array('libelle' => 'ASC'));
         //
 
         /**
@@ -34,7 +42,10 @@ class PortfolioController extends AbstractController
          */
             return $this->render(
                 'site/portfolio.html.twig' ,
-                array());
+                array(
+                    'projets' => $projets,
+                    'tags' => $tags
+                ));
         //
     }
 }

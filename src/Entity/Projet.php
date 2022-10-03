@@ -49,7 +49,7 @@ class Projet
     private $github;
 
     /**
-     * @ORM\Column(type="integer", length=4)
+     * @ORM\Column(type="text", length=4)
      */
     private $annee;
 
