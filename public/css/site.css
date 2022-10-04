@@ -2,8 +2,11 @@
  * COMMUN
  *******************************/
 
+/* Link */
 p a { color: #41B591; }
 
+
+/* Spacer */
 @media (min-height: 533px) {
     .spacer { height: 3rem; }
 }
@@ -32,6 +35,8 @@ p a { color: #41B591; }
     .spacer { height: 10rem; }
 }
 
+
+/* Section Row */
 @media (min-width: 320px) {
     body section > .row { padding: 0 15px; }
 }
@@ -76,7 +81,6 @@ p a { color: #41B591; }
 @media (min-width: 600px) {
     .site h1 { font-size: 24px; }
 }
-
 
 
 
@@ -730,5 +734,30 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
  * PORTFOLIO
  *******************************/
 
-.site.portfolio h1 { }
-.site #introduction h1 { font-family: 'Sarabun-Regular'; margin-bottom: 2rem; }
+/* Intro */
+.site.portfolio h1 { text-align: center; text-transform: uppercase; color: #41B591; }
+.site.portfolio .intro { text-align: center; }
+
+/* Filter */
+.site.portfolio #filter { margin-bottom: 3rem; }
+.site.portfolio #filter > div > :first-child { font-family: 'Sarabun-Bold'; text-align: center; text-transform: uppercase; color: #41B591; margin-top: 20px; }
+.site.portfolio #filter hr { opacity: 1; background-color: #41B591 ; }
+.site.portfolio #filter #filter-buttons { display: flex; justify-content: space-between; }
+.site.portfolio #filter .filter-button { font-size: 14px; text-align: center; color: #9A9A9A; background-color: #E6E6E6; cursor: pointer; display: inline-block; width: 100px; border-radius: 5px; padding: 5px 0; }
+.site.portfolio #filter .filter-button.active { font-family: 'Sarabun-Bold'; color: #fff; background-color: #41B591; }
+
+/* Grid */
+.site.portfolio .filter-container .filtr-item > div { position: relative; width: 100%; }
+.site.portfolio .filter-container .filtr-item img { width: 32rem; }
+
+.site.portfolio .filter-container .filtr-item .filtr-item-titre { font-family: 'Sarabun-Bold'; font-size: 50px; text-transform: uppercase; color: #fff; position: absolute; bottom: 3rem; }
+.site.portfolio .filter-container .filtr-item .filtr-item-desc { font-family: 'Sarabun-Medium'; font-size: 16px; line-height: 16px; color: #fff; position: absolute; bottom: 1rem; }
+
+.site.portfolio .filter-container .filtr-item:not(.bg-white) .filtr-item-titre,
+.site.portfolio .filter-container .filtr-item:not(.bg-white) .filtr-item-desc { background-color: rgba(0,0,0,0.2); border-radius: 5px; }
+.site.portfolio .filter-container .filtr-item.bg-white .filtr-item-titre,
+.site.portfolio .filter-container .filtr-item.bg-white .filtr-item-desc { color: #41B591; }
+
+.site.portfolio .filter-container .filtr-item .filtr-item-tag { position: absolute; right: 0; top: 1rem; }
+.site.portfolio .filter-container .filtr-item .filtr-item-tag div { font-family: 'Sarabun-SemiBold'; text-align: center; color: #41B591; background-color: #fff; border-radius: 5px 0 0 5px; width: 100px; margin-bottom: 10px; padding: 5px 0; }
+.site.portfolio .filter-container .filtr-item.bg-white .filtr-item-tag div { color: #fff; background-color: #41B591; }

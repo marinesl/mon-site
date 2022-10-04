@@ -46,6 +46,13 @@ class ProjetType extends AbstractType
                 'row_attr' => ['class' => '', 'id' => '']
             ])
 
+            ->add('introduction', TextareaType::class, [
+                'label' => 'Introduction',
+                'required' => true,
+                'attr' => ['class' => ''],
+                'row_attr' => ['class' => '', 'id' => '']
+            ])
+
             ->add('couverture', FileType::class, [
                 'label' => 'Image de couverture',
 
@@ -71,6 +78,18 @@ class ProjetType extends AbstractType
 
                 'attr' => ['class' => ''],
                 'row_attr' => ['class' => '', 'id' => 'couverture']
+            ])
+
+            ->add('couverture_bg_white', ChoiceType::class, [
+                'label' => 'Couverture avec un fond blanc',
+                'choices' => [
+                    'Oui' => true,
+                    'Non' => false,
+                ],
+                'expanded' => true,
+                'required' => true,
+                'attr' => ['class' => ''],
+                'row_attr' => ['class' => '', 'id' => '']
             ])
 
             ->add('tags', EntityType::class, [

@@ -29,6 +29,11 @@ class Projet
     private $couverture;
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    private $couverture_bg_white;
+
+    /**
      * @ORM\Column(type="string", length=1000, nullable=true)
      */
     private $lien;
@@ -49,14 +54,19 @@ class Projet
     private $github;
 
     /**
-     * @ORM\Column(type="text", length=4)
+     * @ORM\Column(type="integer", length=4)
      */
     private $annee;
 
     /**
-     * @ORM\Column(type="string", length=10000)
+     * @ORM\Column(type="text")
      */
     private $description;
+
+    /**
+     * @ORM\Column(type="string", length=150)
+     */
+    private $introduction;
 
     public function __construct()
     {
@@ -88,6 +98,18 @@ class Projet
     public function setCouverture(string $couverture): self
     {
         $this->couverture = $couverture;
+
+        return $this;
+    }
+
+    public function getCouvertureBgWhite(): ?bool
+    {
+        return $this->couverture_bg_white;
+    }
+
+    public function setCouvertureBgWhite(bool $couverture_bg_white): self
+    {
+        $this->couverture_bg_white = $couverture_bg_white;
 
         return $this;
     }
@@ -174,6 +196,18 @@ class Projet
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getIntroduction(): ?string
+    {
+        return $this->introduction;
+    }
+
+    public function setIntroduction(string $introduction): self
+    {
+        $this->introduction = $introduction;
 
         return $this;
     }
