@@ -48,4 +48,35 @@ class PortfolioController extends AbstractController
                 ));
         //
     }
+
+
+    /**
+     * @Route("/portfolio/{id}", name="portfolio_projet")
+     * Page d'un projet dans le portfolio
+     */
+    public function projet($id): Response
+    {
+        /**
+         * CONFIG
+         */
+            $em = $this->getDoctrine()->getManager();
+        //
+
+        /**
+         * ELEMENTS
+         */
+            // GET le projet
+            $projet = $em->getRepository(Projet::class)->find($id);
+        //
+
+        /**
+         * VUE
+         */
+            return $this->render(
+                'site/portfolio_projet.html.twig' ,
+                array(
+                    'projet' => $projet,
+                ));
+        //
+    }
 }

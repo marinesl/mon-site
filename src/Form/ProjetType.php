@@ -80,18 +80,6 @@ class ProjetType extends AbstractType
                 'row_attr' => ['class' => '', 'id' => 'couverture']
             ])
 
-            ->add('couverture_bg_white', ChoiceType::class, [
-                'label' => 'Couverture avec un fond blanc',
-                'choices' => [
-                    'Oui' => true,
-                    'Non' => false,
-                ],
-                'expanded' => true,
-                'required' => true,
-                'attr' => ['class' => ''],
-                'row_attr' => ['class' => '', 'id' => '']
-            ])
-
             ->add('tags', EntityType::class, [
                 'class' => Tag::class,
                 'choice_label' => 'libelle',

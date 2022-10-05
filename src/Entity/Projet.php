@@ -29,11 +29,6 @@ class Projet
     private $couverture;
 
     /**
-     * @ORM\Column(type="boolean")
-     */
-    private $couverture_bg_white;
-
-    /**
      * @ORM\Column(type="string", length=1000, nullable=true)
      */
     private $lien;
@@ -98,18 +93,6 @@ class Projet
     public function setCouverture(string $couverture): self
     {
         $this->couverture = $couverture;
-
-        return $this;
-    }
-
-    public function getCouvertureBgWhite(): ?bool
-    {
-        return $this->couverture_bg_white;
-    }
-
-    public function setCouvertureBgWhite(bool $couverture_bg_white): self
-    {
-        $this->couverture_bg_white = $couverture_bg_white;
 
         return $this;
     }

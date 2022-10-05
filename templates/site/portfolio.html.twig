@@ -6,8 +6,6 @@
 
 {% block body %}
 
-    <div class="spacer"></div>
-
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <h1>Porfolio</h1>
@@ -43,11 +41,11 @@
 
     <div class="filter-container">
         {% for projet in projets %}
-            <div class="filtr-item {% if projet.couvertureBgWhite == 1 %}bg-white{% endif %}" 
+            <div class="filtr-item" 
                 data-category="{% for tag in projet.tags %}{{ tag.id }}{% if not loop.last %},{% endif %}{% endfor %}">
 
                 <div>
-                    <img src="{{ asset('projet_couverture/'~ projet.couverture ~'') }}" alt="{{ projet.titre }}">
+                    <a href="{{ path('portfolio_projet', { 'id': projet.id }) }}"><img src="{{ asset('projet_couverture/'~ projet.couverture ~'') }}" alt="{{ projet.titre }}"></a>
 
                     <div class="filtr-item-titre">{{ projet.titre }}</div>
 
@@ -76,7 +74,7 @@
         // Configure your options
         const options = { 
             layout: 'sameSize', // Layout : https://yiotis.net/filterizr/#/tutorials/layouts
-            gutterPixels: 50,
+            gutterPixels: 75,
          };
 
         // Adjust the CSS selector to match the container where

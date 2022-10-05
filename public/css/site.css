@@ -731,6 +731,19 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 
 /*******************************
+ * PORTFOLIO - COMMUN
+ *******************************/
+
+.site.portfolio .filter-container .filtr-item .filtr-item-tag div,
+.site.portfolio.projet #projet > div:last-child > div:nth-child(2) div { font-family: 'Sarabun-SemiBold'; text-align: center; color: #41B591; border: 1px solid #41B591; border-radius: 5px; width: 100px; margin-bottom: 10px; padding: 5px 0; display: inline-block; }
+
+.site.portfolio .filter-container .filtr-item img,
+.site.portfolio.projet #projet > div:first-child img { border: 1px solid #D9D9D9; }
+
+
+
+
+/*******************************
  * PORTFOLIO
  *******************************/
 
@@ -747,17 +760,26 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 .site.portfolio #filter .filter-button.active { font-family: 'Sarabun-Bold'; color: #fff; background-color: #41B591; }
 
 /* Grid */
-.site.portfolio .filter-container .filtr-item > div { position: relative; width: 100%; }
-.site.portfolio .filter-container .filtr-item img { width: 32rem; }
+.site.portfolio .filter-container .filtr-item { width: 32rem !important; }
+.site.portfolio .filter-container .filtr-item img { width: 100%; }
+.site.portfolio .filter-container .filtr-item .filtr-item-titre { font-family: 'Sarabun-Bold'; font-size: 40px; text-transform: uppercase; color: #41B591; margin-top: 10px; }
+.site.portfolio .filter-container .filtr-item .filtr-item-desc { margin-bottom: 20px; }
 
-.site.portfolio .filter-container .filtr-item .filtr-item-titre { font-family: 'Sarabun-Bold'; font-size: 50px; text-transform: uppercase; color: #fff; position: absolute; bottom: 3rem; }
-.site.portfolio .filter-container .filtr-item .filtr-item-desc { font-family: 'Sarabun-Medium'; font-size: 16px; line-height: 16px; color: #fff; position: absolute; bottom: 1rem; }
 
-.site.portfolio .filter-container .filtr-item:not(.bg-white) .filtr-item-titre,
-.site.portfolio .filter-container .filtr-item:not(.bg-white) .filtr-item-desc { background-color: rgba(0,0,0,0.2); border-radius: 5px; }
-.site.portfolio .filter-container .filtr-item.bg-white .filtr-item-titre,
-.site.portfolio .filter-container .filtr-item.bg-white .filtr-item-desc { color: #41B591; }
 
-.site.portfolio .filter-container .filtr-item .filtr-item-tag { position: absolute; right: 0; top: 1rem; }
-.site.portfolio .filter-container .filtr-item .filtr-item-tag div { font-family: 'Sarabun-SemiBold'; text-align: center; color: #41B591; background-color: #fff; border-radius: 5px 0 0 5px; width: 100px; margin-bottom: 10px; padding: 5px 0; }
-.site.portfolio .filter-container .filtr-item.bg-white .filtr-item-tag div { color: #fff; background-color: #41B591; }
+
+/*******************************
+ * PORTFOLIO - PROJET
+ *******************************/
+
+/* Button retour */
+.site.portfolio.projet #retour button { margin: 0; margin-bottom: 3rem; }
+
+/* Titre */
+.site.portfolio.projet h1 { margin-bottom: 4rem; }
+
+/* Projet */
+.site.portfolio.projet #projet { margin-bottom: 4rem; }
+.site.portfolio.projet #projet > div:first-child { text-align: center; }
+.site.portfolio.projet #projet > div:first-child img { width: 90%; }
+.site.portfolio.projet #projet > div:last-child > div:nth-child(2) { margin-top: 2rem; margin-bottom: 2rem; }
