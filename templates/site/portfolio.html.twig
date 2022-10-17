@@ -2,24 +2,32 @@
 
 {% block title %}Portfolio{% endblock %}
 
+{% block meta_title %}Marine LANCELIN - Portfolio{% endblock %}
+
+{% block meta_content %}Découvrez mon portfolio de Développeur Symfony/PHP Freelance{% endblock %}
+
+{% block meta_img %}{{ asset('images/opengraph.png') }}{% endblock %}
+
 {% block body_class %}site portfolio{% endblock %}
 
 {% block body %}
 
+    <div class="spacer-2"></div>
+
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h1>Porfolio</h1>
+            <h1>Portfolio</h1>
         </div>
     </div>
 
     <div class="row intro">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <p>Vous pouvez ici <span class="bold">découvrir mes projets réalisés</span> pour mon plaisir personnel, pour mes clients et pour les entreprises pour lesquelles j'ai travaillé.<br><span class="bold">Filtrez et naviguez !</span></p>
+            <p>Vous pouvez ici <span class="bold">découvrir mes projets réalisés</span> pour mon plaisir personnel, pour mes&nbsp;clients et pour les&nbsp;entreprises pour lesquelles j'ai travaillé.<br><span class="bold">Filtrez et naviguez !</span></p>
         </div>
     </div>
 
     <div class="row" id="filter">
-        <div class="offset-lg-3 col-lg-6 col-md-12 col-sm-12">
+        <div class="offset-xl-3 offset-lg-2 col-xl-6 col-lg-8 col-md-12 col-sm-12">
             <p>Filtres</p>
             <hr>
             <div id="filter-buttons">
@@ -49,7 +57,7 @@
 
                     <div class="filtr-item-titre">{{ projet.titre }}</div>
 
-                    <div class="filtr-item-desc">{{ projet.introduction }}</div>
+                    <div class="filtr-item-desc">{{ projet.introduction|raw }}</div>
                     
                     <div class="filtr-item-tag">
                         {% for tag in projet.tags %}
@@ -74,8 +82,13 @@
         // Configure your options
         const options = { 
             layout: 'sameSize', // Layout : https://yiotis.net/filterizr/#/tutorials/layouts
-            gutterPixels: 75,
-         };
+        };
+
+        if ($( window ).width() >= 768) {
+            options.gutterPixels = 75
+        } else if ($( window ).width() >= 320) {
+            options.gutterPixels = 25
+        }
 
         // Adjust the CSS selector to match the container where
         // you set up your image gallery
