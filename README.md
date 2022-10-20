@@ -28,9 +28,16 @@ Le site est un projet développé sous Symfony. Il était important pour moi d'u
 # Utilisation
 
 ## Page Présentation
+La page Présentation contient toutes les informations de mon parcours scolaire et professionnel. Il est possible d'accéder au formulaire de contact en cliquant sur les boutons "Me contacter".
 
 ## Page Portfolio
+La page Portfolio rassemble tous les projets. Il est possible de filtrer les projets en fonction des technologies en cliquant sur la technologie souhaitée sur le filtre.
+
+Pour afficher plus d'information d'un projet, il suffit de cliquer sur un projet et vous êtes redirigé.
 
 ## Contact
 En cliquant sur Contact dans le menu, vous êtes redirigé vers la page Présentation au niveau du formulaire de contact.
 
+# Crédits
+
+Les maquettes ont été réalisées par [https://www.linkedin.com/in/pierrepineau5?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABjOODABIwNvrPlGz4OYFLOVDjRNnQp1FgI&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B0b9YtcHdR6W7BDs%2BAc2yow%3D%3D](Pierre PINEAU)
