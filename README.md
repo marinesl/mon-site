@@ -9,12 +9,12 @@ Le site est un projet développé sous Symfony. Il était important pour moi d'u
 - Back : Symfony et PHP
 - Front : Twig + HTML et CSS
 
-### Challenges
+## Challenges
 - Le responsive : ce n'est pas une compétence que je maîtrise
 - La deadline : dû aux aléas de la vie et aux autres objectifs à réaliser
 - L'adaptation du contenu : passer d'un site pour une recherche de CDI à une recherche de prospect pour du freelance
 
-### Les fonctionnalités futures
+## Les fonctionnalités futures
 - Page Présentation : 
     - Animations (Librairie AOS ?)
     - Slider de commentaires avec les recommandations des clients et prospects
