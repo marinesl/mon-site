@@ -40,4 +40,4 @@ En cliquant sur Contact dans le menu, vous êtes redirigé vers la page Présent
 
 # Crédits
 
-Les maquettes ont été réalisées par [https://www.linkedin.com/in/pierrepineau5?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABjOODABIwNvrPlGz4OYFLOVDjRNnQp1FgI&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B0b9YtcHdR6W7BDs%2BAc2yow%3D%3D](Pierre PINEAU)
+Les maquettes ont été réalisées par [Pierre PINEAU](https://www.linkedin.com/in/pierrepineau5?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABjOODABIwNvrPlGz4OYFLOVDjRNnQp1FgI&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B0b9YtcHdR6W7BDs%2BAc2yow%3D%3D)
