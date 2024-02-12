@@ -263,7 +263,21 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 #competences #competences-forme { position: absolute; right: -6rem; z-index: -1; }
 #competences ul { list-style: none; list-style-image: url("../picto/bullet.svg"); }
-#competences .competences-certif { float: left; margin-right: 10px; margin-top: 5px; }
+#competences #competences-certif {
+    margin-top: 10px;
+}
+#competences #competences-certif > div { 
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#competences #competences-certif > div > div {
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 15px;
+}
 #competences > div:last-child { position: relative; }
 
 @media (min-height: 533px) {
@@ -284,10 +298,10 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
     #competences #competences-forme { width: 120%; }
     #competences #competences-macbook { width: 110%; }
     #competences ul { padding-inline-start: 20px; }
-    #competences .competences-certif { width: 15%; }
+    #competences #competences-certif img { width: 50%; }
 }
 @media (min-width: 768px) {
-    #competences .competences-certif { width: 30%; }
+    #competences #competences-certif img { width: 50%; }
 }
 @media (min-width: 992px) {
     #competences > div:last-child { display: block; }
@@ -435,7 +449,7 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 
 #fun-facts { margin-top: 5rem; }
 
-#fun-facts .right .row { text-align: center; margin-bottom: 2rem; }
+#fun-facts .right .row { text-align: center; margin-bottom: 2rem; justify-content: space-evenly; }
 #fun-facts .right .row > div { position: relative; }
 #fun-facts .right .fact { position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
 #fun-facts .right p { line-height: 22px; margin-top: 1rem; }
