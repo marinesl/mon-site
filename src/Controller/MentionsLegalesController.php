@@ -13,9 +13,9 @@ use Symfony\Component\String\Slugger\SluggerInterface;
 class MentionsLegalesController extends AbstractController
 {
     /**
-     * @Route("/mentions_legales", name="mentions_legales")
      * Page des mentions légales
      */
+    #[Route('/mentions_legales', name: 'mentions_legales')]
     public function index(Request $request): Response
     {
         /**
@@ -45,9 +45,9 @@ class MentionsLegalesController extends AbstractController
 
 
     /**
-     * @Route("/privacy-statement", name="privacy-statement")
      * Page des mentions légales
      */
+    #[Route('/privacy-statement', name: 'privacy-statement')]
     public function privacy(Request $request): Response
     {
         /**

@@ -16,9 +16,9 @@ use App\Entity\Tag;
 class PortfolioController extends AbstractController
 {
     /**
-     * @Route("/portfolio", name="portfolio")
-     * Page Porfolio du site internet
+     * Page Portfolio du site internet
      */
+    #[Route('/portfolio', name: 'portfolio')]
     public function index(): Response
     {
         /**
@@ -51,9 +51,9 @@ class PortfolioController extends AbstractController
 
 
     /**
-     * @Route("/portfolio/{id}", name="portfolio_projet")
      * Page d'un projet dans le portfolio
      */
+    #[Route('/portfolio/{id}', name: 'portfolio_projet')]
     public function projet($id): Response
     {
         /**

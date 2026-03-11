@@ -11,9 +11,7 @@ use App\Entity\Projet;
 
 class AppHomepageController extends AbstractController
 {
-    /**
-     * @Route("/app/homepage", name="app_homepage")
-     */
+    #[Route('/app/homepage', name: 'app_homepage')]
     public function index(): Response
     {
         /**

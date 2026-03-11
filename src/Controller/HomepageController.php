@@ -7,12 +7,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\String\Slugger\SluggerInterface;
 
 use App\Entity\Contact;
 use App\Form\ContactType;
@@ -20,10 +18,10 @@ use App\Form\ContactType;
 class HomepageController extends AbstractController
 {
     /**
-     * @Route("/", name="homepage")
      * Page d'accueil du site internet
      * @throws Exception|TransportExceptionInterface
      */
+    #[Route('/', name: 'homepage')]
     public function index(
         Request $request,
         MailerInterface $mailer

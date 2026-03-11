@@ -15,10 +15,7 @@ use App\Form\ProjetType;
 
 class AppProjetController extends AbstractController
 {
-    /**
-     * @Route("/app/projet", name="app_projet")
-     * Page de la liste de projets
-     */
+    #[Route('/app/projet', name: 'app_projet')]
     public function index(): Response
     {
         /**
@@ -48,9 +45,9 @@ class AppProjetController extends AbstractController
     }
 
     /**
-     * @Route("/app/projet/add", name="app_projet_add")
      * Formulaire d'ajout d'un projet
      */
+    #[Route('/app/projet/add', name: 'app_projet_add')]
     public function add(Request $request, SluggerInterface $slugger): Response
     {
         /**
@@ -95,9 +92,9 @@ class AppProjetController extends AbstractController
     }
 
     /**
-     * @Route("/app/projet/edit/{id}", name="app_projet_edit")
      * Formulaire de modification d'un projet
      */
+    #[Route('/app/projet/edit/{id}', name: 'app_projet_edit')]
     public function edit(Request $request, SluggerInterface $slugger, $id): Response
     {
         /**

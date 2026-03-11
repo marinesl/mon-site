@@ -15,9 +15,9 @@ use App\Entity\Contact;
 class AppContactController extends AbstractController
 {
     /**
-     * @Route("/app/contact", name="app_contact")
      * Page de la liste de demandes de contact
      */
+    #[Route('/app/contact', name: 'app_contact')]
     public function index(): Response
     {
         /**
