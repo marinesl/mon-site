@@ -12,7 +12,6 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 
-use App\Entity\Contact;
 use App\Form\ContactType;
 
 class HomepageController extends AbstractController
@@ -28,16 +27,10 @@ class HomepageController extends AbstractController
     ): Response
     {
         /**
-         * CONFIG
-         */
-            $em = $this->getDoctrine()->getManager();
-        //
-
-        /**
          * ELEMENTS
          */
             // GET Form
-            $form = $this->createForm(ContactType::class, new Contact);
+            $form = $this->createForm(ContactType::class);
         //
 
         /**
@@ -48,9 +41,6 @@ class HomepageController extends AbstractController
         
                 if ($form->isSubmitted() && $form->isValid()) {
                     $contact = $form->getData();
-                    $contact->setDate(new \DateTime(date('Y-m-d H:i:s')));
-                    $em->persist($contact);
-                    $em->flush();
 
 
                     /***** ENVOI DU MAIL *****/
