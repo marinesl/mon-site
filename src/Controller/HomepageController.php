@@ -2,11 +2,15 @@
 
 namespace App\Controller;
 
+use Exception;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
@@ -18,8 +22,12 @@ class HomepageController extends AbstractController
     /**
      * @Route("/", name="homepage")
      * Page d'accueil du site internet
+     * @throws Exception|TransportExceptionInterface
      */
-    public function index(Request $request): Response
+    public function index(
+        Request $request,
+        MailerInterface $mailer
+    ): Response
     {
         /**
          * CONFIG
@@ -49,38 +57,29 @@ class HomepageController extends AbstractController
 
                     /***** ENVOI DU MAIL *****/
 
-                        // On initialise le transport
-                        $transport = new \Swift_SmtpTransport( $this->getParameter('MAILER_SMTP'), $this->getParameter('MAILER_PORT'), $this->getParameter('MAILER_ENCRYPTION') );
-                        $transport->setUsername( $this->getParameter('MAILER_EMAIL') )->setPassword( $this->getParameter('MAILER_PASSWORD') );
+                    try {
 
-                        // On initialise le mailer
-                        $mailer = new \Swift_Mailer( $transport );
+                        $email = (new Email())
+                            ->from($this->getParameter('MAILER_EMAIL_FROM'))
+                            ->to($this->getParameter('MAILER_EMAIL_TO'))
+                            ->subject('Site - Demande de contact')
+                            ->text('<p>Bonjour,</p><p>Vous avez une nouvelle demande de contact :</p>'.
+                                '<ul>'.
+                                '<li>Nom : '.$contact->getPrenom().' '.$contact->getNom().'</li>'.
+                                '<li>Téléphone : '.$contact->getTelephone().'</li>'.
+                                '<li>E-mail : '.$contact->getEmail().'</li>'.
+                                '<li>Message : '.$contact->getMessage().'</li>'.
+                                '</ul>'.
+                                '<p>Bonne réception</p>');
 
-                        // On initialise le message
-                        $message = new \Swift_Message();
+                        $mailer->send($email);
 
-                        // On crée le mail
-                        $message->setSubject( 'Site - Demande de contact' )
-                                ->setFrom( $this->getParameter('MAILER_EMAIL') )
-                                ->setTo( $this->getParameter('MAILER_EMAIL') )
-                                ->setBody( '<p>Bonjour,</p><p>Vous avez une nouvelle demande de contact :</p>'.
-                                            '<ul>'.
-                                            '<li>Nom : '.$contact->getPrenom().' '.$contact->getNom().'</li>'.
-                                            '<li>Téléphone : '.$contact->getTelephone().'</li>'.
-                                            '<li>E-mail : '.$contact->getEmail().'</li>'.
-                                            '<li>Message : '.$contact->getMessage().'</li>'.
-                                            '</ul>'.
-                                            '<p>Bonne réception</p>' )
-                                ->setContentType( "text/html" );
+                        $this->addFlash('success', 'Votre demande de contact a été envoyée !');
+                    } catch (FileException $e) {
+                        $this->addFlash('fail', 'Un problème est survenu, recommencez votre demande.');
+                    }
 
-                        // On envoie le mail
-                        if ($mailer->send( $message ))
-                            $this->addFlash('success', 'Votre demande de contact a été envoyée !');
-                        else
-                            $this->addFlash('fail', 'Un problème est survenu, recommencez votre demande.');
-                        
-                        return $this->redirect($this->generateUrl('homepage').'#contact');
-                    //
+                    return $this->redirect($this->generateUrl('homepage').'#contact');
                 }
             }
         //

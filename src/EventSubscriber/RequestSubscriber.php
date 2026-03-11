@@ -3,6 +3,7 @@
 namespace App\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
@@ -12,10 +13,16 @@ class RequestSubscriber implements EventSubscriberInterface
 {
     use TargetPathTrait;
 
-    private $session;
+    private SessionInterface $session;
 
-    public function __construct(SessionInterface $session)
+    public function __construct(RequestStack $requestStack)
     {
+        $session = $requestStack->getSession();
+
+        if (null === $session) {
+            throw new \RuntimeException('No session available in RequestSubscriber.');
+        }
+
         $this->session = $session;
     }
 
@@ -33,7 +40,7 @@ class RequestSubscriber implements EventSubscriberInterface
         $this->saveTargetPath($this->session, 'main', $request->getUri());
     }
 
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             KernelEvents::REQUEST => ['onKernelRequest']
