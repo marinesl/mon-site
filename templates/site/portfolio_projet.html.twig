@@ -1,12 +1,12 @@
-{% extends 'base_site.html.twig' %}
+    {% extends 'base_site.html.twig' %}
 
-{% block title %}{{ projet.titre }}{% endblock %}
+{% block title %}{{ project.title }}{% endblock %}
 
-{% block meta_title %}Marine LANCELIN - {{ projet.titre }}{% endblock %}
+{% block meta_title %}Marine LANCELIN - {{ project.title }}{% endblock %}
 
-{% block meta_content %}Découvrez mon projet : {{ projet.titre }}{% endblock %}
+{% block meta_content %}Découvrez mon projet : {{ project.title }}{% endblock %}
 
-{% block meta_img %}{{ asset('projet_couverture/'~ projet.couverture ~'') }}{% endblock %}
+{% block meta_img %}{{ asset('projet_couverture/'~ project.token ~'.png') }}{% endblock %}
 
 {% block body_class %}site portfolio projet{% endblock %}
 
@@ -22,32 +22,32 @@
 
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h1>{{ projet.titre }}</h1>
+            <h1>{{ project.title }}</h1>
         </div>
     </div>
 
     <div class="row" id="projet">
         <div class="col-lg-6 col-md-12 col-sm-12">
-            <img src="{{ asset('projet_couverture/'~ projet.couverture ~'') }}" alt="{{ projet.titre }}">
+            <img src="{{ asset('projet_couverture/'~ project.token ~'.png') }}" alt="{{ project.title }}">
         </div>
 
         <div class="col-lg-6 col-md-12 col-sm-12">
-            <div>{{ projet.description|raw }}</div>
+            <div>{{ project.description|raw }}</div>
             
             <div>
-                {% for tag in projet.tags %}
-                    <div>{{ tag.libelle }}</div>
+                {% for tag in project['tags'] %}
+                    <div>{{ tag }}</div>
                 {% endfor %}
             </div>
 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    {% if projet.lien != NULL %}
-                        <button class="btn"> <a href="{{ projet.lien }}" title="Lien du projet" target="_blank"> <img src="{{ asset('picto/open-tab.svg') }}" alt="Ouverture d'un nouvel onglet"> Lien du projet</a></button>
+                    {% if project.projectLink %}
+                        <button class="btn"> <a href="{{ project.projectLink }}" title="Lien du projet" target="_blank"> <img src="{{ asset('picto/open-tab.svg') }}" alt="Ouverture d'un nouvel onglet"> Lien du projet</a></button>
                     {% endif %}
 
-                    {% if projet.github != NULL %}
-                        <button class="btn"> <a href="{{ projet.github }}" title="Lien du Github" target="_blank"> <img src="{{ asset('picto/github.svg') }}" alt="Github"> Github</a></button>
+                    {% if project.githubLink %}
+                        <button class="btn"> <a href="{{ project.githubLink }}" title="Lien du Github" target="_blank"> <img src="{{ asset('picto/github.svg') }}" alt="Github"> Github</a></button>
                     {% endif %}
                  </div>
             </div>

@@ -32,71 +32,60 @@
             <hr>
             <div id="filter-buttons">
                 <div data-filter="all" class="filter-button active">Tous</div>
-                {% for tag in tags %}
-                    {% set display_tag = false %}
-
-                    {% for projet in tag.projets %}
-                        {% if projet.etat == 1 %}{% set display_tag = true %}{% endif %}
-                    {% endfor %}
-
-                    {% if display_tag %}
-                        <div data-filter="{{ tag.id }}" class="filter-button">{{ tag.libelle }}</div>
-                    {% endif %}
-                {% endfor %}
+                <div data-filter="symfony" class="filter-button">Symfony</div>
+                <div data-filter="php" class="filter-button">PHP</div>
+                <div data-filter="html-css" class="filter-button">HTML/CSS</div>
             </div>
         </div>
     </div>
 
     <div class="filter-container">
-        {% for projet in projets %}
-            <div class="filtr-item" 
-                data-category="{% for tag in projet.tags %}{{ tag.id }}{% if not loop.last %},{% endif %}{% endfor %}">
 
+        {% for project in projects %}
+            {# TODO: mettre les tags dans le data-category + tester filter #}
+            <div class="filter-item" data-category="html-css,php,symfony">
                 <div>
-                    <a href="{{ path('portfolio_projet', { 'id': projet.id }) }}"><img src="{{ asset('projet_couverture/'~ projet.couverture ~'') }}" alt="{{ projet.titre }}"></a>
-
-                    <div class="filtr-item-titre">{{ projet.titre }}</div>
-
-                    <div class="filtr-item-desc">{{ projet.introduction|raw }}</div>
-                    
-                    <div class="filtr-item-tag">
-                        {% for tag in projet.tags %}
-                            <div>{{ tag.libelle }}</div>
+                    <a href="{{ path('portfolio_projet', { 'token': project.token }) }}"><img src="{{ asset('projet_couverture/' ~ project.token ~ '.png') }}" alt="{{ project.title }}"></a>
+                    <div class="filter-item-titre">{{ project.title }}</div>
+                    <div class="filter-item-desc">{{ project.smallDescription }}</div>
+                    <div class="filter-item-tag">
+                        {% for tag in project['tags'] %}
+                            <div>{{ tag }}</div>
                         {% endfor %}
                     </div>
                 </div>
             </div>
         {% endfor %}
+
     </div>
 
 {% endblock %}
 
 {% block javascripts %}
     {# Script pour le filtre par tags #}
-    <script src="{{ asset('js/jquery.filterizr.min.js') }}"></script>
-
     <script>
-        // Library Filterizr
-        // https://yiotis.net/filterizr/#/tutorials/quickstart
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.filter-button');
+            const items = document.querySelectorAll('.filter-item');
 
-        // Configure your options
-        const options = { 
-            layout: 'sameSize', // Layout : https://yiotis.net/filterizr/#/tutorials/layouts
-        };
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.dataset.filter;
 
-        if ($( window ).width() >= 768) {
-            options.gutterPixels = 75
-        } else if ($( window ).width() >= 320) {
-            options.gutterPixels = 25
-        }
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
 
-        // Adjust the CSS selector to match the container where
-        // you set up your image gallery
-        const filterizr = new Filterizr('.filter-container', options);
+                    items.forEach(item => {
+                        const categories = item.dataset.category.split(',');
 
-        $('.filter-button').click(function() {   
-            $('.filter-button').removeClass('active');
-            $(this).addClass('active');
+                        if (filter === 'all' || categories.includes(filter)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
         });
     </script>
 {% endblock %}

@@ -1,0 +1,86 @@
+{
+  "633301f5d5b8c": {
+    "token": "633301f5d5b8c",
+    "title": "Mon site internet et mon portfolio",
+    "description": "<p>Ce projet est personnel. L'objectif était d'avoir de la visibilité sur Internet et un moyen de montrer mes compétences.</p><p>Le site est un projet développé sous Symfony. Il était important pour moi d'utiliser cette technologie pour mettre en avant ma compétence principale. Il est doté d'un Back Office permettant de gérer les projets (ajout, modification, etc...) et les prises de contact dans le formulaire.</p><p>Les technologies utilisées :</p><ul><li>Back : Symfony et PHP</li><li>Front : Twig + HTML et CSS</li></ul><p>Les compétences supplémentaires :</p><ul><li>Gestion de projet</li></ul><p>Le site est responsive et fonctionnel sur les différents navigateurs.</p><p>Le webdesign a été réalisé par Pierre PINEAU.</p>",
+    "smallDescription": "L'objectif était d'avoir de la visibilité sur Internet et un moyen de montrer mes compétences.",
+    "tags": [
+      "Symfony",
+      "PHP",
+      "HTML/CSS"
+    ],
+    "projectLink": "https://marinelancelin.fr/",
+    "githubLink": "https://github.com/marinesl/mon-site"
+  },
+  "6333025ae704e": {
+    "token": "6333025ae704e",
+    "title": "Site vitrine pour l'Atelier Boulette",
+    "description": "<p>Atelier Boulette est une entreprise de création d'objets mignons comme des portes clés, des pochettes, des totes bags, etc...</p><p>Ses services sont :</p><ul><li>Objets personnalisables</li><li>Cricut Maker</li><li>Réalisation sur commande</li></ul><p>Le site vitrine permet à l'Atelier Boulette de présenter ses compétences et ses produits, et ainsi donner la possibilité aux visiteurs de prendre contact pour des commandes.</p><p>Les technologies utilisées :</p><ul><li>Général : FullPage JS + HTML et CSS</li><li>Gestion du formulaire : PHP</li></ul><p>Les compétences supplémentaires :</p><ul><li>Gestion de projet</li></ul><p>Le site est responsive et fonctionnel sur les différents navigateurs.</p><p>Le webdesign a été réalisé par l'Atelier Boulette.</p>",
+    "smallDescription": "Atelier Boulette est une entreprise de création d'objets mignons (portes clés, pochettes, totes bags,...).",
+    "tags": [
+      "HTML/CSS",
+      "PHP"
+    ],
+    "projectLink": "https://atelierboulette.fr/",
+    "githubLink": "https://github.com/marinesl/atelierboulette"
+  },
+  "6333027b7ca16": {
+    "token": "6333027b7ca16",
+    "title": "Page de maintenance pour G2F Solutions",
+    "description": "<p>G2F SOLUTIONS RECONDITIONNEMENT regroupe toutes les étapes nécessaires à la remise en état de vos véhicules d’occasion grâce à leurs ateliers de mécanique et de carrosserie, mais aussi à leurs services de contrôle technique, de préparation et à son studio photos.</p><p>Le client souhaitait une simple page de maintenance pour annoncer l'arrivée du prochain site vitrine.</p><p>Les technologies utilisées :</p><ul><li>Général : HTML et CSS</li></ul><p>Les compétences supplémentaires :</p><ul><li>Gestion de projet</li></ul><p>Le site est responsive et fonctionnel sur les différents navigateurs.</p><p>Le webdesign a été réalisé par Pierre PINEAU.</p>",
+    "smallDescription": "G2F SOLUTIONS regroupe toutes les étapes nécessaires à la remise en état de vos véhicules d’occasion.",
+    "tags": [
+      "HTML/CSS"
+    ],
+    "projectLink": "https://g2fsolutions.com/",
+    "githubLink": false
+  },
+  "63330232bfcf0": {
+    "token": "63330232bfcf0",
+    "title": "Annuaire interne pour les hôpitaux",
+    "description": "<p>Ce projet est un annuaire et une plateforme Back Office Administrateur pour les hôpitaux.</p><p>Les technologies utilisées :</p><ul><li>Front : HTML et CSS + Bootstrap</li><li>Back : PHP</li></ul><p>Ce projet sera prochainement refait sous Symfony.</p>",
+    "smallDescription": "Ce projet est un annuaire interne et une plateforme Back Office Administrateur pour les hôpitaux.",
+    "tags": [
+      "PHP",
+      "HTML/CSS"
+    ],
+    "projectLink": "http://projet.marinelancelin.fr/annuaire-php/",
+    "githubLink": "https://github.com/marinesl/annuaire-php"
+  },
+  "633301053a3d6": {
+    "token": "633301053a3d6",
+    "title": "Back Office pour la Gestion des formations",
+    "description": "<p>Ce projet permet la gestion des formations des salariés de la Maison des Ligues. C'est une plateforme de connexion et d'inscription à différentes formations.</p><p>Les technologies utilisées :</p><ul><li>Front : HTML et CSS + Bootstrap</li><li>Back : PHP</li></ul><p>Ce projet sera prochainement refait sous Symfony.</p>",
+    "smallDescription": "Ce projet est un Back Office pour la gestion des formations des salariés de la Maison des Ligues.",
+    "tags": [
+      "PHP",
+      "HTML/CSS"
+    ],
+    "projectLink": "http://projet.marinelancelin.fr/gestion-des-formations-php",
+    "githubLink": "https://github.com/marinesl/gestion-des-formations-php"
+  },
+  "6333014a9cca6": {
+    "token": "6333014a9cca6",
+    "title": "Back Office pour la Gestion des ligues",
+    "description": "Ce projet permet la gestion des membres d'une association sportive. C'est une application simple de création, de modification des membres d'une association sportive, par les administrateurs des ligues.\n\nLes technologies utilisées :\n\nFront : HTML et CSS + Bootstrap\nBack : PHP\nCe projet sera prochainement refait sous Symfony.",
+    "smallDescription": "Ce projet permet la gestion des membres d'une association sportive, par les administrateurs des ligues.",
+    "tags": [
+      "PHP",
+      "HTML/CSS"
+    ],
+    "projectLink": "http://projet.marinelancelin.fr/gestion-des-ligues-php",
+    "githubLink": "https://github.com/marinesl/gestion-des-ligues-php"
+  },
+  "633301a7588ed": {
+    "token": "633301a7588ed",
+    "title": "Site E-boutique de chaussures (fictif)",
+    "description": "<p>Ce projet est une E-boutique avec des produits triés par catégorie et une création de compte par les visiteurs pour ajouter des produits à leur panier.</p><p>Les technologies utilisées :</p><ul><li>Front : HTML et CSS + Bootstrap</li><li>Back : PHP</li></ul><p>Ce projet sera prochainement refait sous Symfony.</p>",
+    "smallDescription": "Ce projet est un site E-boutique fictif avec des produits triés par catégorie et une création de compte.",
+    "tags": [
+      "PHP",
+      "HTML/CSS"
+    ],
+    "projectLink": "http://projet.marinelancelin.fr/e-boutique-php/",
+    "githubLink": "https://github.com/marinesl/e-boutique-php"
+  }
+}

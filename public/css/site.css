@@ -510,19 +510,19 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
  * PORTFOLIO - COMMUN
  *******************************/
 
-.site.portfolio .filter-container .filtr-item .filtr-item-tag div,
+.site.portfolio .filter-container .filter-item .filter-item-tag div,
 .site.portfolio.projet #projet > div:last-child > div:nth-child(2) div { font-family: 'Sarabun-SemiBold'; text-align: center; color: #41B591; border: 1px solid #41B591; border-radius: 5px; margin-bottom: 10px; padding: 5px 0; display: inline-block; }
 
-.site.portfolio .filter-container .filtr-item img,
+.site.portfolio .filter-container .filter-item img,
 .site.portfolio.projet #projet > div:first-child img { border: 1px solid #D9D9D9; }
 
 
 @media (min-width: 320px) {
-    .site.portfolio .filter-container .filtr-item .filtr-item-tag div,
+    .site.portfolio .filter-container .filter-item .filter-item-tag div,
     .site.portfolio.projet #projet > div:last-child > div:nth-child(2) div { width: 80px; font-size: 13px; }
 }
 @media (min-width: 768px) {
-    .site.portfolio .filter-container .filtr-item .filtr-item-tag div,
+    .site.portfolio .filter-container .filter-item .filter-item-tag div,
     .site.portfolio.projet #projet > div:last-child > div:nth-child(2) div { width: 100px; font-size: 16px; }
 }
 
@@ -546,35 +546,44 @@ img#header-forme { position: absolute; top: 0; right: 0; z-index: -1; }
 .site.portfolio #filter .filter-button.active { font-family: 'Sarabun-Bold'; color: #fff; background-color: #41B591; }
 
 /* Grid */
-.site.portfolio .filter-container .filtr-item img { width: 100%; }
-.site.portfolio .filter-container .filtr-item .filtr-item-titre { font-family: 'Sarabun-Bold'; text-transform: uppercase; color: #41B591; margin-top: 10px; margin-bottom: 10px; }
-.site.portfolio .filter-container .filtr-item .filtr-item-desc { margin-bottom: 20px; }
+.site.portfolio .filter-container {
+    padding: 75px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+.site.portfolio .filter-container .filter-item img { width: 100%; }
+.site.portfolio .filter-container .filter-item .filter-item-titre { font-family: 'Sarabun-Bold'; text-transform: uppercase; color: #41B591; margin-top: 10px; margin-bottom: 10px; }
+.site.portfolio .filter-container .filter-item .filter-item-desc { margin-bottom: 20px; }
 
 
 @media (min-width: 320px) {
-    .site.portfolio .filter-container .filtr-item .filtr-item-titre { font-size: 25px; line-height: 30px; }
+    .site.portfolio .filter-container .filter-item .filter-item-titre { font-size: 25px; line-height: 30px; }
 }
 @media (min-width: 768px) {
-    .site.portfolio .filter-container .filtr-item .filtr-item-tag div,
+    .site.portfolio .filter-container .filter-item .filter-item-tag div,
     .site.portfolio.projet #projet > div:last-child > div:nth-child(2) div { width: 100px; }
 
-    .site.portfolio .filter-container .filtr-item { width: 32rem !important; }
-    .site.portfolio .filter-container .filtr-item .filtr-item-titre { font-size: 30px; line-height: 35px; }
+    .site.portfolio .filter-container .filter-item { width: 32rem !important; }
+    .site.portfolio .filter-container .filter-item .filter-item-titre { font-size: 30px; line-height: 35px; }
 }
 @media (min-width: 991px) {
-    .site.portfolio .filter-container .filtr-item { width: 24rem !important; }
+    .site.portfolio .filter-container .filter-item { width: 24rem !important; }
 }
 @media (min-width: 1024px) {
-    .site.portfolio .filter-container .filtr-item { width: 26rem !important; }
+    .site.portfolio .filter-container .filter-item { width: 26rem !important; }
 }
 @media (min-width: 1280px) {
-    .site.portfolio .filter-container .filtr-item { width: 32rem !important; }
+    .site.portfolio .filter-container .filter-item { width: 32rem !important; }
 }
 @media (min-width: 1680px) {
-    .site.portfolio .filter-container .filtr-item { width: 28rem !important; }
+    .site.portfolio .filter-container .filter-item { width: 28rem !important; }
 }
 @media (min-width: 1920px) {
-    .site.portfolio .filter-container .filtr-item { width: 32rem !important; }
+    .site.portfolio .filter-container .filter-item { width: 32rem !important; }
 }
 
 
