@@ -53,18 +53,21 @@
 
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/home.css') }}">
         <link rel="stylesheet" href="{{ asset('css/site.css') }}">
         {% block stylesheets %}{% endblock %}
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
-        {% include "site/menu.html.twig" %}
+        {% if app.request.get('_route') !== 'home' %}
+            {% include "layouts/menu.html.twig" %}
+        {% endif %}
 
         <section>
             {% block body %}{% endblock %}
         </section>
 
-        {% include "site/footer.html.twig" %}
+        {% include "layouts/footer.html.twig" %}
 
         <script src="{{ asset('js/jquery-3.5.0.min.js') }}"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>

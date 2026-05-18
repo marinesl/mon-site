@@ -1,0 +1,20 @@
+{% extends 'base_site.html.twig' %}
+
+{% block title %}Marine Lancelin{% endblock %}
+
+{% block meta_title %}Marine LANCELIN - Développeuse Symfony/PHP - Correctrice-Relectrice Freelance{% endblock %}
+
+{% block meta_content %}Découvrez mes service de Développeuse Symfony/PHP - Correctrice-Relectrice Freelance{% endblock %}
+
+{% block meta_img %}{{ asset('images/opengraph.png') }}{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body %}
+    <h1>Découvrez mes service</h1>
+
+    <div class="buttons">
+        <div><button class="btn"><a href="{{ path('dev') }}">Développeuse Symfony</a></button></div>
+        <div><button class="btn"><a href="{{ path('readproof') }}">Correctrice-relectrice</a></button></div>
+    </div>
+{% endblock %}

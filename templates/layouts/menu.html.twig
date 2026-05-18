@@ -1,7 +1,7 @@
 <header class="row">
 
     <div class="col-xxl-7 col-xl-6 col-lg-4 col-md-3 col-sm-3 col-3">
-        <a href="{{ path('homepage') }}" title="Accueil"><img src="{{ asset('logo/logo.svg') }}" alt="Logo" id="logo"></a>
+        <a href="{{ path('dev') }}" title="Accueil"><img src="{{ asset('logo/logo.svg') }}" alt="Logo" id="logo"></a>
     </div>
 
     <div class="col-xxl-5 col-xl-6 col-lg-8 col-md-9 col-sm-9 col-9 link">
@@ -17,8 +17,8 @@
         </button>
 
         <ul class="menu-mobile">
-            <li><a href="{{ path('homepage') }}" title="Présentation"
-                class="nav-link{% if app.request.get('_route') == 'homepage' %} active{% endif %}"
+            <li><a href="{{ path('dev') }}" title="Présentation"
+                class="nav-link{% if app.request.get('_route') == 'dev' %} active{% endif %}"
             >
                 Présentation</a></li>
 
@@ -34,7 +34,7 @@
                     Portfolio</a>
             </li>
 
-            <li><a href="{{ path('homepage') }}#contact" class="nav-link">Contact</a></li>
+            <li><a href="{{ path('dev') }}#contact" class="nav-link">Contact</a></li>
 
             <li class="nav-socials">
                 <a href="https://fr.linkedin.com/in/marine-lancelin-a4b25389" target="_blank" title="Linkedin"><img src="{{ asset('picto/linkedin-vert.svg') }}" alt="LinkedIn"></a>
@@ -47,14 +47,14 @@
         {# Desktop #}
         <div class="row menu-desktop">
             <div class="col-lg-3 col-md-3 col-sm-4 col-4">
-                <a href="{{ path('homepage') }}" title="Présentation"
-                    {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
+                <a href="{{ path('dev') }}" title="Présentation"
+                    {% if app.request.get('_route') == 'dev' %}class="active"{% endif %}
                 >
                     Présentation</a>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-4 col-4">
-                {# <a href="{{ path('homepage') }}" title="Présentation"
-                    {% if app.request.get('_route') == 'homepage' %}class="active"{% endif %}
+                {# <a href="{{ path('dev') }}" title="Présentation"
+                    {% if app.request.get('_route') == 'dev' %}class="active"{% endif %}
                 >
                     Présentation</a> #}
                 <a href="{{ path('portfolio') }}" 
@@ -63,7 +63,7 @@
                     Portfolio</a>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-4">
-                <a href="{{ path('homepage') }}#contact">Contact</a>
+                <a href="{{ path('dev') }}#contact">Contact</a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-12" id="menu-rs">
                 <a href="https://fr.linkedin.com/in/marine-lancelin-a4b25389" target="_blank" title="Linkedin"><img src="{{ asset('picto/linkedin.svg') }}" alt="LinkedIn"></a>
@@ -76,7 +76,7 @@
 
 </header>
 
-{% if app.request.get('_route') == 'homepage' %}
+{% if app.request.get('_route') == 'dev' %}
     <img src="{{ asset('forme/blob-header-home.svg') }}" alt="Tâche verte en fond" id="header-forme">
 {% else %}
     <img src="{{ asset('forme/blob-header.svg') }}" alt="Tâche verte en fond" id="header-forme">

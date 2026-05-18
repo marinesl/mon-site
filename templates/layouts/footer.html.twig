@@ -9,7 +9,9 @@
         <div class="col-xl-5 col-lg-6 col-md-7 col-sm-12" id="footer-right">
             <p><a href="{{ path('mentions_legales') }}">Mentions légales</a></p>
 
-            <p><a href="{{ path('homepage') }}#contact">Contact</a></p>
+            {% if app.request.get('_route') !== 'home' %}
+                <p><a href="{{ path('dev') }}#contact">Contact</a></p>
+            {% endif %}
 
             <div id="footer-rs">
                 <a href="https://fr.linkedin.com/in/marine-lancelin-a4b25389" target="_blank" title="Linkedin"><img src="{{ asset('picto/linkedin.svg') }}" alt="LinkedIn"></a>
