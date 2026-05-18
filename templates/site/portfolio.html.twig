@@ -42,15 +42,14 @@
     <div class="filter-container">
 
         {% for project in projects %}
-            {# TODO: mettre les tags dans le data-category + tester filter #}
-            <div class="filter-item" data-category="html-css,php,symfony">
+            <div class="filter-item" data-category="{{ project.tags|column('name')|join(',') }}">
                 <div>
                     <a href="{{ path('portfolio_projet', { 'token': project.token }) }}"><img src="{{ asset('projet_couverture/' ~ project.token ~ '.png') }}" alt="{{ project.title }}"></a>
                     <div class="filter-item-titre">{{ project.title }}</div>
                     <div class="filter-item-desc">{{ project.smallDescription }}</div>
                     <div class="filter-item-tag">
                         {% for tag in project['tags'] %}
-                            <div>{{ tag }}</div>
+                            <div>{{ tag['string'] }}</div>
                         {% endfor %}
                     </div>
                 </div>
