@@ -8,8 +8,8 @@ parameters:
     projet_couverture_directory: '%kernel.project_dir%/public/projet_couverture'
     projet_couverture_local: 'projet_couverture'
 
-    MAILER_EMAIL_TO: '%env(MAILER_EMAIL_TO)%'
-    MAILER_EMAIL_FROM: '%env(MAILER_EMAIL_FROM)%'
+    app.mailer_to: '%env(MAILER_EMAIL_TO)%'
+    app.mailer_from: '%env(MAILER_EMAIL_FROM)%'
 
 services:
     # default configuration for services in *this* file
@@ -34,3 +34,8 @@ services:
     App\Service\PortfolioService:
         arguments:
             $kernelSecret: '%kernel.project_dir%'
+
+    App\Service\MailerService:
+        arguments:
+            $fromEmail: '%app.mailer_from%'
+            $toEmail: '%app.mailer_to%'
