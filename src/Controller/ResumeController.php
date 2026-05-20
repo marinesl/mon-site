@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Attribute\Route;
 
-class DevController extends AbstractController
+class ResumeController extends AbstractController
 {
     public function __construct(
         private readonly MailerService $mailerService
@@ -17,7 +17,7 @@ class DevController extends AbstractController
     }
 
     #[Route('/dev', name: 'dev', methods: ['GET', 'POST'])]
-    public function index(Request $request): Response
+    public function dev(Request $request): Response
     {
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
@@ -36,5 +36,11 @@ class DevController extends AbstractController
         return $this->render('dev/homepage.html.twig', [
             'form' => $form->createView(),
         ]);
+    }
+
+    #[Route('/readproof', name: 'readproof', methods: ['GET', 'POST'])]
+    public function readproof(): Response
+    {
+        return $this->render('readproof/homepage.html.twig');
     }
 }

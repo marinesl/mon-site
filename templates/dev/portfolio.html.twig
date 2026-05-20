@@ -8,7 +8,7 @@
 
 {% block meta_img %}{{ asset('images/opengraph.png') }}{% endblock %}
 
-{% block body_class %}site portfolio{% endblock %}
+{% block body_class %}dev portfolio{% endblock %}
 
 {% block body %}
 
@@ -44,7 +44,7 @@
         {% for project in projects %}
             <div class="filter-item" data-category="{{ project.tags|column('name')|join(',') }}">
                 <div>
-                    <a href="{{ path('portfolio_projet', { 'token': project.token }) }}"><img src="{{ asset('projet_couverture/' ~ project.token ~ '.png') }}" alt="{{ project.title }}"></a>
+                    <a href="{{ path('dev_portfolio_projet', { 'token': project.token }) }}"><img src="{{ asset('projet_couverture/' ~ project.token ~ '.png') }}" alt="{{ project.title }}"></a>
                     <div class="filter-item-titre">{{ project.title }}</div>
                     <div class="filter-item-desc">{{ project.smallDescription }}</div>
                     <div class="filter-item-tag">

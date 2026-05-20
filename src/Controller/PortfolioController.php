@@ -14,25 +14,25 @@ class PortfolioController extends AbstractController
     {
     }
 
-    #[Route('/portfolio', name: 'portfolio')]
-    public function index(): Response
+    #[Route('/dev/portfolio', name: 'dev_portfolio')]
+    public function dev(): Response
     {
-        return $this->render('site/portfolio.html.twig', [
+        return $this->render('dev/portfolio.html.twig', [
             'projects' => $this->portfolioService->getData(),
         ]);
     }
 
-    #[Route('/portfolio/{token}', name: 'portfolio_projet')]
-    public function getProject(string $token): Response
+    #[Route('/dev/portfolio/{token}', name: 'dev_portfolio_projet')]
+    public function getDevProject(string $token): Response
     {
         $project = $this->portfolioService->getProject($token);
 
         // Check if the project exists
-        if (!isset($project)) {
+        if (!$project) {
             throw $this->createNotFoundException('Projet non trouvé');
         }
 
-        return $this->render('site/portfolio_projet.html.twig', [
+        return $this->render('dev/portfolio_projet.html.twig', [
             'project' => $project,
         ]);
     }

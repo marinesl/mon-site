@@ -17,19 +17,16 @@
         </button>
 
         <ul class="menu-mobile">
-            <li><a href="{{ path('dev') }}" title="Présentation"
+            <li>
+                <a href="{{ path('dev') }}" title="Présentation"
                 class="nav-link{% if app.request.get('_route') == 'dev' %} active{% endif %}"
             >
-                Présentation</a></li>
+                Présentation</a>
+            </li>
 
             <li>
-                {# <a href="{{ path('homepage') }}" title="Présentation"
-                class="nav-link{% if app.request.get('_route') == 'homepage' %} active{% endif %}"
-                >
-                Présentation</a> #}
-
-                <a href="{{ path('portfolio') }}" 
-                    class="nav-link {% if app.request.get('_route') == 'portfolio' %} active{% endif %}"
+                <a href="{{ path('dev_portfolio') }}"
+                    class="nav-link {% if app.request.get('_route') == 'dev_portfolio' %} active{% endif %}"
                 >
                     Portfolio</a>
             </li>
@@ -53,12 +50,8 @@
                     Présentation</a>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-4 col-4">
-                {# <a href="{{ path('dev') }}" title="Présentation"
-                    {% if app.request.get('_route') == 'dev' %}class="active"{% endif %}
-                >
-                    Présentation</a> #}
-                <a href="{{ path('portfolio') }}" 
-                    {% if app.request.get('_route') == 'portfolio' %}class="active"{% endif %}
+                <a href="{{ path('dev_portfolio') }}"
+                    {% if app.request.get('_route') == 'dev_portfolio' %}class="active"{% endif %}
                 >
                     Portfolio</a>
             </div>
