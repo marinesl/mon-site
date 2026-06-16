@@ -1,3 +1,8 @@
+{# Determine which "section" we are in: dev or readproof #}
+{% set currentRoute = app.request.get('_route') %}
+{% set baseRoute = currentRoute starts with 'readproof' ? 'readproof' : 'dev' %}
+{% set portfolioRoute = baseRoute ~ '_portfolio' %}
+
 <header class="row">
 
     <div class="col-xxl-7 col-xl-6 col-lg-4 col-md-3 col-sm-3 col-3">
@@ -18,20 +23,22 @@
 
         <ul class="menu-mobile">
             <li>
-                <a href="{{ path('dev') }}" title="Présentation"
-                class="nav-link{% if app.request.get('_route') == 'dev' %} active{% endif %}"
+                <a href="{{ path(baseRoute) }}" title="Présentation"
+                class="nav-link{% if currentRoute == baseRoute %} active{% endif %}"
             >
                 Présentation</a>
             </li>
 
-            <li>
-                <a href="{{ path('dev_portfolio') }}"
-                    class="nav-link {% if app.request.get('_route') == 'dev_portfolio' %} active{% endif %}"
-                >
-                    Portfolio</a>
-            </li>
+            {% if baseRoute == 'dev' %}
+                <li>
+                    <a href="{{ path(portfolioRoute) }}"
+                        class="nav-link {% if currentRoute == portfolioRoute %} active{% endif %}"
+                    >
+                        Portfolio</a>
+                </li>
+            {% endif %}
 
-            <li><a href="{{ path('dev') }}#contact" class="nav-link">Contact</a></li>
+            <li><a href="{{ path(baseRoute) }}#contact" class="nav-link">Contact</a></li>
 
             <li class="nav-socials">
                 <a href="https://fr.linkedin.com/in/marine-lancelin-a4b25389" target="_blank" title="Linkedin"><img src="{{ asset('picto/linkedin-vert.svg') }}" alt="LinkedIn"></a>
@@ -44,19 +51,21 @@
         {# Desktop #}
         <div class="row menu-desktop">
             <div class="col-lg-3 col-md-3 col-sm-4 col-4">
-                <a href="{{ path('dev') }}" title="Présentation"
-                    {% if app.request.get('_route') == 'dev' %}class="active"{% endif %}
+                <a href="{{ path(baseRoute) }}" title="Présentation"
+                    {% if currentRoute == baseRoute %}class="active"{% endif %}
                 >
                     Présentation</a>
             </div>
+            {% if baseRoute == 'dev' %}
             <div class="col-lg-2 col-md-2 col-sm-4 col-4">
-                <a href="{{ path('dev_portfolio') }}"
-                    {% if app.request.get('_route') == 'dev_portfolio' %}class="active"{% endif %}
+                <a href="{{ path(portfolioRoute) }}"
+                    {% if currentRoute == portfolioRoute %}class="active"{% endif %}
                 >
                     Portfolio</a>
             </div>
+            {% endif %}
             <div class="col-lg-3 col-md-3 col-sm-4 col-4">
-                <a href="{{ path('dev') }}#contact">Contact</a>
+                <a href="{{ path(baseRoute) }}#contact">Contact</a>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-12" id="menu-rs">
                 <a href="https://fr.linkedin.com/in/marine-lancelin-a4b25389" target="_blank" title="Linkedin"><img src="{{ asset('picto/linkedin.svg') }}" alt="LinkedIn"></a>
@@ -69,7 +78,7 @@
 
 </header>
 
-{% if app.request.get('_route') == 'dev' %}
+{% if currentRoute == baseRoute %}
     <img src="{{ asset('forme/blob-header-home.svg') }}" alt="Tâche verte en fond" id="header-forme">
 {% else %}
     <img src="{{ asset('forme/blob-header.svg') }}" alt="Tâche verte en fond" id="header-forme">

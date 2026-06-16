@@ -8,7 +8,8 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ConfidentialityController extends AbstractController
 {
-    #[Route('/confidentiality', name: 'confidentiality')]
+    #[Route('/dev/confidentiality', name: 'dev_confidentiality')]
+    #[Route('/readproof/confidentiality', name: 'readproof_confidentiality')]
     public function index(): Response
     {
         return $this->render(
