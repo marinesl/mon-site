@@ -39,8 +39,24 @@ class ResumeController extends AbstractController
     }
 
     #[Route('/readproof', name: 'readproof', methods: ['GET', 'POST'])]
-    public function readproof(): Response
+    public function readproof(Request $request): Response
     {
-        return $this->render('readproof/homepage.html.twig');
+        $form = $this->createForm(ContactType::class);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            try {
+                $this->mailerService->sendMailContact($form->getData());
+                $this->addFlash('success', 'Votre demande de contact a été envoyée !');
+            } catch (\Throwable $e) {
+                $this->addFlash('fail', 'Un problème est survenu, recommencez votre demande.' . $e);
+            }
+
+            return $this->redirect($this->generateUrl('readproof') . '#contact');
+        }
+
+        return $this->render('readproof/homepage.html.twig', [
+            'form' => $form->createView(),
+        ]);
     }
 }
