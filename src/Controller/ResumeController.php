@@ -33,7 +33,7 @@ class ResumeController extends AbstractController
             return $this->redirect($this->generateUrl('dev') . '#contact');
         }
 
-        return $this->render('dev/homepage.html.twig', [
+        return $this->render('dev/resume.html.twig', [
             'form' => $form->createView(),
         ]);
     }
@@ -55,7 +55,7 @@ class ResumeController extends AbstractController
             return $this->redirect($this->generateUrl('readproof') . '#contact');
         }
 
-        return $this->render('readproof/homepage.html.twig', [
+        return $this->render('readproof/resume.html.twig', [
             'form' => $form->createView(),
         ]);
     }
