@@ -2,26 +2,23 @@
 
 {% block title %}Présentation{% endblock %}
 
-{% block meta_title %}Marine LANCELIN - Développeur Symfony/PHP Freelance{% endblock %}
+{% block meta_title %}Marine LANCELIN - Correctrice-relectrice technique Freelance{% endblock %}
 
-{% block meta_content %}Découvrez mon profil de Développeur Symfony/PHP Freelance{% endblock %}
+{% block meta_content %}Découvrez mon profil de Correctrice-relectrice technique Freelance{% endblock %}
 
 {% block meta_img %}{{ asset('images/opengraph.png') }}{% endblock %}
 
-{% block body_class %}site homepage{% endblock %}
+{% block body_class %}readproof homepage{% endblock %}
 
 {% block body %}
 
     {# Introduction #}
     <div class="row" id="introduction">
         <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
-            {# <h1>Hello, je m'appelle Marine&nbsp;LANCELIN<br>et je suis développeur Symfony<br>en freelance</h1> #}
-            <h1>Marine&nbsp;LANCELIN<br>Correctrice-relectrice en freelance</h1>
-            {# <p>Diplômée d’un Master <span class="bold">Développement Web</span> en&nbsp;2019, je&nbsp;suis actuellement <span class="bold">en&nbsp;freelance</span>.</p> #}
-            {# <button class="btn"> <a href="{{ asset('pdf/CV-Marine-LANCELIN.pdf') }}" target="_blank" title="Télécharger mon CV"> <img src="{{ asset('picto/download.svg') }}" alt="Télécharger"> Télécharger mon CV</a></button> #}
-            <p>J’ai une dizaine d’années d’expérience en&nbsp;<span class="bold">PHP/Symfony</span> et&nbsp;en&nbsp;<span class="bold">développement web</span> grâce à&nbsp;mon&nbsp;parcours en&nbsp;agence. Ces&nbsp;années m’ont appris <span class="bold">le&nbsp;professionnalisme, l’organisation et&nbsp;l’autonomie</span>. J’ai le&nbsp;souhait d’apporter <span class="bold">mes&nbsp;compétences, mes&nbsp;conseils et&nbsp;ma&nbsp;bonne humeur</span> dans la&nbsp;réalisation de&nbsp;vos&nbsp;projets.</p>
-            <p>Si vous souhaitez réaliser <span class="bold">un&nbsp;projet PHP/Symfony</span>, contactez-moi.</p>
-            <button class="btn"> <a href="{{ path('readproof') }}#contact" title="Contact"> Me contacter</a></button>
+            <h1>Marine&nbsp;LANCELIN<br>Correctrice-relectrice technique en freelance</h1>
+            <p>Forte de plus de&nbsp;10&nbsp;ans d'immersion dans le&nbsp;développement web, je&nbsp;mets aujourd'hui <span class="bold">ma&nbsp;rigueur technique</span> au&nbsp;service de&nbsp;la&nbsp;relecture et&nbsp;correction de&nbsp;vos&nbsp;contenus. Ce&nbsp;que j'aime dans ce&nbsp;rôle&nbsp;? Traquer les&nbsp;coquilles, clarifier le&nbsp;sens, et&nbsp;<span class="bold">vous rendre un&nbsp;texte qui inspire confiance</span>.</p>
+            <p>Si vous avez <span class="bold">un&nbsp;ouvrage technique à&nbsp;faire relire</span>, parlons-en&nbsp;!</p>
+            <button class="btn"> <a href="{{ path('readproof') }}#contact" title="Contact"> Contactez-moi !</a></button>
         </div>
         <div class="col-xl-6 col-lg-5 col-md-4 col-sm-12">
             <img src="{{ asset('images/header.png') }}" alt="Mac avec Captain America en background de bureau et une bière sur le côté droit + Console avec des commandes Symfony + Photo de moi enfant avec un chien" id="introduction-image">
@@ -40,11 +37,10 @@
         </div>
         <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 right">
             <h2>À propos de moi</h2>
-            {# <p>J'ai découvert les algorithmes et&nbsp;le&nbsp;code en&nbsp;Terminale&nbsp;S en&nbsp;suivant la&nbsp;spécialité <span class="bold">Informatique et&nbsp;Science du&nbsp;Numérique</span>, pendant laquelle j'ai développé un&nbsp;Puissance&nbsp;4 en&nbsp;C#.</p>
-            <p>Durant mes cinq années d'études, le&nbsp;<span class="bold">Back-End</span> est dévenu mon&nbsp;domaine de&nbsp;prédilection, le&nbsp;<span class="bold">PHP</span> ma&nbsp;spécialité et&nbsp;<span class="bold">Symfomy</span> mon&nbsp;coup de&nbsp;c&#339;ur.</p>
-            <p>Ma citation me définit comme une&nbsp;personne qui assume <span class="bold">ses&nbsp;choix et&nbsp;ses&nbsp;goûts&nbsp;</span>: la&nbsp;Chouffe est ma&nbsp;bière préférée, Captain American est mon&nbsp;Avenger adoré et&nbsp;PHP mon&nbsp;langage choisi.</p> #}
-            <p>Je suis capable de&nbsp;<span class="bold">comprendre</span> vos&nbsp;besoins et&nbsp;de&nbsp;les&nbsp;<span class="bold">transformer</span> en&nbsp;projet, de&nbsp;vous <span class="bold">proposer</span> des&nbsp;solutions et&nbsp;de&nbsp;vous donner des&nbsp;idées supplémentaires. </p>
-            <p>Mes méthodes d’organisation commencent par l’établissement d’un cahier des&nbsp;charges et&nbsp;d’un planning estimatif qui pourront vous donner une&nbsp;<span class="bold">vision globale</span> du&nbsp;projet. Ensuite, des&nbsp;points réguliers pour <span class="bold">échanger</span> sur l’avancée du&nbsp;projet et&nbsp;répondre aux&nbsp;questions. Enfin, un&nbsp;<span class="bold">bilan</span> à&nbsp;la&nbsp;fin du&nbsp;projet en&nbsp;bavardant autour d’un café les&nbsp;éventuels points positifs et&nbsp;axes d’amélioration de&nbsp;notre&nbsp;collaboration.</p>
+            <p>Développeuse PHP/Symfony depuis plus de&nbsp;dix&nbsp;ans, je&nbsp;sais mieux que quiconque à&nbsp;quel point une&nbsp;documentation claire peut faire la&nbsp;différence, <span class="bold">pour vos&nbsp;utilisateurs comme pour vos&nbsp;équipes</span>.</p>
+            <p>Ce qui me tient à&nbsp;cœur&nbsp;: <span class="bold">comprendre votre&nbsp;contenu avant de&nbsp;le&nbsp;corriger</span>. Que vous soyez une&nbsp;<span class="bold">PME, un&nbsp;organisme de&nbsp;formation ou&nbsp;une&nbsp;maison d'édition spécialisée</span>, je&nbsp;prends le&nbsp;temps de&nbsp;cerner le&nbsp;niveau de votre&nbsp;audience pour que chaque document soit à&nbsp;la&nbsp;fois juste <span class="bold">techniquement et&nbsp;accessible à&nbsp;vos&nbsp;lecteurs</span>.</p>
+            <p>Mon périmètre couvre l'ensemble de&nbsp;vos&nbsp;besoins rédactionnels &nbsp;: <span class="bold">documentation technique (API, guides développeurs), supports de&nbsp;formation et&nbsp;livres techniques</span>. Concrètement, ça&nbsp;veut dire un&nbsp;regard à&nbsp;la&nbsp;fois technique et&nbsp;éditorial, quelqu'un qui comprend ce&nbsp;que vous&nbsp;écrivez, pas seulement comment c'est écrit.</p>
+            <p>Côté collaboration, je&nbsp;suis connue pour <span class="bold">ma&nbsp;disponibilité, ma&nbsp;franchise et&nbsp;ma&nbsp;proactivité</span>&nbsp;: je&nbsp;ne&nbsp;me&nbsp;contente pas de&nbsp;corriger les&nbsp;fautes, j'identifie les&nbsp;incohérences, les&nbsp;zones floues, et&nbsp;vous&nbsp;suggère des&nbsp;améliorations pour un&nbsp;résultat vraiment soigné.</p>
         </div>
     </div>
 
@@ -60,27 +56,20 @@
                     <h3>Hard skills</h3>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                     <ul>
-                        <li>Symfony</li>
-                        <li>PHP</li>
-                        <li>SQL</li>
-                        <li>Git</li>
+                        <li>Correction orthographique, grammaticale et syntaxique</li>
+                        <li>Correction ortho-typographie</li>
+                        <li>Relecture maquette</li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                     <ul>
                         <li>HTML / CSS</li>
-                        <li>Docker</li>
-                        <li>JavaScript / jQuery</li>
-                        <li>Vue JS</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
-                    <ul>
+                        <li>Markdown</li>
                         <li>WordPress</li>
-                        <li>Mac OS</li>
-                        <li>Twig</li>
+                        <li>Figma</li>
+                        <li>Suite Office</li>
                     </ul>
                 </div>
             </div>
@@ -93,14 +82,15 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                             <ul>
+                                <li>Gestion de projet</li>
                                 <li>Autonomie</li>
                                 <li>Organisation</li>
                                 <li>Empathie</li>
-                                <li>Curiosité</li>
                             </ul>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                             <ul>
+                                <li>Curiosité</li>
                                 <li>Patience</li>
                                 <li>Adaptation</li>
                                 <li>Souriante</li>
@@ -120,24 +110,12 @@
 
                     <div class="row" id="competences-certif">
                         <div class="col-lg-2 col-md-2 col-sm-2">
-                            <img src="{{ asset('images/symfony.svg') }}" alt="Symfony">
-                            <div>SensioLabs<br>(en cours)</div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <img src="{{ asset('images/symfony.svg') }}" alt="Symfony">
-                            <div>Human Coders<br>2023</div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <img src="{{ asset('images/openclassrooms.png') }}" alt="Symfony">
-                            <div>OpenClassroom<br>2022-2023</div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <img src="{{ asset('images/opquast.png') }}" alt="Opquast">
-                            <div>Opquast<br>2019</div>
+                            <img src="{{ asset('images/le-robert.svg') }}" alt="Le Robert">
+                            <div>Le Robert</div>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
                             <img src="{{ asset('images/toeic.png') }}" alt="Toeic">
-                            <div>Toic<br>2019</div>
+                            <div>Toic</div>
                         </div>
                     </div>
                         
@@ -162,7 +140,6 @@
                 <div class="col"></div>
                 <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12" id="scolaire-intro">
                     <h2>Mon parcours scolaire</h2>
-                    <p>Il était important pour moi d'aller au&nbsp;plus loin dans mes&nbsp;études, de&nbsp;me&nbsp;challenger.</p>
                 </div>
                 <div class="col"></div>
             </div>
@@ -170,12 +147,10 @@
             <div class="row" id="scolaire-parcours">
                 <hr>
 
-                <div class="col"></div>
                 <div class="col-xl-3 col-lg-4 col-md-4 col-sm-11 col-11 parcours p1">
                     <div>
                         <p>BTS Services informatiques<br>aux&nbsp;organisations</p>
                         <p>de 2013 à 2015</p>
-                        <p>Découvrir le Front-End, le&nbsp;Back-End, l'algorithmie, Wamp et&nbsp;Notepad, le&nbsp;droit, l'alternance, le&nbsp;travail en&nbsp;équipe et&nbsp;les&nbsp;soirées étudiantes.</p>
                         <p>ITIC PARIS<br><span>Paris, France</span></p>
                     </div>
                 </div>
@@ -183,7 +158,6 @@
                     <div>
                         <p>Licence Pro. Systèmes<br>Informatiques et&nbsp;Logiciel</p>
                         <p>de 2015 à 2016</p>
-                        <p>Aller plus loin dans les&nbsp;métiers du&nbsp;numérique, réalisation de&nbsp;wireframe, d'une&nbsp;charte graphique, d'une&nbsp;vidéo et&nbsp;du&nbsp;premier projet Symfony.</p>
                         <p>CFA UPMC<br><span>Paris, France</span></p>
                     </div>
                 </div>
@@ -191,11 +165,16 @@
                     <div>
                         <p>Master<br>Développement Web</p>
                         <p>de 2017 à 2019</p>
-                        <p>S'ouvrir à tous les langages&nbsp;: CSS, JS, React, Angular, PHP. Participer à&nbsp;des&nbsp;Hackathons. Devenir plus professionnelle avec les&nbsp;bons outils et&nbsp;le&nbsp;bon réseau. {#et&nbsp;les&nbsp;bons amis.#}</p>
                         <p>ECV Digital<br><span>Paris, France</span></p>
                     </div>
                 </div>
-                <div class="col"></div>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-11 col-11 parcours p3">
+                    <div>
+                        <p>Certification en langue française<br>Le ROBERT</p>
+                        <p>2025</p>
+                        <p>EFLC<br><span>Paris, France</span></p>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -206,9 +185,9 @@
     <div class="row" id="professionnel">
         <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-12 col-sm-12 left">
             <h2>Mon parcours pro</h2>
-            {# <p>L'alternance a été un&nbsp;bénéfice dans mes&nbsp;études et&nbsp;dans mon&nbsp;apprentissage professionnel. Cela&nbsp;m'a permis de&nbsp;gagner en&nbsp;confiance, d'expérimenter et&nbsp;de&nbsp;m'améliorer chaque jour. C'est&nbsp;un&nbsp;réel atout avant d'être jeter dans le&nbsp;monde du&nbsp;travail.</p> #}
-            <p>Lors de&nbsp;ma&nbsp;dernière expérience en&nbsp;entreprise, j’ai développé un&nbsp;intranet complet. J’ai réalisé le&nbsp;projet en&nbsp;autonomie&nbsp;: compréhension des&nbsp;besoins, rédaction des&nbsp;cahiers des&nbsp;charges et&nbsp;plannings, gestion de&nbsp;projet, mise en&nbsp;place de&nbsp;l’environnement technique et&nbsp;code (Symfony, PHP, SQL, HTML, CSS, jQuery), mise en&nbsp;production, mais aussi communication avec le&nbsp;client, collaboration avec les&nbsp;designers et&nbsp;management. Cet&nbsp;outil permet à&nbsp;l’entreprise de&nbsp;rassembler toutes les&nbsp;informations dans un&nbsp;seul endroit et&nbsp;à&nbsp;ses&nbsp;employés d’avoir la&nbsp;même organisation.</p>
-            <p>Cette expérience m’a permis de&nbsp;voir un&nbsp;projet dans toute sa&nbsp;globalité. En&nbsp;plus de&nbsp;me&nbsp;perfectionner en&nbsp;Symfony, j’ai pris en&nbsp;main le&nbsp;projet, de&nbsp;la&nbsp;réflexion à&nbsp;sa&nbsp;conception. <span class="bold">J’aime mélanger l’organisationnel et&nbsp;le&nbsp;code, c’est ce&nbsp;qui me&nbsp;motive tous les&nbsp;jours&nbsp;!</span></p>
+            <p>Après plusieurs années à&nbsp;développer des&nbsp;applications web, j'ai choisi de&nbsp;me&nbsp;reconvertir en&nbsp;correctrice-relectrice. Ce&nbsp;n'était pas une&nbsp;décision simple, car on&nbsp;ne&nbsp;quitte pas facilement un&nbsp;métier qu'on maîtrise, mais elle&nbsp;s'est imposée comme une&nbsp;évidence : <span class="bold">l'envie d'allier ma&nbsp;rigueur technique à&nbsp;ma&nbsp;passion pour la&nbsp;langue française</span>.</p>
+            <p>Je me suis formée et&nbsp;certifiée pour ancrer cette&nbsp;transition sur des&nbsp;bases solides. Et&nbsp;ce&nbsp;que j'ai découvert, c'est que le&nbsp;développement m'avait déjà beaucoup appris&nbsp;: lire attentivement, détecter les&nbsp;incohérences, structurer une&nbsp;pensée, ne&nbsp;rien laisser au&nbsp;hasard. <span class="bold">Des&nbsp;réflexes qui font aujourd'hui toute la&nbsp;différence dans mon&nbsp;travail de&nbsp;correction</span>.</p>
+            <p>Mon parcours de&nbsp;développeuse me&nbsp;donne un&nbsp;regard rare sur les&nbsp;documents professionnels et&nbsp;techniques&nbsp;: je&nbsp;comprends le&nbsp;vocabulaire, les&nbsp;enjeux et&nbsp;les&nbsp;exigences de&nbsp;précision propres à&nbsp;ces&nbsp;contenus. Pas besoin de&nbsp;tout réexpliquer, <span class="bold">je&nbsp;suis déjà dans votre&nbsp;monde</span>.</p>
         </div>
     </div>
 
@@ -220,80 +199,70 @@
 
             <div>
                 <img src="{{ asset('picto/cv.svg') }}" alt="Un CV en filaire blanc">
-                {# <p>Pour en&nbsp;savoir plus sur&nbsp;moi, n’hésitez pas à&nbsp;télécharger mon&nbsp;CV complet au&nbsp;format PDF (et&nbsp;à&nbsp;l’accrocher au-dessus de&nbsp;votre bureau)&nbsp;:</p> #}
-                {# <button class="btn"><a href="{{ asset('pdf/CV-Marine-LANCELIN.pdf') }}" target="_blank" title="Télécharger mon CV"> <img src="{{ asset('picto/download.svg') }}" alt="Télécharger"> Télécharger mon CV </a></button> #}
                 <p>Pour travailler avec moi,<br>n’hésitez pas à&nbsp;me&nbsp;contacter&nbsp;:</p>
-                <button class="btn"><a href="{{ path('readproof') }}#contact" title="Contact"> Contact </a></button>
+                <button class="btn"><a href="{{ path('readproof') }}#contact" title="Contact"> Contactez-moi ! </a></button>
             </div>
         </div>
 
         <div class="col-xxl-6 col-xl-7 col-lg-12 col-md-12 col-sm-12 right">
             <table>
                 <tbody>
-                    <tr>
-                        <td>
-                            <p>eFlow</p>
-                            <p>Clichy (92) &#149; <span>de avril 2023 à&nbsp;aujourd’hui</span></p>
-                            <p>Premier emploi en&nbsp;équipe et&nbsp;concentré sur le&nbsp;PHP. Développement de&nbsp;la&nbsp;plateforme LOOPZ pour les&nbsp;clients et&nbsp;Roadmap des&nbsp;fonctionnalités - PHP/SQL/Twig/JS/jQuery.</p>
-                        </td>
-                        <td class="bullet">2023</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Formatrice freelance</p>
-                            <p>Paris (75) &#149; <span>janvier 2023 à&nbsp;aujourd'hui</span></p>
-                            <p>HTML/CSS au&nbsp;Lycée Bondy&nbsp;; WordPress et&nbsp;WooCommerce à&nbsp;Simplon&nbsp;; E-commerce à&nbsp;ENACO&nbsp;...</p>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>CIMAYA</p>
-                            <p>Paris (75) &#149; <span>de février 2016 à&nbsp;juin 2022</span></p>
-                            <p>Premier emploi à responsabilités. Développement de&nbsp;l'intranet - Symfony/PHP/HTML/CSS/Bootstrap/jQuery. Réalisation de&nbsp;sites vitrines clients - WordPress.</p>
-                        </td>
-                        <td class="bullet">2016</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Emedia Communication</p>
-                            <p>Saint-Maur (94) &#149; <span>de octobre 2015 à&nbsp;novembre 2015</span></p>
-                            <p>Premier contrat en alternance. Débug d’une application développée en&nbsp;interne HTML/PHP/JS.</p>
-                        </td>
-                        <td class="bullet">2015</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Banque de gestion Edmond de&nbsp;Rothschild</p>
-                            <p>Paris (75) &#149; <span>août 2015</span></p>
-                            <p>Première digitalisation. Archivage et suivi des&nbsp;dossiers sur 10 ans dans le&nbsp;Service Succession.</p>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Hôpital Necker-Enfants malades<br>&amp; Hôpital Saint-Louis</p>
-                            <p>Paris (75) &#149; <span>octobre 2014 à&nbsp;juin 2014</span></p>
-                            <p>Première collaboration utilisateur. Participation au&nbsp;projet AGHATE (Agenda de&nbsp;Gestion des&nbsp;Hospitalisations Ambulatoires et&nbsp;ThErapeutiques) – HTML/PHP/SQL/jQuery/JavaScript.</p>
-                        </td>
-                        <td class="bullet">2014</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Hôpital Necker-Enfants malades</p>
-                            <p>Paris (75) &#149; <span>juin 2014 à&nbsp;juillet 2014</span></p>
-                            <p>Premier projet PHP. Réalisation de&nbsp;l’annuaire électronique de&nbsp;l’hôpital HTML/CSS/Bootstrap/PHP/SQL.</p>
-                        </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>HSBC</p>
-                            <p>Paris (75) &#149; <span>août 2013</span></p>
-                            <p>Première expérience professionnelle. Relance régulière des&nbsp;chefs de&nbsp;projet sur&nbsp;l’état d’avancement des&nbsp;projets.</p>
-                        </td>
-                        <td class="bullet">2013</td>
-                    </tr>
+                <tr>
+                    <td>
+                        <p>Groupe Gefor</p>
+                        <p>Freelance &#149; <span>de&nbsp;mars&nbsp;2026 à&nbsp;aujourd'hui</span></p>
+                        <p>Formatrice technique sur Laravel, PHP et&nbsp;développement mobile, auprès d'adultes en&nbsp;reconversion, avec une attention particulière à la clarté des contenus pédagogiques transmis..</p>
+                    </td>
+                    <td class="bullet">2026</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>IIM Digital School</p>
+                        <p>Freelance &#149; <span>de&nbsp;décembre&nbsp;2025 à&nbsp;aujourd'hui</span></p>
+                        <p>J'accompagne sept étudiant(e)s en&nbsp;Master dans la&nbsp;structuration et&nbsp;la&nbsp;rédaction de&nbsp;leur&nbsp;mémoire technique&nbsp;: problématique, plan, cohérence du&nbsp;propos, relecture et&nbsp;notation finale.</p>
+                    </td>
+                    <td class="bullet">2025</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Association IMEDI</p>
+                        <p>Freelance &#149; <span>de&nbsp;mars&nbsp;2025 à&nbsp;aujourd'hui</span></p>
+                        <p>Pilotage complet d'une plateforme d'interprétariat médical, du&nbsp;cahier des&nbsp;charges au&nbsp;déploiement, avec une&nbsp;implication forte sur la&nbsp;rédaction des&nbsp;spécifications et&nbsp;la&nbsp;clarté fonctionnelle des&nbsp;livrables.</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Qualisocial</p>
+                        <p>Paris (75) &#149; <span>de&nbsp;juin&nbsp;2024 à&nbsp;mars 2025</span></p>
+                        <p>Contribution à l'évolution de&nbsp;la&nbsp;plateforme Qualicare&nbsp;: amélioration de&nbsp;l'expérience utilisateur, renforcement de&nbsp;la&nbsp;sécurité et&nbsp;cohérence des&nbsp;parcours côté admin et&nbsp;client.</p>
+                    </td>
+                    <td class="bullet">2024</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>eFlow</p>
+                        <p>Clichy (92) &#149; <span>d'avril&nbsp;2023 à&nbsp;mai 2024</span></p>
+                        <p>Participation à&nbsp;la&nbsp;refonte UX/UI de&nbsp;Loopz et&nbsp;développement de&nbsp;nouveaux modules, avec une&nbsp;attention constante à&nbsp;la&nbsp;lisibilité des&nbsp;interfaces et&nbsp;à&nbsp;la&nbsp;logique des&nbsp;parcours utilisateurs.</p>
+                    </td>
+                    <td class="bullet">2023</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>CIMAYA</p>
+                        <p>Paris (75) &#149; <span>de&nbsp;février&nbsp;2016 à&nbsp;juin 2022</span></p>
+                        <p>Six ans au sein d'une agence de&nbsp;communication éditoriale&nbsp;: en&nbsp;parallèle du&nbsp;développement de&nbsp;l'ERP interne, j'ai relu et&nbsp;corrigé des&nbsp;rapports annuels, magazines, flyers et&nbsp;articles en&nbsp;ligne pour les&nbsp;clients de&nbsp;l'agence, dans des&nbsp;domaines variés et&nbsp;avec des&nbsp;exigences de&nbsp;publication élevées. Une&nbsp;première expérience de&nbsp;correction concrète, au&nbsp;cœur d'un environnement où la&nbsp;précision du&nbsp;mot comptait autant que celle du&nbsp;code.</p>
+                    </td>
+                    <td class="bullet">2016</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hôpital&nbsp;Necker-Enfants&nbsp;malades &amp;&nbsp;Hôpital&nbsp;Saint-Louis</p>
+                        <p>Paris (75) &#149; <span>juin&nbsp;2014 à&nbsp;juin 2015</span></p>
+                        <p>Contribution au&nbsp;projet AGHATE (gestion des&nbsp;hospitalisations) et&nbsp;réalisation de&nbsp;l'annuaire électronique de&nbsp;l'hôpital.</p>
+                    </td>
+                    <td class="bullet">2014</td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -306,8 +275,7 @@
 
         <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 left align-self-center">
             <h2>Fun facts</h2>
-            <p>Et non, les développeurs ne&nbsp;font pas&nbsp;que&nbsp;coder à&nbsp;longueur de&nbsp;temps, enfermés dans un&nbsp;sous-sol. Certains <a href="https://www.instagram.com/cloclo_marinette/" target="_blank">voyagent en&nbsp;Europe</a>, découvrent, lisent, binge watch, sortent se&nbsp;balader, prennent des&nbsp;photos, sociabilisent aussi.</p>
-            <p>Personnellement, je ne&nbsp;rate pas un&nbsp;match du&nbsp;XV de&nbsp;France, je&nbsp;lis dans le&nbsp;métro, je&nbsp;ne&nbsp;passe pas un&nbsp;été sans prendre un&nbsp;avion, j'adore retrouver mes&nbsp;amis dans un&nbsp;bar ou&nbsp;à&nbsp;Disneyland Paris, et&nbsp;les&nbsp;prendre en photo. {#pour alimenter le&nbsp;panorama photos que je&nbsp;prépare pour leur mariage...#}</p>
+            <p>Non, les développeurs ne&nbsp;passent pas leurs journées enfermés dans un&nbsp;sous-sol à&nbsp;coder en&nbsp;boucle. Personnellement, je&nbsp;ne&nbsp;rate aucun match du&nbsp;XV&nbsp;de&nbsp;France, je&nbsp;lis dans le&nbsp;métro, je&nbsp;ne&nbsp;passe pas un&nbsp;été sans prendre l'avion, et&nbsp;j'adore retrouver mes&nbsp;amis dans un&nbsp;bar, et&nbsp;les&nbsp;photographier, bien sûr.</p>
         </div>
 
         <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 right">
@@ -316,7 +284,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                     <img src="{{ asset('forme/blob-fun-fact-1.svg') }}" alt="Forme verte" class="forme">
                     <img src="{{ asset('picto/fun-fact-1.svg') }}" alt="Deux passeports" class="fact">
-                    <p><span>30 pays visités</span><br>le plus beau&nbsp;: la&nbsp;Thaïlande</p>
+                    <p><span>30 pays visités</span><br>dont la Thaïlande<br>et les Philippines</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                     <img src="{{ asset('forme/blob-fun-fact-2.svg') }}" alt="Forme verte" class="forme">
@@ -325,25 +293,15 @@
                 </div>
             </div>
             <div class="row">
-                {# <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                    <img src="{{ asset('forme/blob-fun-fact-4.svg') }}" alt="Forme verte" class="forme">
-                    <img src="{{ asset('picto/fun-fact-4.svg') }}" alt="La tête de Mickey" class="fact">
-                    <p><span>Parc Disneyland</span><br>ancienne détentrice d’un pass annuel</p>
-                </div> #}
                 <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                     <img src="{{ asset('forme/blob-fun-fact-3.svg') }}" alt="Forme verte" class="forme">
                     <img src="{{ asset('picto/fun-fact-3.svg') }}" alt="Un ballon de rugby" class="fact">
-                    <p><span>Fan de rugby</span><br>supportrice du&nbsp;Stade Français et&nbsp;du&nbsp;XV de&nbsp;France</p>
+                    <p><span>Fan de rugby</span><br>supportrice<br>du&nbsp;XV de&nbsp;France</p>
                 </div>
-                {# <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-                    <img src="{{ asset('forme/blob-fun-fact-5.svg') }}" alt="Forme verte" class="forme">
-                    <img src="{{ asset('picto/fun-fact-5.svg') }}" alt="Un pot de pop-corn et un écran télé avec le logo de Netflix" class="fact">
-                    <p><span>130 séries regardées</span><br>plus de 5 700 épisodes&nbsp;!</p>
-                </div> #}
                 <div class="col-lg-4 col-md-4 col-sm-4 col-6">
                     <img src="{{ asset('forme/blob-fun-fact-6.svg') }}" alt="Forme verte" class="forme">
                     <img src="{{ asset('picto/fun-fact-6.svg') }}" alt="Deux livres empilés" class="fact">
-                    <p><span>Lectrice passionnée</span><br>développement<br>personnel</p>
+                    <p><span>Lectrice passionnée</span><br>d’essais féministes<br>et de romans en anglais</p>
                 </div>
             </div>
         </div>
@@ -359,7 +317,7 @@
                 <div class="col"></div>
                 <div class="col-lg-6 col-md-12 col-sm-12" id="contact-intro">
                     <h2>Contact</h2>
-                    {# TODO:<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus eu diam non vestibulum. Phasellus sit amet lectus sed eros pharetra venenatis non sit amet.</p> #}
+                    <p>Si vous avez un&nbsp;ouvrage technique à&nbsp;faire relire, parlons-en&nbsp;!</p>
                 </div>
                 <div class="col"></div>
             </div>
@@ -367,32 +325,31 @@
             <div class="row">
                 <div class="col"></div>
 
-                {#form_start(form, {'attr': {'class': 'col-xl-8 col-lg-10 col-md-11 col-sm-12'}}) #}
+                {{ form_start(form, {'attr': {'class': 'col-xl-8 col-lg-10 col-md-11 col-sm-12'}}) }}
 
                 <div class="row">
 
                     <div class="col-lg-6 col-md-6 col-sm-11 col-11">
                         <div class="row">
-                            {# {{ form_row(form.prenom) }}
-                            {{ form_row(form.nom) }} #}
+                            {{ form_row(form.prenom) }}
+                            {{ form_row(form.nom) }} }}
 
                         </div>
 
                         <div class="row">
-                            {# {{ form_row(form.email) }} #}
+                            {{ form_row(form.email) }}
 
                         </div>
 
                         <div class="row">
-                            {# {{ form_row(form.telephone) }} #}
+                            {{ form_row(form.telephone) }}
 
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-11 col-11">
                         <div class="row" id="row-message">
-                            {# {{ form_row(form.message) }} #}
-
+                            {{ form_row(form.message) }}
                         </div>
                     </div>
                     
@@ -400,14 +357,11 @@
 
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-11 col-11">
-                        {# TODO: Mettre le picto dans le bouton <button type="submit" id="contact_save" name="contact[save]" class="btn-primary btn"> <img src="{{ asset('picto/send.svg') }}" alt="Envoyer"> Envoyer</button> #}
-
-                        {# {{ form_row(form.save) }} #}
-
+                        {{ form_row(form.save) }}
                     </div>
                 </div>
 
-                {# {{ form_end(form) }} #}
+                {{ form_end(form) }}
 
 
                 <div class="col"></div>
