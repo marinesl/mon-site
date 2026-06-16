@@ -4,10 +4,10 @@
 
 header {
     position: relative;
-}
-
-header.row {
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header #logo {
@@ -21,7 +21,7 @@ header .link {
     text-align: center;
 }
 
-header .link .row {
+header .link .menu-desktop {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -184,6 +184,7 @@ header .menu-mobile .nav-link::after {
     }
     header .menu-desktop {
         display: flex;
+        gap: 4rem;
     }
     header .burger {
         display: none;
@@ -200,7 +201,7 @@ header .menu-mobile .nav-link::after {
         text-align: inherit;
     }
     header #menu-rs img {
-        width: 13%;
+        width: 2rem;
     }
 }
 @media (min-width: 1280px) {
