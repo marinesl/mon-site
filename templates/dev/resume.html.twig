@@ -2,23 +2,28 @@
 
 {% block title %}Présentation{% endblock %}
 
-{% block meta_title %}Marine LANCELIN - Correctrice-relectrice technique Freelance{% endblock %}
+{% block meta_title %}Marine LANCELIN - Développeur Symfony/PHP Freelance{% endblock %}
 
-{% block meta_content %}Découvrez mon profil de Correctrice-relectrice technique Freelance{% endblock %}
+{% block meta_content %}Découvrez mon profil de Développeur Symfony/PHP Freelance{% endblock %}
 
 {% block meta_img %}{{ asset('images/opengraph.png') }}{% endblock %}
 
-{% block body_class %}readproof homepage{% endblock %}
+{% block body_id %}dev{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/resume.css') }}">
+{% endblock %}
 
 {% block body %}
 
     {# Introduction #}
     <div class="row" id="introduction">
         <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
-            <h1>Marine&nbsp;LANCELIN<br>Correctrice-relectrice technique en freelance</h1>
-            <p>Forte de plus de&nbsp;10&nbsp;ans d'immersion dans le&nbsp;développement web, je&nbsp;mets aujourd'hui <span class="bold">ma&nbsp;rigueur technique</span> au&nbsp;service de&nbsp;la&nbsp;relecture et&nbsp;correction de&nbsp;vos&nbsp;contenus. Ce&nbsp;que j'aime dans ce&nbsp;rôle&nbsp;? Traquer les&nbsp;coquilles, clarifier le&nbsp;sens, et&nbsp;<span class="bold">vous rendre un&nbsp;texte qui inspire confiance</span>.</p>
-            <p>Si vous avez <span class="bold">un&nbsp;ouvrage technique à&nbsp;faire relire</span>, parlons-en&nbsp;!</p>
-            <button class="btn"> <a href="{{ path('readproof') }}#contact" title="Contact"> Contactez-moi !</a></button>
+            <h1>Marine&nbsp;LANCELIN<br>Développeuse Symfony en&nbsp;freelance</h1>
+            <p>Forte d'une dizaine d'années d'expérience en&nbsp;PHP/Symfony acquises en&nbsp;agence, j'ai appris à&nbsp;<span class="bold">allier rigueur technique et&nbsp;sens du&nbsp;service</span>. Ce&nbsp;que j'aime dans mon&nbsp;métier&nbsp;? Transformer vos&nbsp;idées en&nbsp;<span class="bold">projets concrets, avec soin, méthode… et&nbsp;bonne humeur</span>.</p>
+            <p>Si vous avez un&nbsp;projet PHP/Symfony en&nbsp;tête, parlons-en&nbsp;!</p>
+            <button class="btn"> <a href="{{ path('dev') }}#contact" title="Contact"> Contactez-moi !</a></button>
         </div>
         <div class="col-xl-6 col-lg-5 col-md-4 col-sm-12">
             <img src="{{ asset('images/header.png') }}" alt="Mac avec Captain America en background de bureau et une bière sur le côté droit + Console avec des commandes Symfony + Photo de moi enfant avec un chien" id="introduction-image">
@@ -37,10 +42,10 @@
         </div>
         <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 right">
             <h2>À propos de moi</h2>
-            <p>Développeuse PHP/Symfony depuis plus de&nbsp;dix&nbsp;ans, je&nbsp;sais mieux que quiconque à&nbsp;quel point une&nbsp;documentation claire peut faire la&nbsp;différence, <span class="bold">pour vos&nbsp;utilisateurs comme pour vos&nbsp;équipes</span>.</p>
-            <p>Ce qui me tient à&nbsp;cœur&nbsp;: <span class="bold">comprendre votre&nbsp;contenu avant de&nbsp;le&nbsp;corriger</span>. Que vous soyez une&nbsp;<span class="bold">PME, un&nbsp;organisme de&nbsp;formation ou&nbsp;une&nbsp;maison d'édition spécialisée</span>, je&nbsp;prends le&nbsp;temps de&nbsp;cerner le&nbsp;niveau de votre&nbsp;audience pour que chaque document soit à&nbsp;la&nbsp;fois juste <span class="bold">techniquement et&nbsp;accessible à&nbsp;vos&nbsp;lecteurs</span>.</p>
-            <p>Mon périmètre couvre l'ensemble de&nbsp;vos&nbsp;besoins rédactionnels &nbsp;: <span class="bold">documentation technique (API, guides développeurs), supports de&nbsp;formation et&nbsp;livres techniques</span>. Concrètement, ça&nbsp;veut dire un&nbsp;regard à&nbsp;la&nbsp;fois technique et&nbsp;éditorial, quelqu'un qui comprend ce&nbsp;que vous&nbsp;écrivez, pas seulement comment c'est écrit.</p>
-            <p>Côté collaboration, je&nbsp;suis connue pour <span class="bold">ma&nbsp;disponibilité, ma&nbsp;franchise et&nbsp;ma&nbsp;proactivité</span>&nbsp;: je&nbsp;ne&nbsp;me&nbsp;contente pas de&nbsp;corriger les&nbsp;fautes, j'identifie les&nbsp;incohérences, les&nbsp;zones floues, et&nbsp;vous&nbsp;suggère des&nbsp;améliorations pour un&nbsp;résultat vraiment soigné.</p>
+            <p>Développeuse PHP/Symfony depuis plus de&nbsp;10&nbsp;ans, j'interviens <span class="bold">de&nbsp;la&nbsp;conception au&nbsp;déploiement</span>, pour que vous n'ayez qu'un&nbsp;seul interlocuteur technique de&nbsp;confiance.</p>
+            <p>Ce qui me tient à cœur&nbsp;: comprendre votre&nbsp;métier avant de&nbsp;toucher au&nbsp;code. Que vous soyez une&nbsp;PME, une&nbsp;association ou&nbsp;un&nbsp;particulier, je&nbsp;prends le&nbsp;temps de&nbsp;<span class="bold">cerner vos&nbsp;enjeux réels pour vous proposer des&nbsp;solutions adaptées</span>, pas du&nbsp;sur-mesure inutilement complexe, pas du&nbsp;prêt-à-l'emploi qui ne&nbsp;vous&nbsp;correspond pas.</p>
+            <p>Mon périmètre technique couvre l'ensemble du&nbsp;projet&nbsp;: <span class="bold">développement back-end Symfony, intégration front-end HTML/CSS/JS, exposition d'APIs avec API Platform, et&nbsp;mise en&nbsp;production</span>. Concrètement, ça veut dire moins d'intermédiaires, plus de&nbsp;cohérence, et&nbsp;une&nbsp;vision globale de&nbsp;votre projet du&nbsp;début à&nbsp;la&nbsp;fin.</p>
+            <p>Côté collaboration, je suis connue pour ma&nbsp;disponibilité, ma&nbsp;franchise et&nbsp;ma&nbsp;proactivité&nbsp;: je&nbsp;ne&nbsp;me&nbsp;contente pas d'attendre un&nbsp;cahier des&nbsp;charges figé, <span class="bold">j'alerte, je&nbsp;propose, j'anticipe</span>.</p>
         </div>
     </div>
 
@@ -56,20 +61,28 @@
                     <h3>Hard skills</h3>
                 </div>
 
-                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                     <ul>
-                        <li>Correction orthographique, grammaticale et syntaxique</li>
-                        <li>Correction ortho-typographie</li>
-                        <li>Relecture maquette</li>
+                        <li>Symfony</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                        <li>Git</li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                     <ul>
+                        <li>Vue JS</li>
                         <li>HTML / CSS</li>
-                        <li>Markdown</li>
+                        <li>Twig</li>
+                        <li>Tailwind</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                    <ul>
+                        <li>Devops</li>
                         <li>WordPress</li>
+                        <li>Angular</li>
                         <li>Figma</li>
-                        <li>Suite Office</li>
                     </ul>
                 </div>
             </div>
@@ -114,6 +127,14 @@
                             <div>Le Robert</div>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2">
+                            <img src="{{ asset('images/symfony.svg') }}" alt="Symfony">
+                            <div>Human Coders</div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <img src="{{ asset('images/opquast.png') }}" alt="Opquast">
+                            <div>Opquast</div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
                             <img src="{{ asset('images/toeic.png') }}" alt="Toeic">
                             <div>Toic</div>
                         </div>
@@ -147,6 +168,7 @@
             <div class="row" id="scolaire-parcours">
                 <hr>
 
+                <div class="col"></div>
                 <div class="col-xl-3 col-lg-4 col-md-4 col-sm-11 col-11 parcours p1">
                     <div>
                         <p>BTS Services informatiques<br>aux&nbsp;organisations</p>
@@ -168,13 +190,7 @@
                         <p>ECV Digital<br><span>Paris, France</span></p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-11 col-11 parcours p3">
-                    <div>
-                        <p>Certification en langue française<br>Le ROBERT</p>
-                        <p>2025</p>
-                        <p>EFLC<br><span>Paris, France</span></p>
-                    </div>
-                </div>
+                <div class="col"></div>
             </div>
 
         </div>
@@ -185,9 +201,8 @@
     <div class="row" id="professionnel">
         <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-12 col-sm-12 left">
             <h2>Mon parcours pro</h2>
-            <p>Après plusieurs années à&nbsp;développer des&nbsp;applications web, j'ai choisi de&nbsp;me&nbsp;reconvertir en&nbsp;correctrice-relectrice. Ce&nbsp;n'était pas une&nbsp;décision simple, car on&nbsp;ne&nbsp;quitte pas facilement un&nbsp;métier qu'on maîtrise, mais elle&nbsp;s'est imposée comme une&nbsp;évidence : <span class="bold">l'envie d'allier ma&nbsp;rigueur technique à&nbsp;ma&nbsp;passion pour la&nbsp;langue française</span>.</p>
-            <p>Je me suis formée et&nbsp;certifiée pour ancrer cette&nbsp;transition sur des&nbsp;bases solides. Et&nbsp;ce&nbsp;que j'ai découvert, c'est que le&nbsp;développement m'avait déjà beaucoup appris&nbsp;: lire attentivement, détecter les&nbsp;incohérences, structurer une&nbsp;pensée, ne&nbsp;rien laisser au&nbsp;hasard. <span class="bold">Des&nbsp;réflexes qui font aujourd'hui toute la&nbsp;différence dans mon&nbsp;travail de&nbsp;correction</span>.</p>
-            <p>Mon parcours de&nbsp;développeuse me&nbsp;donne un&nbsp;regard rare sur les&nbsp;documents professionnels et&nbsp;techniques&nbsp;: je&nbsp;comprends le&nbsp;vocabulaire, les&nbsp;enjeux et&nbsp;les&nbsp;exigences de&nbsp;précision propres à&nbsp;ces&nbsp;contenus. Pas besoin de&nbsp;tout réexpliquer, <span class="bold">je&nbsp;suis déjà dans votre&nbsp;monde</span>.</p>
+            <p>Mon expérience la&nbsp;plus marquante reste les&nbsp;six&nbsp;ans passés chez CIMAYA, où&nbsp;j'ai conçu et&nbsp;développé seule l'ERP interne de&nbsp;l'entreprise, <span class="bold">de&nbsp;la&nbsp;compréhension des&nbsp;besoins jusqu'à la&nbsp;mise en&nbsp;production, en&nbsp;passant par la&nbsp;gestion de&nbsp;projet, la&nbsp;collaboration avec les&nbsp;designers et&nbsp;la&nbsp;relation client</span>.</p>
+            <p>Ce projet m'a appris à&nbsp;voir le&nbsp;développement dans sa&nbsp;globalité&nbsp;: pas seulement le&nbsp;code, mais aussi la&nbsp;réflexion, l'organisation et&nbsp;l'impact concret sur le&nbsp;quotidien des&nbsp;équipes. C'est cette&nbsp;combinaison entre <span class="bold">logique technique et&nbsp;vision d'ensemble</span> qui me&nbsp;motive au&nbsp;quotidien./p>
         </div>
     </div>
 
@@ -199,70 +214,70 @@
 
             <div>
                 <img src="{{ asset('picto/cv.svg') }}" alt="Un CV en filaire blanc">
-                <p>Pour travailler avec moi,<br>n’hésitez pas à&nbsp;me&nbsp;contacter&nbsp;:</p>
-                <button class="btn"><a href="{{ path('readproof') }}#contact" title="Contact"> Contactez-moi ! </a></button>
+                <p>Si vous avez un&nbsp;projet PHP/Symfony en&nbsp;tête,<br>parlons-en&nbsp;!</p>
+                <button class="btn"><a href="{{ path('dev') }}#contact" title="Contact"> Contactez-moi ! </a></button>
             </div>
         </div>
 
         <div class="col-xxl-6 col-xl-7 col-lg-12 col-md-12 col-sm-12 right">
             <table>
                 <tbody>
-                <tr>
-                    <td>
-                        <p>Groupe Gefor</p>
-                        <p>Freelance &#149; <span>de&nbsp;mars&nbsp;2026 à&nbsp;aujourd'hui</span></p>
-                        <p>Formatrice technique sur Laravel, PHP et&nbsp;développement mobile, auprès d'adultes en&nbsp;reconversion, avec une attention particulière à la clarté des contenus pédagogiques transmis..</p>
-                    </td>
-                    <td class="bullet">2026</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>IIM Digital School</p>
-                        <p>Freelance &#149; <span>de&nbsp;décembre&nbsp;2025 à&nbsp;aujourd'hui</span></p>
-                        <p>J'accompagne sept étudiant(e)s en&nbsp;Master dans la&nbsp;structuration et&nbsp;la&nbsp;rédaction de&nbsp;leur&nbsp;mémoire technique&nbsp;: problématique, plan, cohérence du&nbsp;propos, relecture et&nbsp;notation finale.</p>
-                    </td>
-                    <td class="bullet">2025</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Association IMEDI</p>
-                        <p>Freelance &#149; <span>de&nbsp;mars&nbsp;2025 à&nbsp;aujourd'hui</span></p>
-                        <p>Pilotage complet d'une plateforme d'interprétariat médical, du&nbsp;cahier des&nbsp;charges au&nbsp;déploiement, avec une&nbsp;implication forte sur la&nbsp;rédaction des&nbsp;spécifications et&nbsp;la&nbsp;clarté fonctionnelle des&nbsp;livrables.</p>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Qualisocial</p>
-                        <p>Paris (75) &#149; <span>de&nbsp;juin&nbsp;2024 à&nbsp;mars 2025</span></p>
-                        <p>Contribution à l'évolution de&nbsp;la&nbsp;plateforme Qualicare&nbsp;: amélioration de&nbsp;l'expérience utilisateur, renforcement de&nbsp;la&nbsp;sécurité et&nbsp;cohérence des&nbsp;parcours côté admin et&nbsp;client.</p>
-                    </td>
-                    <td class="bullet">2024</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>eFlow</p>
-                        <p>Clichy (92) &#149; <span>d'avril&nbsp;2023 à&nbsp;mai 2024</span></p>
-                        <p>Participation à&nbsp;la&nbsp;refonte UX/UI de&nbsp;Loopz et&nbsp;développement de&nbsp;nouveaux modules, avec une&nbsp;attention constante à&nbsp;la&nbsp;lisibilité des&nbsp;interfaces et&nbsp;à&nbsp;la&nbsp;logique des&nbsp;parcours utilisateurs.</p>
-                    </td>
-                    <td class="bullet">2023</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>CIMAYA</p>
-                        <p>Paris (75) &#149; <span>de&nbsp;février&nbsp;2016 à&nbsp;juin 2022</span></p>
-                        <p>Six ans au sein d'une agence de&nbsp;communication éditoriale&nbsp;: en&nbsp;parallèle du&nbsp;développement de&nbsp;l'ERP interne, j'ai relu et&nbsp;corrigé des&nbsp;rapports annuels, magazines, flyers et&nbsp;articles en&nbsp;ligne pour les&nbsp;clients de&nbsp;l'agence, dans des&nbsp;domaines variés et&nbsp;avec des&nbsp;exigences de&nbsp;publication élevées. Une&nbsp;première expérience de&nbsp;correction concrète, au&nbsp;cœur d'un environnement où la&nbsp;précision du&nbsp;mot comptait autant que celle du&nbsp;code.</p>
-                    </td>
-                    <td class="bullet">2016</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Hôpital&nbsp;Necker-Enfants&nbsp;malades &amp;&nbsp;Hôpital&nbsp;Saint-Louis</p>
-                        <p>Paris (75) &#149; <span>juin&nbsp;2014 à&nbsp;juin 2015</span></p>
-                        <p>Contribution au&nbsp;projet AGHATE (gestion des&nbsp;hospitalisations) et&nbsp;réalisation de&nbsp;l'annuaire électronique de&nbsp;l'hôpital.</p>
-                    </td>
-                    <td class="bullet">2014</td>
-                </tr>
+                    <tr>
+                        <td>
+                            <p>Groupe Gefor</p>
+                            <p>Freelance &#149; <span>de&nbsp;mars&nbsp;2026 à&nbsp;aujourd'hui</span></p>
+                            <p>Formatrice technique sur Laravel, PHP et&nbsp;développement mobile, auprès d'adultes en&nbsp;reconversion.</p>
+                        </td>
+                        <td class="bullet">2026</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>IIM Digital School</p>
+                            <p>Freelance &#149; <span>de&nbsp;décembre&nbsp;2025 à&nbsp;aujourd'hui</span></p>
+                            <p>J'accompagne sept étudiant(e)s en&nbsp;Master (Lead Dev Fullstack &&nbsp;Ingénierie Web) dans la&nbsp;rédaction de&nbsp;leur&nbsp;mémoire technique, le&nbsp;suivi de&nbsp;leur&nbsp;alternance et&nbsp;leur&nbsp;soutenance orale.</p>
+                        </td>
+                        <td class="bullet">2025</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Association IMEDI</p>
+                            <p>Freelance &#149; <span>de&nbsp;mars&nbsp;2025 à&nbsp;aujourd'hui</span></p>
+                            <p>Conception et&nbsp;développement from scratch d'une&nbsp;plateforme de&nbsp;prise de&nbsp;rendez-vous en&nbsp;interprétariat médical, du&nbsp;cahier des&nbsp;charges aux&nbsp;maquettes Figma, jusqu'au déploiement et&nbsp;à&nbsp;la&nbsp;formation des&nbsp;utilisateurs. Vue.js ·&nbsp;Symfony ·&nbsp;Api&nbsp;Platform ·&nbsp;Tailwind ·&nbsp;DevOps</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Qualisocial</p>
+                            <p>Paris (75) &#149; <span>de&nbsp;juin&nbsp;2024 à&nbsp;mars 2025</span></p>
+                            <p>Amélioration de&nbsp;la&nbsp;plateforme Qualicare côté admin et&nbsp;client&nbsp;: nouvelles fonctionnalités, renforcement de&nbsp;la&nbsp;sécurité (2FA, règles de&nbsp;connexion) et&nbsp;optimisations UX. Angular ·&nbsp;Symfony ·&nbsp;SCSS</p>
+                        </td>
+                        <td class="bullet">2024</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>eFlow</p>
+                            <p>Clichy (92) &#149; <span>d'avril&nbsp;2023 à&nbsp;mai 2024</span></p>
+                            <p>Développement de&nbsp;nouvelles fonctionnalités (To&nbsp;do, Absences, Médiathèque) et&nbsp;participation à&nbsp;la&nbsp;refonte UX/UI complète de&nbsp;la&nbsp;plateforme Loopz, outil de&nbsp;gestion de&nbsp;projets pour les&nbsp;métiers de&nbsp;la&nbsp;communication. PHP ·&nbsp;jQuery ·&nbsp;SQL</p>
+                        </td>
+                        <td class="bullet">2023</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>CIMAYA</p>
+                            <p>Paris (75) &#149; <span>de&nbsp;février&nbsp;2016 à&nbsp;juin 2022</span></p>
+                            <p>Pendant six ans, j'ai conçu et&nbsp;développé l'ERP interne de&nbsp;cette&nbsp;agence de&nbsp;communication éditoriale, un&nbsp;projet de&nbsp;fond pour digitaliser les&nbsp;process et&nbsp;centraliser l'information pour toute l'équipe. J'ai également réalisé des&nbsp;sites vitrines pour les&nbsp;rapports annuels de&nbsp;leurs&nbsp;clients. Symfony ·&nbsp;PHP ·&nbsp;SQL ·&nbsp;Bootstrap ·&nbsp;WordPress</p>
+                        </td>
+                        <td class="bullet">2016</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Hôpital&nbsp;Necker-Enfants&nbsp;malades &amp;&nbsp;Hôpital&nbsp;Saint-Louis</p>
+                            <p>Paris (75) &#149; <span>juin&nbsp;2014 à&nbsp;juin 2015</span></p>
+                            <p>Contribution au&nbsp;projet AGHATE (gestion des&nbsp;hospitalisations) et&nbsp;réalisation de&nbsp;l'annuaire électronique de&nbsp;l'hôpital.</p>
+                        </td>
+                        <td class="bullet">2014</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -317,7 +332,7 @@
                 <div class="col"></div>
                 <div class="col-lg-6 col-md-12 col-sm-12" id="contact-intro">
                     <h2>Contact</h2>
-                    <p>Si vous avez un&nbsp;ouvrage technique à&nbsp;faire relire, parlons-en&nbsp;!</p>
+                    <p>Si vous avez un&nbsp;projet PHP/Symfony en&nbsp;tête, parlons-en&nbsp;!</p>
                 </div>
                 <div class="col"></div>
             </div>
@@ -333,17 +348,14 @@
                         <div class="row">
                             {{ form_row(form.prenom) }}
                             {{ form_row(form.nom) }}
-
                         </div>
 
                         <div class="row">
                             {{ form_row(form.email) }}
-
                         </div>
 
                         <div class="row">
                             {{ form_row(form.telephone) }}
-
                         </div>
                     </div>
 
@@ -362,7 +374,6 @@
                 </div>
 
                 {{ form_end(form) }}
-
 
                 <div class="col"></div>
 

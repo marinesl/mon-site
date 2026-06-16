@@ -51,14 +51,12 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
         <link rel="manifest" href="{{ asset('favicon/site.webmanifest') }}">
 
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/site.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/menu_footer.css') }}">
         {% block stylesheets %}{% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %}">
+    <body id="{% block body_id %}{% endblock %}">
         {% if app.request.get('_route') !== 'home' %}
             {% include "layouts/menu.html.twig" %}
         {% endif %}
@@ -69,8 +67,6 @@
 
         {% include "layouts/footer.html.twig" %}
 
-        <script src="{{ asset('js/jquery-3.5.0.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/site.js') }}"></script>
         {% block javascripts %}{% endblock %}
 

@@ -8,7 +8,13 @@
 
 {% block meta_img %}{{ asset('projet_couverture/'~ project['token'] ~'.png') }}{% endblock %}
 
-{% block body_class %}dev portfolio projet{% endblock %}
+{% block body_id %}dev{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/project.css') }}">
+{% endblock %}
+
 
 {% block body %}
 
