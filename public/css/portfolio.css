@@ -1,0 +1,162 @@
+/*******************************
+ * PORTFOLIO PAGE
+ *******************************/
+
+/* Commun */
+.portfolio .filter-container .filter-item .filter-item-tag div,
+.portfolio.projet #projet > div:last-child > div:nth-child(2) div {
+    font-family: 'Sarabun-SemiBold', serif;
+    text-align: center;
+    color: #41B591;
+    border: 1px solid #41B591;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.portfolio .filter-container .filter-item img,
+.portfolio.projet #projet > div:first-child img {
+    border: 1px solid #D9D9D9;
+}
+
+
+@media (min-width: 320px) {
+    .portfolio .filter-container .filter-item .filter-item-tag div,
+    .portfolio.projet #projet > div:last-child > div:nth-child(2) div {
+        width: 80px;
+        font-size: 13px;
+    }
+}
+@media (min-width: 768px) {
+    .portfolio .filter-container .filter-item .filter-item-tag div,
+    .portfolio.projet #projet > div:last-child > div:nth-child(2) div {
+        width: 100px;
+        font-size: 16px;
+    }
+}
+
+/* Intro */
+.portfolio h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #41B591;
+}
+
+.portfolio .intro {
+    text-align: center;
+}
+
+/* Filter */
+.portfolio #filter {
+    margin-bottom: 3rem;
+}
+
+.portfolio #filter > div > :first-child {
+    font-family: 'Sarabun-Bold', serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #41B591;
+    margin-top: 20px;
+}
+
+.portfolio #filter hr {
+    opacity: 1;
+    background-color: #41B591 ;
+}
+
+.portfolio #filter #filter-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio #filter .filter-button {
+    font-size: 14px;
+    text-align: center;
+    color: #9A9A9A;
+    background-color: #E6E6E6;
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.portfolio #filter .filter-button.active {
+    font-family: 'Sarabun-Bold', serif;
+    color: #fff;
+    background-color: #41B591;
+}
+
+/* Grid */
+.portfolio .filter-container {
+    padding: 75px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.portfolio .filter-container .filter-item img {
+    width: 100%;
+}
+
+.portfolio .filter-container .filter-item .filter-item-titre {
+    font-family: 'Sarabun-Bold', serif;
+    text-transform: uppercase;
+    color: #41B591;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.portfolio .filter-container .filter-item .filter-item-desc {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 320px) {
+    .portfolio .filter-container .filter-item .filter-item-titre {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+@media (min-width: 768px) {
+    .portfolio .filter-container .filter-item .filter-item-tag div,
+    .portfolio.projet #projet > div:last-child > div:nth-child(2) div {
+        width: 100px;
+    }
+
+    .portfolio .filter-container .filter-item {
+        width: 32rem !important;
+    }
+    .portfolio .filter-container .filter-item .filter-item-titre {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+@media (min-width: 991px) {
+    .portfolio .filter-container .filter-item {
+        width: 24rem !important;
+    }
+}
+@media (min-width: 1024px) {
+    .portfolio .filter-container .filter-item {
+        width: 26rem !important;
+    }
+}
+@media (min-width: 1280px) {
+    .portfolio .filter-container .filter-item {
+        width: 32rem !important;
+    }
+}
+@media (min-width: 1680px) {
+    .portfolio .filter-container .filter-item {
+        width: 28rem !important;
+    }
+}
+@media (min-width: 1920px) {
+    .portfolio .filter-container .filter-item {
+        width: 32rem !important;
+    }
+}

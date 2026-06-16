@@ -1,0 +1,770 @@
+/*******************************
+ * SECTION ROW
+ *******************************/
+
+@media (min-width: 320px) {
+    section > .row {
+        padding: 0 15px;
+    }
+}
+@media (min-width: 480px) {
+    section > .row {
+        padding: 0 30px;
+    }
+}
+@media (min-width: 600px) {
+    section > .row {
+        padding: 0 40px;
+    }
+}
+@media (max-width: 767px) {
+    section {
+        margin-top: 30px;
+    }
+}
+@media (min-width: 768px) {
+    section > .row {
+        padding: 0 60px;
+    }
+}
+@media (min-width: 1280px) {
+    section > .row {
+        padding: 0 100px;
+    }
+}
+@media (min-width: 1440px) {
+    section > .row {
+        padding: 0 70px;
+    }
+}
+@media (min-width: 1680px) {
+    section > .row {
+        padding: 0 100px;
+    }
+}
+
+
+
+/*******************************
+ * PRESENTATION - INTRODUCTION
+ *******************************/
+
+#introduction {
+    padding-top: 4rem;
+}
+
+#introduction h1 {
+    margin-bottom: 2rem;
+}
+
+#introduction div:last-child {
+    position: relative;
+}
+
+#introduction #introduction-image {
+    width: 100%;
+}
+
+#introduction button {
+    float: left;
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 320px) {
+    #introduction div:last-child {
+        display: none;
+    }
+}
+@media (min-width: 600px) {
+    #introduction div:first-child {
+        padding-right: 5rem;
+    }
+}
+@media (min-width: 992px) {
+    #introduction div:last-child {
+        display: block;
+    }
+}
+@media (min-width: 1280px) {
+    #introduction h1 {
+        font-size: 26px;
+    }
+}
+@media (min-width: 1920px) {
+    #introduction div:first-child {
+        padding-right: 20rem;
+    }
+}
+
+
+
+
+/*******************************
+ * PRESENTATION - A PROPOS
+ *******************************/
+
+#apropos #apropos-bloc {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#apropos #apropos-quote {
+    font-family: 'PTSerif-Italic', serif;
+    color: #41B591;
+    margin-bottom: 0;
+    position: relative;
+}
+
+#apropos #apropos-guillemet {
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+#apropos #apropos-soulignement {
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media (min-width: 320px) {
+    #apropos div:first-child {
+        margin-bottom: 2rem;
+    }
+    #apropos #apropos-quote {
+        font-size: 30px;
+    }
+    #apropos #apropos-soulignement {
+        left: 6rem;
+    }
+}
+@media (min-width: 992px) {
+    #apropos div:first-child {
+        margin-bottom: 0;
+    }
+    #apropos #apropos-soulignement {
+        left: auto; right: 1rem;
+    }
+}
+@media (min-width: 1280px) {
+    #apropos #apropos-quote {
+        font-size: 41px;
+    }
+    #apropos #apropos-soulignement {
+        right: 4rem;
+    }
+}
+@media (min-width: 1366px) {
+    #apropos #apropos-soulignement {
+        right: 6rem;
+    }
+}
+@media (min-width: 1440px) {
+    #apropos #apropos-soulignement {
+        right: 9rem;
+    }
+}
+@media (min-width: 1680px) {
+    #apropos #apropos-soulignement {
+        right: 16rem;
+    }
+}
+@media (min-width: 1920px) {
+    #apropos .right {
+        padding-right: 15rem;
+    }
+    #apropos #apropos-soulignement {
+        right: 24rem;
+    }
+}
+
+
+
+
+/*******************************
+ * PRESENTATION - COMPETENCES
+ *******************************/
+
+#competences #competences-forme {
+    position: absolute;
+    right: -6rem;
+    z-index: -1;
+}
+
+#competences ul {
+    list-style: none url("../picto/bullet.svg");
+}
+
+#competences #competences-certif {
+    margin-top: 10px;
+}
+
+#competences #competences-certif > div {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#competences #competences-certif > div > div {
+    font-size: 12px;
+    margin-top: 5px;
+    line-height: 15px;
+}
+
+#competences > div:last-child {
+    position: relative;
+}
+
+@media (min-height: 533px) {
+    #competences #competences-forme {
+        top: -5rem;
+    }
+}
+@media (min-width: 1024px) and (min-height: 768px) {
+    #competences #competences-forme {
+        top: -5rem;
+    }
+}
+@media (min-height: 800px) {
+    #competences #competences-forme {
+        top: -10rem;
+    }
+}
+@media (min-height: 900px) {
+    #competences #competences-forme {
+        top: -5rem;
+    }
+}
+
+@media (min-width: 320px) {
+    #competences > div:last-child {
+        display: none;
+    }
+    #competences #competences-forme {
+        width: 120%;
+    }
+    #competences #competences-macbook {
+        width: 110%;
+    }
+    #competences ul {
+        padding-inline-start: 20px;
+    }
+    #competences #competences-certif img {
+        width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    #competences #competences-certif img {
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    #competences > div:last-child {
+        display: block;
+    }
+}
+@media (min-width: 1024px) {
+    #competences ul {
+        padding-inline-start: 30px;
+    }
+}
+@media (min-width: 1280px) {
+    #competences #competences-forme {
+        width: auto;
+    }
+    #competences ul {
+        padding-inline-start: 40px;
+    }
+}
+@media (min-width: 1680px) {
+    #competences #competences-macbook {
+        width: 100%;
+    }
+}
+@media (min-width: 1920px) {
+    #competences #competences-macbook {
+        width: 90%;
+    }
+}
+
+
+
+
+/*************************************
+ * PRESENTATION - PARCOURS SCOLAIRE
+ *************************************/
+
+#scolaire {
+    background-image: url('../forme/blob-parcours-scolaire.svg');
+    background-size: cover;
+    padding: 6rem 0;
+}
+
+#scolaire #scolaire-intro {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#scolaire #scolaire-intro h2 {
+    color: #fff;
+}
+
+#scolaire #scolaire-parcours {
+    position: relative;
+}
+
+#scolaire #scolaire-parcours hr {
+    color: #fff;
+    height: 2px;
+    border-top-color: #fff;
+    border-top-width: 2px;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+}
+
+#scolaire #scolaire-parcours .parcours > div {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+#scolaire .parcours p:nth-child(1) {
+    font-family: 'Sarabun-SemiBold', serif;
+    font-size: 20px;
+    line-height: 22px;
+    color: #41B591;
+    margin-bottom: 5px;
+}
+
+#scolaire .parcours p:nth-child(2) {
+    font-family: 'Sarabun-Regular', serif;
+    font-size: 14px;
+    color: #41B591;
+    margin-bottom: 5px;
+}
+
+#scolaire .parcours p:nth-child(3) {
+    font-family: 'Sarabun-Bold', serif;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+#scolaire .parcours p:nth-child(3) span {
+    font-family: 'Sarabun-LightItalic', serif;
+    color: #AAAAAA;
+}
+
+@media (min-height: 533px) {
+    #scolaire .parcours.p1 p:nth-child(3),
+    #scolaire .parcours.p2 p:nth-child(3) {
+        margin-top: 38px;
+    }
+}
+@media (min-height: 800px) {
+    #scolaire .parcours.p1 p:nth-child(3) {
+        margin-top: 38px;
+    }
+    #scolaire .parcours.p2 p:nth-child(3) {
+        margin-top: 17px;
+    }
+}
+@media (min-height: 900px) {
+    #scolaire .parcours.p1 p:nth-child(3),
+    #scolaire .parcours.p2 p:nth-child(3) {
+        margin-top: 0;
+    }
+}
+@media (min-width: 768px) and (min-height: 1024px) {
+    #scolaire .parcours.p1 p:nth-child(3) {
+        margin-top: 38px;
+    }
+    #scolaire .parcours.p2 p:nth-child(3) {
+        margin-top: 17px;
+    }
+}
+@media (min-height: 1050px) {
+    #scolaire .parcours.p1 p:nth-child(3),
+    #scolaire .parcours.p2 p:nth-child(3) {
+        margin-top: 38px;
+    }
+}
+@media (min-height: 1080px) {
+    #scolaire .parcours.p1 p:nth-child(3),
+    #scolaire .parcours.p2 p:nth-child(3) {
+        margin-top: 0;
+    }
+}
+@media (min-height: 1280px) {
+    #scolaire .parcours.p1 p:nth-child(3) {
+        margin-top: 38px;
+    }
+    #scolaire .parcours.p2 p:nth-child(3) {
+        margin-top: 17px;
+    }
+}
+@media (min-height: 1366px) {
+    #scolaire .parcours.p1 p:nth-child(3),
+    #scolaire .parcours.p2 p:nth-child(3) {
+        margin-top: 37px;
+    }
+}
+
+@media (min-width: 320px){
+    #scolaire {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #scolaire #scolaire-parcours .col {
+        display: none;
+    }
+    #scolaire .parcours {
+        margin-bottom: 1rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (min-width: 768px){
+    #scolaire .parcours {
+        margin-bottom: 0;
+        left: initial;
+        transform: initial;
+    }
+}
+@media (min-width: 1280px){
+    #scolaire {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #scolaire #scolaire-parcours .col {
+        display: block;
+    }
+}
+
+
+
+
+/*******************************************
+ * PRESENTATION - PARCOURS PROFESSIONNEL
+ *******************************************/
+
+#professionnel {
+    margin-top: 5rem;
+}
+
+#professionnel-2 {
+    margin-top: 3rem;
+}
+
+#professionnel-2 .left {
+    position: relative;
+}
+
+#professionnel-2 .left img.forme-2 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#professionnel-2 .left > div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#professionnel-2 .left > div > img:first-child {
+    margin-bottom: 1rem;
+    width: 50px;
+}
+
+#professionnel-2 .left > div p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+#professionnel-2 .left button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-shadow: inherit;
+}
+
+#professionnel-2 .right td:first-child {
+    text-align: right;
+    width: 80%;
+}
+
+#professionnel-2 .right td:first-child p:nth-child(1) {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+#professionnel-2 .right td:first-child p:nth-child(2) {
+    font-family: 'Sarabun-Bold', serif;
+    margin-bottom: 0;
+}
+
+#professionnel-2 .right td:first-child p:nth-child(2) span {
+    font-family: 'Sarabun-LightItalic', serif;
+    color: #41B591;
+}
+
+#professionnel-2 .right td:first-child p:nth-child(3) {
+    font-size: 14px;
+}
+
+#professionnel-2 .right td:last-child {
+    font-size: 18px;
+    line-height: 35px;
+    color: #41B591;
+    vertical-align: top;
+    border-left: 1px solid #D9D9D9;
+    position: relative;
+    padding-left: 20px
+}
+
+#professionnel-2 .right td.bullet::before {
+    content: "•";
+    color: #41B591;
+    background-color: #fff;
+    width: 20px;
+    height: 45px;
+    border-radius: 100%;
+    font-size: 25px;
+    position: absolute;
+    left: -4px;
+    top: 0;
+}
+
+@media (min-width: 320px) {
+    #professionnel-2 .left {
+        display: none;
+    }
+    #professionnel-2 .left img.forme,
+    #professionnel-2 .left > div {
+        width: 110%;
+    }
+    #professionnel-2 .right td:first-child {
+        padding-right: 1rem;
+    }
+}
+@media (min-width: 414px) {
+    #professionnel-2 .right td:first-child {
+        padding-right: 2rem;
+    }
+}
+@media (min-width: 1280px) {
+    #professionnel-2 {
+        padding-left: 0;
+    }
+    #professionnel-2 .left {
+        display: block;
+    }
+    #professionnel-2 .left > div p {
+        padding: 0 5rem;
+    }
+    #professionnel-2 .left img.forme,
+    #professionnel-2 .left > div {
+        width: 120%;
+    }
+    #professionnel-2 .left img.forme-2 {
+        width: 110%;
+    }
+    #professionnel-2 .right td:first-child {
+        padding-left: 5rem;
+    }
+}
+@media (min-width: 1366px) {
+    #professionnel-2 .left > div {
+        width: 100%;
+    }
+    #professionnel-2 .left > div p {
+        padding: 0 1rem;
+    }
+    #professionnel-2 .left img.forme {
+        width: 120%;
+    }
+    #professionnel-2 .left img.forme-2 {
+        width: 110%;
+    }
+}
+@media (min-width: 1440px) {
+    #professionnel-2 .left > div p {
+        padding: 0 5rem;
+    }
+    #professionnel-2 .left img.forme,
+    #professionnel-2 .left > div {
+        width: 110%;
+    }
+    #professionnel-2 .left img.forme-2 {
+        width: auto;
+    }
+}
+@media (min-width: 1680px) {
+    #professionnel-2 .left > div p {
+        padding: 0 7rem;
+    }
+    #professionnel-2 .left img.forme,
+    #professionnel-2 .left > div {
+        width: 90%;
+    }
+}
+@media (min-width: 1920px) {
+    #professionnel-2 .left img.forme,
+    #professionnel-2 .left > div {
+        width: 80%;
+    }
+}
+
+
+
+
+/*******************************
+ * PRESENTATION - FUN FACTS
+ *******************************/
+
+#fun-facts {
+    margin-top: 5rem;
+}
+
+#fun-facts .right .row {
+    text-align: center;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+
+#fun-facts .right .row > div {
+    position: relative;
+}
+
+#fun-facts .right .fact {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#fun-facts .right p {
+    line-height: 22px;
+    margin-top: 1rem;
+}
+
+#fun-facts .right p span {
+    font-family: 'Sarabun-Bold', serif;
+}
+
+@media (min-width: 320px) {
+    #fun-facts .left {
+        margin-bottom: 2rem;
+    }
+}
+@media (min-width: 1280px) {
+    #fun-facts .left {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+/*******************************
+ * PRESENTATION - CONTACT
+ *******************************/
+
+#contact {
+    background-image: url('../forme/blob-parcours-scolaire.svg');
+    background-size: cover;
+    padding: 6rem 0;
+    margin-top: 2rem;
+}
+
+#contact #contact-intro {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#contact #contact-intro h2 {
+    color: #fff;
+}
+
+#contact form label {
+    color: #fff;
+}
+
+#contact form .label-block {
+    margin-bottom: 1rem;
+}
+
+#contact form .label-block label {
+    float: none;
+    display: block;
+}
+
+#contact form .label-block input, #contact form .label-block textarea {
+    width: 100%;
+}
+
+#contact form .btn {
+    color: #41B591;
+    border: none;
+    background-color: #fff;
+    margin-top: 1rem;
+}
+
+#row-message, #row-message > div {
+    height: 100%;
+}
+
+#contact .alert {
+    text-align: center;
+}
+
+#contact .alert.alert-success {
+    color: #fff;
+    background-color: #36d65d;
+    border-color: #36d65d;
+}
+
+#contact .alert.alert-fail {
+    color: #fff;
+    background-color: #F42626;
+    border-color: #F42626;
+}
+
+@media (min-width: 320px) {
+    #contact form > .row > div {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #contact .col {
+        display: none;
+    }
+    #row-message textarea {
+        height: 130px;
+    }
+}
+@media (min-width: 768px) {
+    #contact form > .row > div {
+        left: initial;
+        transform: initial;
+    }
+    #contact .col {
+        display: block;
+    }
+    #row-message textarea {
+        height: calc(100% - 46px);
+    }
+}

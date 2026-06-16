@@ -1,0 +1,45 @@
+/*******************************
+ * PROJET PAGE
+ *******************************/
+
+/* Button retour */
+#retour button {
+    margin: 0 0 3rem;
+}
+
+/* Titre */
+h1 {
+    margin-bottom: 4rem;
+}
+
+/* Projet */
+#projet {
+    margin-bottom: 4rem;
+}
+
+#projet > div:first-child img {
+    width: 90%;
+}
+
+#projet > div:last-child > div:nth-child(2) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#projet .btn {
+    display: inline-block;
+}
+
+
+@media (min-width: 320px) {
+    #projet > div:first-child {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+@media (min-width: 1280px) {
+    #projet > div:first-child {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}

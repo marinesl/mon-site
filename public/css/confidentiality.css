@@ -1,0 +1,18 @@
+/*******************************
+* CONFIDENTIALITY PAGE
+*******************************/
+
+h1 {
+    text-transform: uppercase;
+    color: #41B591;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-family: 'Sarabun-Bold', serif;
+    font-size: 16px;
+    text-transform: inherit;
+    color: #000;
+    margin-bottom: 0;
+}
+
