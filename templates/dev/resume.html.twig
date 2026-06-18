@@ -19,13 +19,13 @@
 
     {# Introduction #}
     <div class="row" id="introduction">
-        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
+        <div>
             <h1>Marine&nbsp;LANCELIN<br>Développeuse Symfony en&nbsp;freelance</h1>
             <p>Forte d'une dizaine d'années d'expérience en&nbsp;PHP/Symfony acquises en&nbsp;agence, j'ai appris à&nbsp;<span class="bold">allier rigueur technique et&nbsp;sens du&nbsp;service</span>. Ce&nbsp;que j'aime dans mon&nbsp;métier&nbsp;? Transformer vos&nbsp;idées en&nbsp;<span class="bold">projets concrets, avec soin, méthode… et&nbsp;bonne humeur</span>.</p>
             <p>Si vous avez un&nbsp;projet PHP/Symfony en&nbsp;tête, parlons-en&nbsp;!</p>
             <button class="btn"> <a href="{{ path('dev') }}#contact" title="Contact"> Contactez-moi !</a></button>
         </div>
-        <div class="col-xl-6 col-lg-5 col-md-4 col-sm-12">
+        <div>
             <img src="{{ asset('images/header.png') }}" alt="Mac avec Captain America en background de bureau et une bière sur le côté droit + Console avec des commandes Symfony + Photo de moi enfant avec un chien" id="introduction-image">
         </div>
     </div>
@@ -34,13 +34,13 @@
 
     {# A propos #}
     <div class="row" id="apropos">
-        <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 left">
+        <div class="left">
             <div id="apropos-bloc">
                 <img src="{{ asset('picto/quote.svg') }}" alt="Guillemets" id="apropos-guillemet">
                 <p id="apropos-quote">There's nothing more<br>badass than being yourself <img src="{{ asset('forme/underline.svg') }}" alt="Soulignement" id="apropos-soulignement"></p>
             </div>
         </div>
-        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 right">
+        <div class="right">
             <h2>À propos de moi</h2>
             <p>Développeuse PHP/Symfony depuis plus de&nbsp;10&nbsp;ans, j'interviens <span class="bold">de&nbsp;la&nbsp;conception au&nbsp;déploiement</span>, pour que vous n'ayez qu'un&nbsp;seul interlocuteur technique de&nbsp;confiance.</p>
             <p>Ce qui me tient à cœur&nbsp;: comprendre votre&nbsp;métier avant de&nbsp;toucher au&nbsp;code. Que vous soyez une&nbsp;PME, une&nbsp;association ou&nbsp;un&nbsp;particulier, je&nbsp;prends le&nbsp;temps de&nbsp;<span class="bold">cerner vos&nbsp;enjeux réels pour vous proposer des&nbsp;solutions adaptées</span>, pas du&nbsp;sur-mesure inutilement complexe, pas du&nbsp;prêt-à-l'emploi qui ne&nbsp;vous&nbsp;correspond pas.</p>
@@ -53,31 +53,27 @@
 
     {# Compétences #}
     <div class="row" id="competences">
-        <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
+        <div class="left">
             <h2>Mes compétences</h2>
 
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
+            <div>
+                <div>
                     <h3>Hard skills</h3>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                <div class="skills">
                     <ul>
                         <li>Symfony</li>
                         <li>PHP</li>
                         <li>SQL</li>
                         <li>Git</li>
                     </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                     <ul>
                         <li>Vue JS</li>
                         <li>HTML / CSS</li>
                         <li>Twig</li>
                         <li>Tailwind</li>
                     </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                     <ul>
                         <li>Devops</li>
                         <li>WordPress</li>
@@ -87,64 +83,55 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h3>Soft skills</h3>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                            <ul>
-                                <li>Gestion de projet</li>
-                                <li>Autonomie</li>
-                                <li>Organisation</li>
-                                <li>Empathie</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                            <ul>
-                                <li>Curiosité</li>
-                                <li>Patience</li>
-                                <li>Adaptation</li>
-                                <li>Souriante</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div>
+                <div>
+                    <h3>Soft skills</h3>
+                </div>
+                <div class="skills">
+                    <ul>
+                        <li>Gestion de projet</li>
+                        <li>Autonomie</li>
+                        <li>Organisation</li>
+                        <li>Empathie</li>
+                    </ul>
+                    <ul>
+                        <li>Curiosité</li>
+                        <li>Patience</li>
+                        <li>Adaptation</li>
+                        <li>Souriante</li>
+                    </ul>
+                    <ul></ul>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <h3>Formations & Certifications</h3>
-                        </div>
-                    </div>
-
-                    <div class="row" id="competences-certif">
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <img src="{{ asset('images/le-robert.svg') }}" alt="Le Robert">
-                            <div>Le Robert</div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <img src="{{ asset('images/symfony.svg') }}" alt="Symfony">
-                            <div>Human Coders</div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <img src="{{ asset('images/opquast.png') }}" alt="Opquast">
-                            <div>Opquast</div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <img src="{{ asset('images/toeic.png') }}" alt="Toeic">
-                            <div>Toic</div>
-                        </div>
-                    </div>
-                        
+            <div>
+                <div>
+                    <h3>Formations & Certifications</h3>
                 </div>
+
+                <div id="competences-certif">
+                    <div>
+                        <img src="{{ asset('images/le-robert.svg') }}" alt="Le Robert">
+                        <div>Le Robert</div>
+                    </div>
+                    <div>
+                        <img src="{{ asset('images/symfony.svg') }}" alt="Symfony">
+                        <div>Human Coders</div>
+                    </div>
+                    <div>
+                        <img src="{{ asset('images/opquast.png') }}" alt="Opquast">
+                        <div>Opquast</div>
+                    </div>
+                    <div>
+                        <img src="{{ asset('images/toeic.png') }}" alt="Toeic">
+                        <div>Toic</div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
-        <div class="col-xl-6 col-lg-5 col-md-5 col-sm-12">
+        <div class="right">
             <img src="{{ asset('forme/blob-competences.svg') }}" alt="Tâche verte" id="competences-forme">
             <img src="{{ asset('images/macbook-symfony.png') }}" alt="Macbook avec du code Symfony" id="competences-macbook">
         </div>
@@ -154,78 +141,66 @@
 
     {# Parcours scolaire #}
     <div class="row" id="scolaire">
-
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12" id="scolaire-intro">
-                    <h2>Mon parcours scolaire</h2>
-                </div>
-                <div class="col"></div>
+        <div>
+            <div id="scolaire-intro">
+                <h2>Mon parcours scolaire</h2>
             </div>
-
-            <div class="row" id="scolaire-parcours">
-                <hr>
-
-                <div class="col"></div>
-                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-11 col-11 parcours p1">
-                    <div>
-                        <p>BTS Services informatiques<br>aux&nbsp;organisations</p>
-                        <p>de 2013 à 2015</p>
-                        <p>ITIC PARIS<br><span>Paris, France</span></p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-11 col-11 parcours p2">
-                    <div>
-                        <p>Licence Pro. Systèmes<br>Informatiques et&nbsp;Logiciel</p>
-                        <p>de 2015 à 2016</p>
-                        <p>CFA UPMC<br><span>Paris, France</span></p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-11 col-11 parcours p3">
-                    <div>
-                        <p>Master<br>Développement Web</p>
-                        <p>de 2017 à 2019</p>
-                        <p>ECV Digital<br><span>Paris, France</span></p>
-                    </div>
-                </div>
-                <div class="col"></div>
-            </div>
-
         </div>
 
+        <div id="scolaire-parcours">
+            <hr>
+
+            <div>
+                <div class="parcours p1">
+                    <p>BTS Services informatiques<br>aux&nbsp;organisations</p>
+                    <p>de 2013 à 2015</p>
+                    <p>ITIC PARIS<br><span>Paris, France</span></p>
+                </div>
+                <div class="parcours p2">
+                    <p>Licence Pro. Systèmes<br>Informatiques et&nbsp;Logiciel</p>
+                    <p>de 2015 à 2016</p>
+                    <p>CFA UPMC<br><span>Paris, France</span></p>
+                </div>
+                <div class="parcours p3">
+                    <p>Master<br>Développement Web</p>
+                    <p>de 2017 à 2019</p>
+                    <p>ECV Digital<br><span>Paris, France</span></p>
+                </div>
+            </div>
+        </div>
     </div>
 
     {# Parcours professionnel #}
-    <div class="row" id="professionnel">
-        <div class="col-xxl-8 col-xl-8 col-lg-10 col-md-12 col-sm-12 left">
+    <div id="professionnel" class="row">
+        <div>
             <h2>Mon parcours pro</h2>
             <p>Mon expérience la&nbsp;plus marquante reste les&nbsp;six&nbsp;ans passés chez CIMAYA, où&nbsp;j'ai conçu et&nbsp;développé seule l'ERP interne de&nbsp;l'entreprise, <span class="bold">de&nbsp;la&nbsp;compréhension des&nbsp;besoins jusqu'à la&nbsp;mise en&nbsp;production, en&nbsp;passant par la&nbsp;gestion de&nbsp;projet, la&nbsp;collaboration avec les&nbsp;designers et&nbsp;la&nbsp;relation client</span>.</p>
-            <p>Ce projet m'a appris à&nbsp;voir le&nbsp;développement dans sa&nbsp;globalité&nbsp;: pas seulement le&nbsp;code, mais aussi la&nbsp;réflexion, l'organisation et&nbsp;l'impact concret sur le&nbsp;quotidien des&nbsp;équipes. C'est cette&nbsp;combinaison entre <span class="bold">logique technique et&nbsp;vision d'ensemble</span> qui me&nbsp;motive au&nbsp;quotidien./p>
+            <p>Ce projet m'a appris à&nbsp;voir le&nbsp;développement dans sa&nbsp;globalité&nbsp;: pas seulement le&nbsp;code, mais aussi la&nbsp;réflexion, l'organisation et&nbsp;l'impact concret sur le&nbsp;quotidien des&nbsp;équipes. C'est cette&nbsp;combinaison entre <span class="bold">logique technique et&nbsp;vision d'ensemble</span> qui me&nbsp;motive au&nbsp;quotidien.</p>
         </div>
+        <div></div>
     </div>
 
     <div class="row" id="professionnel-2">
+        <div class="left">
+            <div class="forme">
+                <img src="{{ asset('images/parcours-pro.png') }}" alt="Forme verte sur un écran d'ordinateur portable" class="forme">
+                <img src="{{ asset('forme/blob-parcours-pro.svg') }}" alt="Forme grise avec opacité" class="forme-2">
 
-        <div class="col-xxl-6 col-xl-5 col-lg-5 col-md-5 col-sm-12 left">
-            <img src="{{ asset('images/parcours-pro.png') }}" alt="Forme verte sur un écran d'ordinateur portable" class="forme">
-            <img src="{{ asset('forme/blob-parcours-pro.svg') }}" alt="Forme grise avec opacité" class="forme-2">
-
-            <div>
-                <img src="{{ asset('picto/cv.svg') }}" alt="Un CV en filaire blanc">
-                <p>Si vous avez un&nbsp;projet PHP/Symfony en&nbsp;tête,<br>parlons-en&nbsp;!</p>
-                <button class="btn"><a href="{{ path('dev') }}#contact" title="Contact"> Contactez-moi ! </a></button>
+                <div>
+                    <img src="{{ asset('picto/cv.svg') }}" alt="Un CV en filaire blanc">
+                    <p>Si vous avez un&nbsp;projet PHP/Symfony en&nbsp;tête,<br>parlons-en&nbsp;!</p>
+                    <button class="btn"><a href="{{ path('dev') }}#contact" title="Contact"> Contactez-moi ! </a></button>
+                </div>
             </div>
         </div>
 
-        <div class="col-xxl-6 col-xl-7 col-lg-12 col-md-12 col-sm-12 right">
+        <div class="right">
             <table>
                 <tbody>
                     <tr>
                         <td>
                             <p>Groupe Gefor</p>
-                            <p>Freelance &#149; <span>de&nbsp;mars&nbsp;2026 à&nbsp;aujourd'hui</span></p>
+                            <p>Freelance &#149; <span>de&nbsp;mars&nbsp;2026 à&nbsp;juin&nbsp;2026</span></p>
                             <p>Formatrice technique sur Laravel, PHP et&nbsp;développement mobile, auprès d'adultes en&nbsp;reconversion.</p>
                         </td>
                         <td class="bullet">2026</td>
@@ -288,32 +263,31 @@
     {# Fun facts #}
     <div class="row" id="fun-facts">
 
-        <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 left align-self-center">
+        <div class="left">
             <h2>Fun facts</h2>
             <p>Non, les développeurs ne&nbsp;passent pas leurs journées enfermés dans un&nbsp;sous-sol à&nbsp;coder en&nbsp;boucle. Personnellement, je&nbsp;ne&nbsp;rate aucun match du&nbsp;XV&nbsp;de&nbsp;France, je&nbsp;lis dans le&nbsp;métro, je&nbsp;ne&nbsp;passe pas un&nbsp;été sans prendre l'avion, et&nbsp;j'adore retrouver mes&nbsp;amis dans un&nbsp;bar, et&nbsp;les&nbsp;photographier, bien sûr.</p>
         </div>
 
-        <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 right">
-            
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+        <div class="right">
+            <div>
+                <div>
                     <img src="{{ asset('forme/blob-fun-fact-1.svg') }}" alt="Forme verte" class="forme">
                     <img src="{{ asset('picto/fun-fact-1.svg') }}" alt="Deux passeports" class="fact">
                     <p><span>30 pays visités</span><br>dont la Thaïlande<br>et les Philippines</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div>
                     <img src="{{ asset('forme/blob-fun-fact-2.svg') }}" alt="Forme verte" class="forme">
                     <img src="{{ asset('picto/fun-fact-2.svg') }}" alt="Un appareil photo et une lune" class="fact">
                     <p><span>Photographe passionnée</span><br>argentique et&nbsp;numérique</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+            <div>
+                <div>
                     <img src="{{ asset('forme/blob-fun-fact-3.svg') }}" alt="Forme verte" class="forme">
                     <img src="{{ asset('picto/fun-fact-3.svg') }}" alt="Un ballon de rugby" class="fact">
                     <p><span>Fan de rugby</span><br>supportrice<br>du&nbsp;XV de&nbsp;France</p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div>
                     <img src="{{ asset('forme/blob-fun-fact-6.svg') }}" alt="Forme verte" class="forme">
                     <img src="{{ asset('picto/fun-fact-6.svg') }}" alt="Deux livres empilés" class="fact">
                     <p><span>Lectrice passionnée</span><br>d’essais féministes<br>et de romans en anglais</p>
@@ -326,78 +300,46 @@
     {# Contact #}
     <div class="row" id="contact">
 
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12" id="contact-intro">
-                    <h2>Contact</h2>
-                    <p>Si vous avez un&nbsp;projet PHP/Symfony en&nbsp;tête, parlons-en&nbsp;!</p>
-                </div>
-                <div class="col"></div>
+        <div>
+            <div id="contact-intro">
+                <h2>Contact</h2>
+                <p>Si vous avez un&nbsp;projet PHP/Symfony en&nbsp;tête, parlons-en&nbsp;!</p>
             </div>
-
-            <div class="row">
-                <div class="col"></div>
-
-                {{ form_start(form, {'attr': {'class': 'col-xl-8 col-lg-10 col-md-11 col-sm-12'}}) }}
-
-                <div class="row">
-
-                    <div class="col-lg-6 col-md-6 col-sm-11 col-11">
-                        <div class="row">
-                            {{ form_row(form.prenom) }}
-                            {{ form_row(form.nom) }}
-                        </div>
-
-                        <div class="row">
-                            {{ form_row(form.email) }}
-                        </div>
-
-                        <div class="row">
-                            {{ form_row(form.telephone) }}
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-11 col-11">
-                        <div class="row" id="row-message">
-                            {{ form_row(form.message) }}
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-11 col-11">
-                        {{ form_row(form.save) }}
-                    </div>
-                </div>
-
-                {{ form_end(form) }}
-
-                <div class="col"></div>
-
-            </div>
-
-            <div class="row">
-                
-                <div class="col"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    {% for message in app.flashes('success') %}
-                        <div class="alert alert-success">
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-                    {% for message in app.flashes('fail') %}
-                        <div class="alert alert-fail">
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-                </div>
-                <div class="col"></div>
-            </div>
-
         </div>
+
+        <div class="row">
+            {{ form_start(form) }}
+
+            <div class="fields">
+                <div class="left">
+                    {{ form_row(form.prenom) }}
+                    {{ form_row(form.nom) }}
+                    {{ form_row(form.email) }}
+                    {{ form_row(form.telephone) }}
+                </div>
+
+                <div class="right" id="row-message">
+                    {{ form_row(form.message) }}
+                </div>
+            </div>
+
+            {{ form_row(form.save) }}
+
+            {{ form_end(form) }}
+        </div>
+
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        {% for message in app.flashes('fail') %}
+            <div class="alert alert-fail">
+                {{ message }}
+            </div>
+        {% endfor %}
+
     </div>
 
 {% endblock %}

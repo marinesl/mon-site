@@ -272,7 +272,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5rem;
 }
 
 footer a,

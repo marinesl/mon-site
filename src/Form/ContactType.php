@@ -19,36 +19,31 @@ class ContactType extends AbstractType
             ->add('prenom', TextType::class, [
                 'label' => 'Prénom*',
                 'required' => true,
-                'attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12'],
-                'row_attr' => ['class' => 'col-lg-6 col-md-6 col-sm-12 label-block', 'id' => '']
+                'row_attr' => ['class' => 'label-block']
             ])
 
             ->add('nom', TextType::class, [
                 'label' => 'Nom*',
                 'required' => true,
-                'attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12'],
-                'row_attr' => ['class' => 'col-lg-6 col-md-6 col-sm-12 label-block', 'id' => '']
+                'row_attr' => ['class' => 'label-block']
             ])
 
             ->add('email', EmailType::class, [
                 'label' => 'E-mail*',
                 'required' => true,
-                'attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12'],
-                'row_attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12 label-block', 'id' => '']
+                'row_attr' => ['class' => ' label-block']
             ])
 
             ->add('telephone', TelType::class, [
                 'label' => 'Téléphone',
                 'required' => false,
-                'attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12'],
-                'row_attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12 label-block', 'id' => '']
+                'row_attr' => ['class' => ' label-block']
             ])
 
             ->add('message', TextareaType::class, [
                 'label' => 'Message*',
                 'required' => true,
-                'attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12'],
-                'row_attr' => ['class' => 'col-lg-12 col-md-12 col-sm-12 label-block', 'id' => '']
+                'row_attr' => ['class' => ' label-block']
             ])
 
             ->add('save',SubmitType::class, [

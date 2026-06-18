@@ -102,6 +102,7 @@ body {
     font-family: 'OpenSans-Regular', serif;
     font-size: 16px;
     color: #373737;
+    margin: auto;
 }
 
 body, html {
@@ -173,6 +174,7 @@ button.btn {
     align-items: center;
     -webkit-box-shadow: 0 5px 20px 0 rgba(0,0,0,0.25);
     box-shadow: 0 5px 20px 0 rgba(0,0,0,0.25);
+    border: none;
 }
 
 button.btn:hover {
@@ -197,8 +199,17 @@ button.btn a:hover {
  * FORM
  *******************************/
 
-input[type=text] {
+input[type=text],
+input[type=email],
+input[type=tel] {
     color: #373737;
+    border: none;
+    height: 25px;
+}
+
+textarea {
+    color: #373737;
+    border: none;
 }
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -214,13 +225,9 @@ input:-moz-placeholder { /* Firefox 18- */
     color: #AAAAAA !important;
 }
 
-.form-group {
-    margin: auto auto 3rem;
-}
-
 .form-control,
 .form-group .custom-file-label {
-    width: 70%;
+    width: 100%;
 }
 
 .form-group label:not(.form-check-label),

@@ -29,7 +29,6 @@ section {
 button.btn {
     color: #41B591;
     background-color: #ffffff;
-    border: none;
 }
 
 button.btn a,
@@ -41,6 +40,13 @@ button.btn a:hover {
 footer {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+}
+
+footer #footer-left {
+    padding-left: 5rem;
+}
+
+footer #footer-right {
+    padding-right: 5rem;
 }
