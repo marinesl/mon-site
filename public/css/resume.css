@@ -375,10 +375,17 @@
 }
 
 #scolaire #scolaire-parcours .parcours {
-    width: 25%;
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 5px;
+}
+
+#dev #scolaire #scolaire-parcours .parcours {
+    width: 20%;
+}
+
+#readproof #scolaire #scolaire-parcours .parcours {
+    width: 20%;
 }
 
 #scolaire .parcours p:nth-child(1) {

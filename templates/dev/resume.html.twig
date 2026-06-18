@@ -127,10 +127,9 @@
                         <div>Toic</div>
                     </div>
                 </div>
-
             </div>
-
         </div>
+
         <div class="right">
             <img src="{{ asset('forme/blob-competences.svg') }}" alt="Tâche verte" id="competences-forme">
             <img src="{{ asset('images/macbook-symfony.png') }}" alt="Macbook avec du code Symfony" id="competences-macbook">
@@ -171,7 +170,7 @@
     </div>
 
     {# Parcours professionnel #}
-    <div id="professionnel" class="row">
+    <div class="row" id="professionnel">
         <div>
             <h2>Mon parcours pro</h2>
             <p>Mon expérience la&nbsp;plus marquante reste les&nbsp;six&nbsp;ans passés chez CIMAYA, où&nbsp;j'ai conçu et&nbsp;développé seule l'ERP interne de&nbsp;l'entreprise, <span class="bold">de&nbsp;la&nbsp;compréhension des&nbsp;besoins jusqu'à la&nbsp;mise en&nbsp;production, en&nbsp;passant par la&nbsp;gestion de&nbsp;projet, la&nbsp;collaboration avec les&nbsp;designers et&nbsp;la&nbsp;relation client</span>.</p>
@@ -256,8 +255,6 @@
                 </tbody>
             </table>
         </div>
-
-
     </div>
 
     {# Fun facts #}
@@ -294,7 +291,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     
     {# Contact #}
@@ -324,7 +320,6 @@
             </div>
 
             {{ form_row(form.save) }}
-
             {{ form_end(form) }}
         </div>
 
