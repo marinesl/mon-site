@@ -3,7 +3,7 @@
  *******************************/
 
 /* Commun */
-.portfolio .filter-container .filter-item .filter-item-tag div,
+.filter-container .filter-item .filter-item-tag div,
 .portfolio.projet #projet > div:last-child > div:nth-child(2) div {
     font-family: 'Sarabun-SemiBold', serif;
     text-align: center;
@@ -15,21 +15,21 @@
     display: inline-block;
 }
 
-.portfolio .filter-container .filter-item img,
+.filter-container .filter-item img,
 .portfolio.projet #projet > div:first-child img {
     border: 1px solid #D9D9D9;
 }
 
 
 @media (min-width: 320px) {
-    .portfolio .filter-container .filter-item .filter-item-tag div,
+    .filter-container .filter-item .filter-item-tag div,
     .portfolio.projet #projet > div:last-child > div:nth-child(2) div {
         width: 80px;
         font-size: 13px;
     }
 }
 @media (min-width: 768px) {
-    .portfolio .filter-container .filter-item .filter-item-tag div,
+    .filter-container .filter-item .filter-item-tag div,
     .portfolio.projet #projet > div:last-child > div:nth-child(2) div {
         width: 100px;
         font-size: 16px;
@@ -37,22 +37,26 @@
 }
 
 /* Intro */
-.portfolio h1 {
+h1 {
     text-align: center;
     text-transform: uppercase;
     color: #41B591;
 }
 
-.portfolio .intro {
+.intro {
     text-align: center;
 }
 
 /* Filter */
-.portfolio #filter {
+#filter {
     margin-bottom: 3rem;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.portfolio #filter > div > :first-child {
+#filter > div > :first-child {
     font-family: 'Sarabun-Bold', serif;
     text-align: center;
     text-transform: uppercase;
@@ -60,17 +64,17 @@
     margin-top: 20px;
 }
 
-.portfolio #filter hr {
+#filter hr {
     opacity: 1;
     background-color: #41B591 ;
 }
 
-.portfolio #filter #filter-buttons {
+#filter #filter-buttons {
     display: flex;
     justify-content: space-between;
 }
 
-.portfolio #filter .filter-button {
+#filter .filter-button {
     font-size: 14px;
     text-align: center;
     color: #9A9A9A;
@@ -82,14 +86,14 @@
     padding: 5px 0;
 }
 
-.portfolio #filter .filter-button.active {
+#filter .filter-button.active {
     font-family: 'Sarabun-Bold', serif;
     color: #fff;
     background-color: #41B591;
 }
 
 /* Grid */
-.portfolio .filter-container {
+.filter-container {
     padding: 75px;
     position: relative;
     width: 100%;
@@ -99,11 +103,11 @@
     gap: 5rem;
 }
 
-.portfolio .filter-container .filter-item img {
+.filter-container .filter-item img {
     width: 100%;
 }
 
-.portfolio .filter-container .filter-item .filter-item-titre {
+.filter-container .filter-item .filter-item-titre {
     font-family: 'Sarabun-Bold', serif;
     text-transform: uppercase;
     color: #41B591;
@@ -111,52 +115,52 @@
     margin-bottom: 10px;
 }
 
-.portfolio .filter-container .filter-item .filter-item-desc {
+.filter-container .filter-item .filter-item-desc {
     margin-bottom: 20px;
 }
 
 @media (min-width: 320px) {
-    .portfolio .filter-container .filter-item .filter-item-titre {
+    .filter-container .filter-item .filter-item-titre {
         font-size: 25px;
         line-height: 30px;
     }
 }
 @media (min-width: 768px) {
-    .portfolio .filter-container .filter-item .filter-item-tag div,
+    .filter-container .filter-item .filter-item-tag div,
     .portfolio.projet #projet > div:last-child > div:nth-child(2) div {
         width: 100px;
     }
 
-    .portfolio .filter-container .filter-item {
+    .filter-container .filter-item {
         width: 32rem !important;
     }
-    .portfolio .filter-container .filter-item .filter-item-titre {
+    .filter-container .filter-item .filter-item-titre {
         font-size: 30px;
         line-height: 35px;
     }
 }
 @media (min-width: 991px) {
-    .portfolio .filter-container .filter-item {
+    .filter-container .filter-item {
         width: 24rem !important;
     }
 }
 @media (min-width: 1024px) {
-    .portfolio .filter-container .filter-item {
+    .filter-container .filter-item {
         width: 26rem !important;
     }
 }
 @media (min-width: 1280px) {
-    .portfolio .filter-container .filter-item {
+    .filter-container .filter-item {
         width: 32rem !important;
     }
 }
 @media (min-width: 1680px) {
-    .portfolio .filter-container .filter-item {
+    .filter-container .filter-item {
         width: 28rem !important;
     }
 }
 @media (min-width: 1920px) {
-    .portfolio .filter-container .filter-item {
+    .filter-container .filter-item {
         width: 32rem !important;
     }
 }

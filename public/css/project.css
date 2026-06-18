@@ -15,6 +15,15 @@ h1 {
 /* Projet */
 #projet {
     margin-bottom: 4rem;
+    display: flex;
+}
+
+#projet .left {
+    width: 40%;
+}
+
+#projet .right {
+    width: 60%;
 }
 
 #projet > div:first-child img {
