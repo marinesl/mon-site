@@ -10,14 +10,18 @@ html {
     height: 100%;
 }
 
-header.row {
-    height: auto;
-}
-
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+footer #footer-left {
+    padding-left: 5rem;
+}
+
+footer #footer-right {
+    padding-right: 5rem;
 }
 
 section {
@@ -37,6 +41,7 @@ h2 {
     font-family: 'Sarabun-SemiBold', serif;
     text-transform: uppercase;
     color: #41B591;
+    text-align: center;
 }
 
 
