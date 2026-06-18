@@ -67,19 +67,30 @@
 
         {% include "layouts/footer.html.twig" %}
 
-        <script src="{{ asset('js/site.js') }}"></script>
         {% block javascripts %}{% endblock %}
 
         <script>
+            /* Axept.io settings */
             window.axeptioSettings = {
-            clientId: "630dcef37b9b91c4d791fc5d",
+                clientId: "630dcef37b9b91c4d791fc5d",
             };
             
             (function(d, s) {
-            var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-            e.async = true; e.src = "//static.axept.io/sdk.js";
-            t.parentNode.insertBefore(e, t);
+                var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+                e.async = true; e.src = "//static.axept.io/sdk.js";
+                t.parentNode.insertBefore(e, t);
             })(document, "script");
+
+            /* Toggle menu for mobile */
+            document.addEventListener('DOMContentLoaded', function() {
+                const burger = document.querySelector('.burger');
+                const menu = document.querySelector('.menu');
+                if (burger && menu) {
+                    burger.addEventListener('click', () => {
+                        menu.classList.toggle('menu-open');
+                    })
+                }
+            })
         </script>
 
     </body>
