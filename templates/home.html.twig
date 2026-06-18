@@ -16,10 +16,47 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Découvrez mes services</h1>
+    <section class="home-hero" aria-labelledby="home-hero-title">
+        <div class="left">
+            <p>Freelance Symfony & correction</p>
+            <h1>Découvrez mes services</h1>
+            <p>
+                J’accompagne les&nbsp;entreprises et&nbsp;indépendants avec des&nbsp;applications web fiables
+                et&nbsp;des&nbsp;contenus irréprochables.
+            </p>
+        </div>
 
-    <div class="buttons">
-        <div><button class="btn"><a href="{{ path('dev') }}">Développeuse Symfony</a></button></div>
-        <div><button class="btn"><a href="{{ path('readproof') }}">Correctrice-relectrice</a></button></div>
-    </div>
+        <div class="right" aria-label="Mes services">
+            <a href="{{ path('dev') }}">
+                <article class="service-card">
+                    <h2>Développeuse PHP/Symfony et Vue.js</h2>
+                    <p class="service-card__lead">
+                        Applications web, back-offices et&nbsp;sites vitrines sur&nbsp;mesure en&nbsp;Symfony/PHP.
+                    </p>
+                    <ul class="service-card__list">
+                        <li>Architecture et&nbsp;développement d’applications Symfony</li>
+                        <li>Refonte ou&nbsp;amélioration de&nbsp;projets existants</li>
+                        <li>Mise en place de&nbsp;bonnes pratiques (tests, performance, sécurité)</li>
+                    </ul>
+                    <button class="btn">Découvrir ce service</button>
+
+                </article>
+            </a>
+
+            <a href="{{ path('readproof') }}">
+                <article class="service-card">
+                    <h2>Correctrice-relectrice technique</h2>
+                    <p class="service-card__lead">
+                        Relecture attentive pour des&nbsp;textes clairs, fluides et&nbsp;professionnels.
+                    </p>
+                    <ul class="service-card__list">
+                        <li>Correction orthographique, grammaticale et&nbsp;typographique</li>
+                        <li>Reformulation légère pour améliorer la&nbsp;fluidité</li>
+                        <li>Adaptation au&nbsp;ton et&nbsp;au&nbsp;public visé</li>
+                    </ul>
+                    <button class="btn">Découvrir ce service</button>
+                </article>
+            </a>
+        </div>
+    </section>
 {% endblock %}
