@@ -147,6 +147,77 @@
 
 
 /*******************************
+ * COMMENTAIRES
+ *******************************/
+
+#comments h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+/* Container */
+#comments > div {
+    /*max-width: 60vw;*/
+    margin: 0 auto;
+}
+
+/* List layout reset */
+#comments ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Card style for each comment */
+#comments li {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.75rem 2rem 1.5rem 2.75rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Opening quote icon (simple) */
+#comments li::before {
+    content: "“";
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    font-size: 40px;
+    line-height: 1;
+    color: #41B591;
+    opacity: 0.25;
+}
+
+/* Comment text */
+#comments li > span.comment-text {
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+/* Author line */
+#comments li > span.comment-author {
+    display: block;
+    color: #41B591;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    #comments ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+
+
+
+/*******************************
  * PRESENTATION - COMPETENCES
  *******************************/
 
