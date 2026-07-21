@@ -138,6 +138,11 @@ h3 {
     margin-top: 1rem;
 }
 
+h2.orange,
+h3.orange {
+    color: #D7760C;
+}
+
 .bold {
     font-family: 'Sarabun-Bold', serif;
 }
@@ -146,6 +151,10 @@ a {
     /*color: #373737;*/
     color: #41B591;
     text-decoration: none;
+}
+
+a.orange {
+    color: #D7760C;
 }
 
 a:hover {
@@ -176,6 +185,10 @@ button.btn {
     box-shadow: 0 5px 20px 0 rgba(0,0,0,0.25);
     border: none;
     letter-spacing: 0.04em;
+}
+
+button.btn.orange {
+    background-color: #D7760C;
 }
 
 button.btn:hover {

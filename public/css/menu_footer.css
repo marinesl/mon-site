@@ -278,6 +278,11 @@ footer {
     padding: 0 5rem;
 }
 
+#readproof footer,
+footer.orange {
+    background-color: #D7760C;
+}
+
 footer a,
 footer a:hover,
 footer a:focus {

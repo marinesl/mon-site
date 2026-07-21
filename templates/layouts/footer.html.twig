@@ -2,7 +2,7 @@
 {% set baseRoute = currentRoute starts with 'readproof' ? 'readproof' : 'dev' %}
 {% set confidentialityRoute = baseRoute ~ '_confidentiality' %}
 
-<footer>
+<footer class="{{ color }}">
     <div id="footer-left">
         <p>&copy; {{ "now"|date('Y') }} - Marine Lancelin</p>
     </div>

@@ -80,6 +80,10 @@
     position: relative;
 }
 
+#apropos #apropos-quote.orange {
+    color: #D7760C;
+}
+
 #apropos #apropos-guillemet {
     position: absolute;
     top: -20px;
@@ -247,7 +251,7 @@
 }
 
 #competences .left ul {
-    list-style: none url("../picto/bullet.svg");
+    list-style: none url("../picto/bullet_orange.svg");
     width: 30%;
 }
 
@@ -364,6 +368,10 @@
     padding: 6rem 0;
 }
 
+#readproof #scolaire {
+    background-image: url('../forme/blob-parcours-scolaire_orange.svg');
+}
+
 #scolaire #scolaire-intro {
     text-align: center;
     color: #fff;
@@ -418,6 +426,11 @@
     line-height: 22px;
     color: #41B591;
     margin-bottom: 5px;
+}
+
+#scolaire .parcours p.orange:nth-child(1),
+#scolaire .parcours p.orange:nth-child(2) {
+    color: #D7760C;
 }
 
 #scolaire .parcours p:nth-child(2) {
@@ -630,6 +643,12 @@
     top: 0;
 }
 
+#professionnel-2 .right td:first-child p:nth-child(2) span.orange,
+#professionnel-2 .right td.orange:last-child,
+#professionnel-2 .right td.bullet.orange::before{
+    color: #D7760C;
+}
+
 @media (min-width: 320px) {
     #professionnel-2 .left {
         display: none;
@@ -781,6 +800,10 @@
     margin-top: 2rem;
 }
 
+#readproof #contact {
+    background-image: url('../forme/blob-parcours-scolaire_orange.svg');
+}
+
 #contact #contact-intro {
     text-align: center;
     color: #fff;
@@ -828,6 +851,10 @@
     border: none;
     background-color: #fff;
     margin-top: 1rem;
+}
+
+#readproof #contact form .btn {
+    color: #D7760C;
 }
 
 #contact .alert {

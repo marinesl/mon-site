@@ -8,6 +8,10 @@ h1 {
     margin-bottom: 3rem;
 }
 
+h1.orange {
+    color: #D7760C;
+}
+
 h2 {
     font-family: 'Sarabun-Bold', serif;
     font-size: 16px;

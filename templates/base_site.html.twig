@@ -56,8 +56,13 @@
         {% block stylesheets %}{% endblock %}
     </head>
 
+    {# Determine which "section" we are in: dev or readproof #}
+    {% set currentRoute = app.request.get('_route') %}
+    {% set baseRoute = currentRoute starts with 'readproof' ? 'readproof' : 'dev' %}
+    {% set isOrange = baseRoute === 'readproof' ? 'orange' : '' %}
+
     <body id="{% block body_id %}{% endblock %}">
-        {% if app.request.get('_route') !== 'home' %}
+        {% if currentRoute !== 'home' %}
             {% include "layouts/menu.html.twig" %}
         {% endif %}
 
@@ -65,7 +70,7 @@
             {% block body %}{% endblock %}
         </section>
 
-        {% include "layouts/footer.html.twig" %}
+        {{ include('layouts/footer.html.twig', { color: isOrange }) }}
 
         {% block javascripts %}{% endblock %}
 
