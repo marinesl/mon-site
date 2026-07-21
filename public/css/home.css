@@ -100,14 +100,6 @@ a:hover {
     cursor: pointer;
 }
 
-.btn:hover,
-.btn:focus-visible {
-    background-color: #369978;
-    transform: translateY(-1px);
-    box-shadow: 0 14px 35px rgba(65, 181, 145, 0.6);
-    color: #ffffff;
-}
-
 /* Keep existing footer behavior */
 
 footer {
