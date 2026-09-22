@@ -1,0 +1,17 @@
+<div class="row" id="apropos">
+    <div class="left">
+        <div id="apropos-bloc">
+            <img src="{{ asset('picto/quote' ~ isOrangeImg ~ '.svg') }}" alt="Guillemets" id="apropos-guillemet">
+            <p id="apropos-quote" class="{{ isOrange }}">There's nothing more<br>badass than being yourself <img src="{{ asset('forme/underline' ~ isOrangeImg ~ '.svg') }}" alt="Soulignement" id="apropos-soulignement"></p>
+        </div>
+    </div>
+    <div class="right">
+        <h2 class="{{ isOrange }}">À propos de moi</h2>
+        {% block text %}{% endblock %}
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+

@@ -251,8 +251,12 @@
 }
 
 #competences .left ul {
-    list-style: none url("../picto/bullet_orange.svg");
+    list-style: none url("../picto/bullet.svg");
     width: 30%;
+}
+
+#readproof #competences .left ul {
+    list-style: none url("../picto/bullet_orange.svg");
 }
 
 #competences .left #competences-certif {
@@ -286,7 +290,8 @@
 #readproof #competences #competences-macbook {
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media (min-height: 533px) {

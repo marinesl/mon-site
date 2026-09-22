@@ -1,0 +1,58 @@
+{% extends 'layouts/resume_page/competences.html.twig' %}
+
+{% block hardSkills %}
+    <ul>
+        <li>Symfony</li>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>Git</li>
+    </ul>
+    <ul>
+        <li>Vue JS</li>
+        <li>HTML / CSS</li>
+        <li>Twig</li>
+        <li>Tailwind</li>
+    </ul>
+    <ul>
+        <li>Devops</li>
+        <li>WordPress</li>
+        <li>Angular</li>
+        <li>Figma</li>
+    </ul>
+{% endblock %}
+
+{% block softSkills %}
+    <ul>
+        <li>Gestion de projet</li>
+        <li>Autonomie</li>
+        <li>Organisation</li>
+        <li>Empathie</li>
+    </ul>
+    <ul>
+        <li>Curiosité</li>
+        <li>Patience</li>
+        <li>Adaptation</li>
+        <li>Souriante</li>
+    </ul>
+    <ul></ul>
+{% endblock %}
+
+{% block formations %}
+    <div>
+        <img src="{{ asset('images/symfony.svg') }}" alt="Symfony">
+        <div>Human Coders</div>
+    </div>
+    <div>
+        <img src="{{ asset('images/opquast.png') }}" alt="Opquast">
+        <div>Opquast</div>
+    </div>
+{% endblock %}
+
+{% block img %}
+    symfony
+{% endblock %}
+
+{% block imgAlt %}
+    MacBook avec du code Symfony
+{% endblock %}
+

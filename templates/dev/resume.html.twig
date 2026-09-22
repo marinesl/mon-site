@@ -18,26 +18,11 @@
 {% block body %}
 
     {# Introduction #}
-    {{ include('dev/resume/introduction.html.twig') }}
+    {{ include('dev/resume_page/introduction.html.twig') }}
 
     {# A propos #}
-    <div class="row" id="apropos">
-        <div class="left">
-            <div id="apropos-bloc">
-                <img src="{{ asset('picto/quote.svg') }}" alt="Guillemets" id="apropos-guillemet">
-                <p id="apropos-quote">There's nothing more<br>badass than being yourself <img src="{{ asset('forme/underline.svg') }}" alt="Soulignement" id="apropos-soulignement"></p>
-            </div>
-        </div>
-        <div class="right">
-            <h2>À propos de moi</h2>
-            <p>Développeuse PHP/Symfony depuis plus de&nbsp;10&nbsp;ans, j'interviens <span class="bold">de&nbsp;la&nbsp;conception au&nbsp;déploiement</span>, pour que vous n'ayez qu'un&nbsp;seul interlocuteur technique de&nbsp;confiance.</p>
-            <p>Ce qui me tient à cœur&nbsp;: comprendre votre&nbsp;métier avant de&nbsp;toucher au&nbsp;code. Que vous soyez une&nbsp;PME, une&nbsp;association ou&nbsp;un&nbsp;particulier, je&nbsp;prends le&nbsp;temps de&nbsp;<span class="bold">cerner vos&nbsp;enjeux réels pour vous proposer des&nbsp;solutions adaptées</span>, pas du&nbsp;sur-mesure inutilement complexe, pas du&nbsp;prêt-à-l'emploi qui ne&nbsp;vous&nbsp;correspond pas.</p>
-            <p>Mon périmètre technique couvre l'ensemble du&nbsp;projet&nbsp;: <span class="bold">développement back-end Symfony, intégration front-end HTML/CSS/JS, exposition d'APIs avec API Platform, et&nbsp;mise en&nbsp;production</span>. Concrètement, ça veut dire moins d'intermédiaires, plus de&nbsp;cohérence, et&nbsp;une&nbsp;vision globale de&nbsp;votre projet du&nbsp;début à&nbsp;la&nbsp;fin.</p>
-            <p>Côté collaboration, je suis reconnue pour ma&nbsp;disponibilité, ma&nbsp;franchise et&nbsp;ma&nbsp;proactivité&nbsp;: je&nbsp;ne&nbsp;me&nbsp;contente pas d'attendre un&nbsp;cahier des&nbsp;charges figé, <span class="bold">j'alerte, je&nbsp;propose, j'anticipe</span>.</p>
-        </div>
-    </div>
+    {{ include('dev/resume_page/a_propos.html.twig') }}
 
-    <div class="spacer"></div>
 
     {# Commentaires #}
     <div class="row" id="comments">
@@ -70,91 +55,8 @@
     <div class="spacer"></div>
 
     {# Compétences #}
-    <div class="row" id="competences">
-        <div class="left">
-            <h2>Mes compétences</h2>
+    {{ include('dev/resume_page/competences.html.twig') }}
 
-            <div>
-                <div>
-                    <h3>Hard skills</h3>
-                </div>
-
-                <div class="skills">
-                    <ul>
-                        <li>Symfony</li>
-                        <li>PHP</li>
-                        <li>SQL</li>
-                        <li>Git</li>
-                    </ul>
-                    <ul>
-                        <li>Vue JS</li>
-                        <li>HTML / CSS</li>
-                        <li>Twig</li>
-                        <li>Tailwind</li>
-                    </ul>
-                    <ul>
-                        <li>Devops</li>
-                        <li>WordPress</li>
-                        <li>Angular</li>
-                        <li>Figma</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h3>Soft skills</h3>
-                </div>
-                <div class="skills">
-                    <ul>
-                        <li>Gestion de projet</li>
-                        <li>Autonomie</li>
-                        <li>Organisation</li>
-                        <li>Empathie</li>
-                    </ul>
-                    <ul>
-                        <li>Curiosité</li>
-                        <li>Patience</li>
-                        <li>Adaptation</li>
-                        <li>Souriante</li>
-                    </ul>
-                    <ul></ul>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h3>Formations & Certifications</h3>
-                </div>
-
-                <div id="competences-certif">
-                    <div>
-                        <img src="{{ asset('images/le-robert.svg') }}" alt="Le Robert">
-                        <div>Le Robert</div>
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/symfony.svg') }}" alt="Symfony">
-                        <div>Human Coders</div>
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/opquast.png') }}" alt="Opquast">
-                        <div>Opquast</div>
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/toeic.png') }}" alt="Toeic">
-                        <div>Toic</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="right">
-            <img src="{{ asset('forme/blob-competences.svg') }}" alt="Tâche verte" id="competences-forme">
-            <img src="{{ asset('images/macbook-symfony.png') }}" alt="Macbook avec du code Symfony" id="competences-macbook">
-        </div>
-    </div>
-
-    <div class="spacer"></div>
 
     {# Parcours scolaire #}
     <div class="row" id="scolaire">

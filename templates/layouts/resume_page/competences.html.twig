@@ -1,0 +1,49 @@
+<div class="row" id="competences">
+    <div class="left">
+        <h2 class="{{ isOrange }}">Mes compétences</h2>
+
+        <div>
+            <div>
+                <h3 class="{{ isOrange }}">Hard skills</h3>
+            </div>
+
+            <div class="skills">
+                {% block hardSkills %}{% endblock %}
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h3 class="{{ isOrange }}">Soft skills</h3>
+            </div>
+            <div class="skills">
+                {% block softSkills %}{% endblock %}
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h3 class="{{ isOrange }}">Formations & Certifications</h3>
+            </div>
+
+            <div id="competences-certif">
+                {% block formations %}{% endblock %}
+                <div>
+                    <img src="{{ asset('images/le-robert.svg') }}" alt="Le Robert">
+                    <div>Le Robert</div>
+                </div>
+                <div>
+                    <img src="{{ asset('images/toeic.png') }}" alt="Toeic">
+                    <div>Toic</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <img src="{{ asset('forme/blob-competences' ~ isOrangeImg ~ '.svg') }}" alt="Tâche" id="competences-forme">
+        <img src="{{ asset('images/macbook-competences' ~ isReadproofImg ~ '.png') }}" alt="{% block imgAlt %}{% endblock %}" id="competences-macbook">
+    </div>
+</div>
+
+<div class="spacer"></div>

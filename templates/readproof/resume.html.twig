@@ -18,98 +18,15 @@
 {% block body %}
 
     {# Introduction #}
-    {{ include('readproof/resume/introduction.html.twig') }}
+    {{ include('readproof/resume_page/introduction.html.twig') }}
 
     {# A propos #}
-    <div class="row" id="apropos">
-        <div class="left">
-            <div id="apropos-bloc">
-                <img src="{{ asset('picto/quote_orange.svg') }}" alt="Guillemets" id="apropos-guillemet">
-                <p id="apropos-quote" class="orange">There's nothing more<br>badass than being yourself <img src="{{ asset('forme/underline_orange.svg') }}" alt="Soulignement" id="apropos-soulignement"></p>
-            </div>
-        </div>
-        <div class=" right">
-            <h2 class="orange">À propos de moi</h2>
-            <p>Développeuse PHP/Symfony depuis plus de&nbsp;dix&nbsp;ans, je&nbsp;sais mieux que quiconque à&nbsp;quel point une&nbsp;documentation claire peut faire la&nbsp;différence, <span class="bold">pour vos&nbsp;utilisateurs comme pour vos&nbsp;équipes</span>.</p>
-            <p>Ce qui me tient à&nbsp;cœur&nbsp;: <span class="bold">comprendre votre&nbsp;contenu avant de&nbsp;le&nbsp;corriger</span>. Que vous soyez une&nbsp;<span class="bold">PME, un&nbsp;organisme de&nbsp;formation ou&nbsp;une&nbsp;maison d'édition spécialisée</span>, je&nbsp;prends le&nbsp;temps de&nbsp;cerner le&nbsp;niveau de votre&nbsp;audience pour que chaque document soit à&nbsp;la&nbsp;fois juste <span class="bold">techniquement et&nbsp;accessible à&nbsp;vos&nbsp;lecteurs</span>.</p>
-            <p>Mon périmètre couvre l'ensemble de&nbsp;vos&nbsp;besoins rédactionnels &nbsp;: <span class="bold">documentation technique (API, guides développeurs), supports de&nbsp;formation et&nbsp;livres techniques</span>. Concrètement, ça&nbsp;veut dire un&nbsp;regard à&nbsp;la&nbsp;fois technique et&nbsp;éditorial, quelqu'un qui comprend ce&nbsp;que vous&nbsp;écrivez, pas seulement comment c'est écrit.</p>
-            <p>Côté collaboration, je&nbsp;suis reconnue pour <span class="bold">ma&nbsp;disponibilité, ma&nbsp;franchise et&nbsp;ma&nbsp;proactivité</span>&nbsp;: je&nbsp;ne&nbsp;me&nbsp;contente pas de&nbsp;corriger les&nbsp;fautes, j'identifie les&nbsp;incohérences, les&nbsp;zones floues, et&nbsp;vous&nbsp;suggère des&nbsp;améliorations pour un&nbsp;résultat vraiment soigné.</p>
-        </div>
-    </div>
-
-    <div class="spacer"></div>
+    {{ include('readproof/resume_page/a_propos.html.twig') }}
 
     {# Compétences #}
-    <div class="row" id="competences">
-        <div class="left">
-            <h2 class="orange">Mes compétences</h2>
+    {{ include('readproof/resume_page/competences.html.twig') }}
 
-            <div>
-                <div>
-                    <h3 class="orange">Hard skills</h3>
-                </div>
 
-                <div class="skills">
-                    <ul>
-                        <li>Correction orthographique, grammaticale et syntaxique</li>
-                        <li>Correction ortho-typographie</li>
-                        <li>Relecture maquette</li>
-                    </ul>
-                    <ul>
-                        <li>HTML / CSS</li>
-                        <li>Markdown</li>
-                        <li>WordPress</li>
-                        <li>Figma</li>
-                        <li>Suite Office</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h3 class="orange">Soft skills</h3>
-                </div>
-                <div class="skills">
-                    <ul>
-                        <li>Gestion de projet</li>
-                        <li>Autonomie</li>
-                        <li>Organisation</li>
-                        <li>Empathie</li>
-                    </ul>
-                    <ul>
-                        <li>Curiosité</li>
-                        <li>Patience</li>
-                        <li>Adaptation</li>
-                        <li>Souriante</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <h3 class="orange">Formations & Certifications</h3>
-                </div>
-
-                <div id="competences-certif">
-                    <div>
-                        <img src="{{ asset('images/le-robert.svg') }}" alt="Le Robert">
-                        <div>Le Robert</div>
-                    </div>
-                    <div>
-                        <img src="{{ asset('images/toeic.png') }}" alt="Toeic">
-                        <div>Toic</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="right">
-            <img src="{{ asset('forme/blob-competences_orange.svg') }}" alt="Tâche verte" id="competences-forme">
-            <img src="{{ asset('images/macbook-word.png') }}" alt="Macbook avec une page Word" id="competences-macbook">
-        </div>
-    </div>
-
-    <div class="spacer"></div>
 
     {# Parcours scolaire #}
     <div class="row" id="scolaire">
