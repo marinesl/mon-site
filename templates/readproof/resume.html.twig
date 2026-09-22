@@ -36,47 +36,6 @@
     {{ include('readproof/resume_page/fun_fact.html.twig') }}
     
     {# Contact #}
-    <div class="row" id="contact">
-
-        <div>
-            <div id="contact-intro">
-                <h2>Contact</h2>
-                <p>Si vous avez un&nbsp;ouvrage technique à&nbsp;faire relire, parlons-en&nbsp;!</p>
-            </div>
-        </div>
-
-
-        <div class="row">
-            {{ form_start(form) }}
-
-            <div class="fields">
-                <div class="left">
-                    {{ form_row(form.prenom) }}
-                    {{ form_row(form.nom) }}
-                    {{ form_row(form.email) }}
-                    {{ form_row(form.telephone) }}
-                </div>
-
-                <div class="right" id="row-message">
-                    {{ form_row(form.message) }}
-                </div>
-            </div>
-
-            {{ form_row(form.save) }}
-            {{ form_end(form) }}
-        </div>
-
-        {% for message in app.flashes('success') %}
-            <div class="alert alert-success">
-                {{ message }}
-            </div>
-        {% endfor %}
-
-        {% for message in app.flashes('fail') %}
-            <div class="alert alert-fail">
-                {{ message }}
-            </div>
-        {% endfor %}
-    </div>
+    {{ include('layouts/resume_page/contact.html.twig') }}
 
 {% endblock %}
