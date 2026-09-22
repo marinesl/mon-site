@@ -1,0 +1,94 @@
+<div class="row" id="professionnel">
+    <div>
+        <h2 class="{{ isOrange }}">Mon parcours pro</h2>
+        {% block intro %}{% endblock %}
+    </div>
+</div>
+
+<div class="row" id="professionnel-2">
+    <div class="left">
+        <div class="forme">
+            {% if baseRoute === 'dev' %}
+                <img src="{{ asset('images/parcours-pro.png') }}" alt="Forme verte sur un écran d'ordinateur portable" class="forme">
+            {% endif %}
+            <img src="{{ asset('forme/blob-parcours-pro' ~ isOrangeImg ~ '.svg') }}" alt="Forme grise avec opacité" class="forme-2">
+
+            <div>
+                <img src="{{ asset('picto/cv.svg') }}" alt="Un CV en filaire blanc">
+                <p>Pour travailler avec moi,<br>n’hésitez pas à me contacter&nbsp;:</p>
+                <button class="btn"><a href="{{ path(baseRoute) }}#contact" title="Contact"> Contactez-moi ! </a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    <p>Groupe Gefor</p>
+                    <p>Freelance &#149; <span class="{{ isOrange }}">de&nbsp;mars&nbsp;2026 à&nbsp;aujourd'hui</span></p>
+                    <p>Formatrice technique sur Laravel, PHP et&nbsp;développement mobile, auprès d'adultes en&nbsp;reconversion{% block gefor %}{% endblock %}.</p>
+                </td>
+                <td class="bullet {{ isOrange }}">2026</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Université Gustave Eiffel</p>
+                    <p>Freelance &#149; <span class="{{ isOrange }}">de&nbsp;septembre&nbsp;2026 à&nbsp;aujourd'hui</span></p>
+                    <p>Formatrice technique sur PHP, SQL et&nbsp;SGBD auprès d'étudiants en&nbsp;Master&nbsp;2{% block gustave_eiffel %}{% endblock %}.</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>IIM Digital School</p>
+                    <p>Freelance &#149; <span class="{{ isOrange }}">de&nbsp;décembre&nbsp;2025 à&nbsp;juillet 2026</span></p>
+                    <p>{% block iim %}{% endblock %}</p>
+                </td>
+                <td class="bullet {{ isOrange }}">2025</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Association IMEDI</p>
+                    <p>Freelance &#149; <span class="{{ isOrange }}">de&nbsp;mars&nbsp;2025 à&nbsp;aujourd'hui</span></p>
+                    <p>{% block imedi %}{% endblock %}</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Qualisocial</p>
+                    <p>Paris (75) &#149; <span class="{{ isOrange }}">de&nbsp;juin&nbsp;2024 à&nbsp;mars 2025</span></p>
+                    <p>{% block qualisocial %}{% endblock %}</p>
+                </td>
+                <td class="bullet {{ isOrange }}">2024</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>eFlow</p>
+                    <p>Clichy (92) &#149; <span class="{{ isOrange }}">d'avril&nbsp;2023 à&nbsp;mai 2024</span></p>
+                    <p>{% block eflow %}{% endblock %}</p>
+                </td>
+                <td class="bullet {{ isOrange }}">2023</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>CIMAYA</p>
+                    <p>Paris (75) &#149; <span class="{{ isOrange }}">de&nbsp;février&nbsp;2016 à&nbsp;juin 2022</span></p>
+                    <p>{% block cimaya %}{% endblock %}</p>
+                </td>
+                <td class="bullet {{ isOrange }}">2016</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Ils m'ont aussi fait confiance...</p>
+                    <p></p>
+                    <p>Hôpital&nbsp;Necker-Enfants&nbsp;malades, Hôpital&nbsp;Saint-Louis, CPAM Morbihan, Efrei Paris Panthéon - Assas Université</p>
+                </td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
