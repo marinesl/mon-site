@@ -1,14 +1,10 @@
-{# Determine which "section" we are in: dev or readproof #}
-{% set currentRoute = app.request.get('_route') %}
-{% set baseRoute = currentRoute starts with 'readproof' ? 'readproof' : 'dev' %}
 {% set portfolioRoute = baseRoute ~ '_portfolio' %}
-{% set isOrange = baseRoute === 'readproof' ? '_orange' : '' %}
 
 <header>
 
     <div>
         <a href="{{ path('home') }}" title="Accueil">
-            <img src="{{ asset('logo/logo' ~ isOrange ~ '.svg') }}" alt="Logo" id="logo">
+            <img src="{{ asset('logo/logo' ~ isOrangeImg ~ '.svg') }}" alt="Logo" id="logo">
         </a>
     </div>
 
@@ -79,7 +75,7 @@
 </header>
 
 {% if currentRoute == baseRoute %}
-    <img src="{{ asset('forme/blob-header-home' ~ isOrange ~ '.svg') }}" alt="Tâche verte en fond" id="header-forme">
+    <img src="{{ asset('forme/blob-header-home' ~ isOrangeImg ~ '.svg') }}" alt="Tâche verte en fond" id="header-forme">
 {% else %}
-    <img src="{{ asset('forme/blob-header' ~ isOrange ~ '.svg') }}" alt="Tâche verte en fond" id="header-forme">
+    <img src="{{ asset('forme/blob-header' ~ isOrangeImg ~ '.svg') }}" alt="Tâche verte en fond" id="header-forme">
 {% endif %}

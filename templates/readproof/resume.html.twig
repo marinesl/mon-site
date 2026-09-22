@@ -18,19 +18,7 @@
 {% block body %}
 
     {# Introduction #}
-    <div class="row" id="introduction">
-        <div>
-            <h1>Marine&nbsp;LANCELIN<br>Correctrice-relectrice technique en freelance</h1>
-            <p>Forte de plus de&nbsp;10&nbsp;ans d'immersion dans le&nbsp;développement web, je&nbsp;mets aujourd'hui <span class="bold">ma&nbsp;rigueur technique</span> au&nbsp;service de&nbsp;la&nbsp;relecture et&nbsp;correction de&nbsp;vos&nbsp;contenus. Ce&nbsp;que j'aime dans ce&nbsp;rôle&nbsp;? Traquer les&nbsp;coquilles, clarifier le&nbsp;sens, et&nbsp;<span class="bold">vous rendre un&nbsp;texte qui inspire confiance</span>.</p>
-            <p>Si vous avez <span class="bold">un&nbsp;ouvrage technique à&nbsp;faire relire</span>, parlons-en&nbsp;!</p>
-            <button class="btn orange"> <a href="{{ path('readproof') }}#contact" title="Contact"> Contactez-moi !</a></button>
-        </div>
-        <div>
-            <img src="{{ asset('images/header-readproof.png') }}" alt="Mac avec Captain America en background de bureau et une bière sur le côté droit + Console avec des commandes Symfony + Photo de moi enfant avec un chien" id="introduction-image">
-        </div>
-    </div>
-
-    <div class="spacer"></div>
+    {{ include('readproof/resume/introduction.html.twig') }}
 
     {# A propos #}
     <div class="row" id="apropos">
@@ -45,7 +33,7 @@
             <p>Développeuse PHP/Symfony depuis plus de&nbsp;dix&nbsp;ans, je&nbsp;sais mieux que quiconque à&nbsp;quel point une&nbsp;documentation claire peut faire la&nbsp;différence, <span class="bold">pour vos&nbsp;utilisateurs comme pour vos&nbsp;équipes</span>.</p>
             <p>Ce qui me tient à&nbsp;cœur&nbsp;: <span class="bold">comprendre votre&nbsp;contenu avant de&nbsp;le&nbsp;corriger</span>. Que vous soyez une&nbsp;<span class="bold">PME, un&nbsp;organisme de&nbsp;formation ou&nbsp;une&nbsp;maison d'édition spécialisée</span>, je&nbsp;prends le&nbsp;temps de&nbsp;cerner le&nbsp;niveau de votre&nbsp;audience pour que chaque document soit à&nbsp;la&nbsp;fois juste <span class="bold">techniquement et&nbsp;accessible à&nbsp;vos&nbsp;lecteurs</span>.</p>
             <p>Mon périmètre couvre l'ensemble de&nbsp;vos&nbsp;besoins rédactionnels &nbsp;: <span class="bold">documentation technique (API, guides développeurs), supports de&nbsp;formation et&nbsp;livres techniques</span>. Concrètement, ça&nbsp;veut dire un&nbsp;regard à&nbsp;la&nbsp;fois technique et&nbsp;éditorial, quelqu'un qui comprend ce&nbsp;que vous&nbsp;écrivez, pas seulement comment c'est écrit.</p>
-            <p>Côté collaboration, je&nbsp;suis connue pour <span class="bold">ma&nbsp;disponibilité, ma&nbsp;franchise et&nbsp;ma&nbsp;proactivité</span>&nbsp;: je&nbsp;ne&nbsp;me&nbsp;contente pas de&nbsp;corriger les&nbsp;fautes, j'identifie les&nbsp;incohérences, les&nbsp;zones floues, et&nbsp;vous&nbsp;suggère des&nbsp;améliorations pour un&nbsp;résultat vraiment soigné.</p>
+            <p>Côté collaboration, je&nbsp;suis reconnue pour <span class="bold">ma&nbsp;disponibilité, ma&nbsp;franchise et&nbsp;ma&nbsp;proactivité</span>&nbsp;: je&nbsp;ne&nbsp;me&nbsp;contente pas de&nbsp;corriger les&nbsp;fautes, j'identifie les&nbsp;incohérences, les&nbsp;zones floues, et&nbsp;vous&nbsp;suggère des&nbsp;améliorations pour un&nbsp;résultat vraiment soigné.</p>
         </div>
     </div>
 
@@ -117,7 +105,7 @@
 
         <div class="right">
             <img src="{{ asset('forme/blob-competences_orange.svg') }}" alt="Tâche verte" id="competences-forme">
-            <img src="{{ asset('images/macbook-symfony.png') }}" alt="Macbook avec du code Symfony" id="competences-macbook">
+            <img src="{{ asset('images/macbook-word.png') }}" alt="Macbook avec une page Word" id="competences-macbook">
         </div>
     </div>
 

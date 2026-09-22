@@ -1,0 +1,18 @@
+<div class="row" id="introduction">
+    <div>
+        <h1>Marine&nbsp;LANCELIN<br>{% block field %}{% endblock %}</h1>
+
+        {% block text %}{% endblock %}
+
+        <button class="btn {{ isOrange }} ~ '">
+            <a href="{{ path(baseRoute) }}#contact" title="Contact">
+                Contactez-moi !
+            </a>
+        </button>
+    </div>
+    <div>
+        <img src="{{ asset('images/header' ~ isReadproofImg ~ '.png') }}" alt="{% block altImg %}{% endblock %}" id="introduction-image">
+    </div>
+</div>
+
+<div class="spacer"></div>

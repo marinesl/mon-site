@@ -283,6 +283,12 @@
     position: relative;
 }
 
+#readproof #competences #competences-macbook {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @media (min-height: 533px) {
     #competences #competences-forme {
         top: -5rem;
@@ -347,6 +353,10 @@
 @media (min-width: 1680px) {
     #competences #competences-macbook {
         width: 100%;
+    }
+
+    #readproof #competences #competences-macbook {
+        width: 70%;
     }
 }
 @media (min-width: 1920px) {

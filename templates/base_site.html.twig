@@ -60,6 +60,8 @@
     {% set currentRoute = app.request.get('_route') %}
     {% set baseRoute = currentRoute starts with 'readproof' ? 'readproof' : 'dev' %}
     {% set isOrange = baseRoute === 'readproof' ? 'orange' : '' %}
+    {% set isOrangeImg = baseRoute === 'readproof' ? '_orange' : '' %}
+    {% set isReadproofImg = baseRoute === 'readproof' ? '-readproof' : '' %}
 
     <body id="{% block body_id %}{% endblock %}">
         {% if currentRoute !== 'home' %}

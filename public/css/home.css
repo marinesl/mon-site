@@ -108,7 +108,12 @@ button.btn {
     color: #41B591;
 }
 
-.service-card.orange button.btn {
+button.btn:hover {
+    color: #41B591;
+}
+
+.service-card.orange button.btn,
+.service-card.orange button.btn:hover {
     color: #D7760C;
 }
 

@@ -1,5 +1,3 @@
-{% set currentRoute = app.request.get('_route') %}
-{% set baseRoute = currentRoute starts with 'readproof' ? 'readproof' : 'dev' %}
 {% set confidentialityRoute = baseRoute ~ '_confidentiality' %}
 
 <footer class="{{ color }}">

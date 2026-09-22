@@ -18,19 +18,7 @@
 {% block body %}
 
     {# Introduction #}
-    <div class="row" id="introduction">
-        <div>
-            <h1>Marine&nbsp;LANCELIN<br>Développeuse Symfony en&nbsp;freelance</h1>
-            <p>Forte d'une dizaine d'années d'expérience en&nbsp;PHP/Symfony acquises en&nbsp;agence, j'ai appris à&nbsp;<span class="bold">allier rigueur technique et&nbsp;sens du&nbsp;service</span>. Ce&nbsp;que j'aime dans mon&nbsp;métier&nbsp;? Transformer vos&nbsp;idées en&nbsp;<span class="bold">projets concrets, avec soin, méthode… et&nbsp;bonne humeur</span>.</p>
-            <p>Si vous avez un&nbsp;projet PHP/Symfony en&nbsp;tête, parlons-en&nbsp;!</p>
-            <button class="btn"> <a href="{{ path('dev') }}#contact" title="Contact"> Contactez-moi !</a></button>
-        </div>
-        <div>
-            <img src="{{ asset('images/header.png') }}" alt="Mac avec Captain America en background de bureau et une bière sur le côté droit + Console avec des commandes Symfony + Photo de moi enfant avec un chien" id="introduction-image">
-        </div>
-    </div>
-
-    <div class="spacer"></div>
+    {{ include('dev/resume/introduction.html.twig') }}
 
     {# A propos #}
     <div class="row" id="apropos">
@@ -45,7 +33,7 @@
             <p>Développeuse PHP/Symfony depuis plus de&nbsp;10&nbsp;ans, j'interviens <span class="bold">de&nbsp;la&nbsp;conception au&nbsp;déploiement</span>, pour que vous n'ayez qu'un&nbsp;seul interlocuteur technique de&nbsp;confiance.</p>
             <p>Ce qui me tient à cœur&nbsp;: comprendre votre&nbsp;métier avant de&nbsp;toucher au&nbsp;code. Que vous soyez une&nbsp;PME, une&nbsp;association ou&nbsp;un&nbsp;particulier, je&nbsp;prends le&nbsp;temps de&nbsp;<span class="bold">cerner vos&nbsp;enjeux réels pour vous proposer des&nbsp;solutions adaptées</span>, pas du&nbsp;sur-mesure inutilement complexe, pas du&nbsp;prêt-à-l'emploi qui ne&nbsp;vous&nbsp;correspond pas.</p>
             <p>Mon périmètre technique couvre l'ensemble du&nbsp;projet&nbsp;: <span class="bold">développement back-end Symfony, intégration front-end HTML/CSS/JS, exposition d'APIs avec API Platform, et&nbsp;mise en&nbsp;production</span>. Concrètement, ça veut dire moins d'intermédiaires, plus de&nbsp;cohérence, et&nbsp;une&nbsp;vision globale de&nbsp;votre projet du&nbsp;début à&nbsp;la&nbsp;fin.</p>
-            <p>Côté collaboration, je suis connue pour ma&nbsp;disponibilité, ma&nbsp;franchise et&nbsp;ma&nbsp;proactivité&nbsp;: je&nbsp;ne&nbsp;me&nbsp;contente pas d'attendre un&nbsp;cahier des&nbsp;charges figé, <span class="bold">j'alerte, je&nbsp;propose, j'anticipe</span>.</p>
+            <p>Côté collaboration, je suis reconnue pour ma&nbsp;disponibilité, ma&nbsp;franchise et&nbsp;ma&nbsp;proactivité&nbsp;: je&nbsp;ne&nbsp;me&nbsp;contente pas d'attendre un&nbsp;cahier des&nbsp;charges figé, <span class="bold">j'alerte, je&nbsp;propose, j'anticipe</span>.</p>
         </div>
     </div>
 
