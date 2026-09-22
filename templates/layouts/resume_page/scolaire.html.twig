@@ -24,7 +24,15 @@
                 <p class="{{ isOrange }}">de 2017 à 2019</p>
                 <p>ECV Digital<br><span>Paris, France</span></p>
             </div>
-            {% block formation %}{% endblock %}
+            {% if baseRoute === 'readproof' %}
+                <div class="parcours p3">
+                    <div>
+                        <p class="orange">Certification en langue française<br>Le ROBERT</p>
+                        <p class="orange">2025</p>
+                        <p>EFLC<br><span>Paris, France</span></p>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </div>
 </div>
