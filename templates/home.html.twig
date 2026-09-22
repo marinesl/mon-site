@@ -27,6 +27,22 @@
         </div>
 
         <div class="right" aria-label="Mes services">
+
+            <a href="{{ path('readproof') }}">
+                <article class="service-card orange">
+                    <h2 >Correctrice-relectrice technique</h2>
+                    <p class="service-card__lead">
+                        Relecture attentive pour des&nbsp;textes clairs, fluides et&nbsp;professionnels.
+                    </p>
+                    <ul class="service-card__list">
+                        <li>Correction orthographique, grammaticale et&nbsp;typographique</li>
+                        <li>Reformulation légère pour améliorer la&nbsp;fluidité</li>
+                        <li>Adaptation au&nbsp;ton et&nbsp;au&nbsp;public visé</li>
+                    </ul>
+                    <button class="btn">Voir mes services de correctrice</button>
+                </article>
+            </a>
+
             <a href="{{ path('dev') }}">
                 <article class="service-card">
                     <h2>Développeuse PHP/Symfony et Vue.js</h2>
@@ -39,21 +55,6 @@
                         <li>Mise en place de&nbsp;bonnes pratiques (tests, performance, sécurité)</li>
                     </ul>
                     <button class="btn">Voir mes services de développeuse</button>
-                </article>
-            </a>
-
-            <a href="{{ path('readproof') }}">
-                <article class="service-card">
-                    <h2 class="orange">Correctrice-relectrice technique</h2>
-                    <p class="service-card__lead">
-                        Relecture attentive pour des&nbsp;textes clairs, fluides et&nbsp;professionnels.
-                    </p>
-                    <ul class="service-card__list">
-                        <li>Correction orthographique, grammaticale et&nbsp;typographique</li>
-                        <li>Reformulation légère pour améliorer la&nbsp;fluidité</li>
-                        <li>Adaptation au&nbsp;ton et&nbsp;au&nbsp;public visé</li>
-                    </ul>
-                    <button class="btn orange">Voir mes services de correctrice</button>
                 </article>
             </a>
         </div>

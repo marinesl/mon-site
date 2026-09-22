@@ -6,7 +6,7 @@ body {
     height: 100vh;
     position: relative;
     color: #102a43;
-    background-color: #41B591;
+    background-color: #fff;
 }
 
 section {
@@ -28,10 +28,6 @@ section {
     gap: 3.5rem;
     align-items: center;
     padding: 0 10rem;
-}
-
-.left {
-    color: #ffffff;
 }
 
 .left p:first-child {
@@ -61,7 +57,6 @@ a:hover {
 }
 
 .service-card {
-    background-color: #ffffff;
     border-radius: 5px;
     padding: 1.75rem 1.75rem 1.5rem;
     -webkit-box-shadow: 0 5px 20px 0 rgba(0,0,0,0.25);
@@ -71,6 +66,14 @@ a:hover {
     overflow: hidden;
 }
 
+.service-card {
+    background-color: #41B591;
+}
+
+.service-card.orange {
+    background-color: #D7760C;
+}
+
 .service-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
@@ -78,15 +81,18 @@ a:hover {
 
 .service-card h2 {
     margin: 0 0 0.75rem;
+    color: #fff;
 }
 
 .service-card__lead {
     margin: 0 0 0.75rem;
+    color: #fff;
 }
 
 .service-card__list {
     padding-left: 1.1rem;
     margin: 0 0 1.5rem;
+    color: #fff;
 }
 
 .service-card__list li + li {
@@ -95,9 +101,15 @@ a:hover {
 
 /* Buttons styled as primary/secondary actions */
 
-.btn {
+button.btn {
     margin: inherit !important;
     cursor: pointer;
+    background-color: #fff;
+    color: #41B591;
+}
+
+.service-card.orange button.btn {
+    color: #D7760C;
 }
 
 /* Keep existing footer behavior */
@@ -106,6 +118,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: #102a43;
 }
 
 footer #footer-left {
@@ -160,5 +173,10 @@ footer #footer-right {
 
     footer #footer-right {
         padding-right: 1.5rem;
+    }
+}
+@media (min-width: 320px) {
+    footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
     }
 }
