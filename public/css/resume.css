@@ -162,8 +162,19 @@
 
 /* Container */
 #comments > div {
-    /*max-width: 60vw;*/
     margin: 0 auto;
+}
+
+/* Slider wrapper (mobile-first) */
+#comments .comments-slider {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+/* Clips the track to its own box so neighbouring slides don't peek into the padding */
+#comments .comments-viewport {
+    overflow: hidden;
 }
 
 /* List layout reset */
@@ -171,19 +182,26 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    gap: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease; /* slide animation */
 }
 
 /* Card style for each comment */
 #comments li {
     position: relative;
-    background-color: #fff;
+    background-color: #E0FFF5;
     border-radius: 8px;
     padding: 1.75rem 2rem 1.5rem 2.75rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     line-height: 1.6;
-    font-size: 15px;
+    /* Each comment + its side margins = exactly 50% => 2 comments per "page",
+       so the slider's translateX(-100%) steps stay aligned */
+    flex: 0 0 calc(50% - 2rem);
+    box-sizing: border-box;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Opening quote icon (simple) */
@@ -195,25 +213,85 @@
     font-size: 40px;
     line-height: 1;
     color: #41B591;
-    opacity: 0.25;
+    font-family: 'PTSerif-Italic', serif;
 }
 
 /* Comment text */
 #comments li > span.comment-text {
+    font-family: 'PTSerif-Italic', serif;
     display: block;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 /* Author line */
 #comments li > span.comment-author {
     display: block;
+    margin-top: auto; /* push to the bottom of the card */
+    font-size: 14px;
+}
+
+/* Navigation arrows (mobile only by default) */
+#comments .comments-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: #fff;
     color: #41B591;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 999;
+}
+
+#comments .comments-prev {
+    left: 0;
+}
+
+#comments .comments-next {
+    right: 0;
+}
+
+#comments .comments-nav:focus-visible {
+    outline: 2px solid #41B591;
+    outline-offset: 2px;
+}
+
+/* Dots */
+#comments .comments-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+#comments .comments-dots button {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    border: none;
+    background-color: #D9D9D9;
+    cursor: pointer;
+    padding: 0;
+}
+
+#comments .comments-dots button.is-active {
+    background-color: #41B591;
+    width: 18px;
 }
 
 /* Responsive */
-@media (min-width: 768px) {
-    #comments ul {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (max-width: 480px) {
+    #comments .comments-slider {
+        padding: 0 2rem;
     }
 }
 
