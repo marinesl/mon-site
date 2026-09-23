@@ -12,6 +12,27 @@
             </div>
         </div>
 
+        {% if baseRoute === 'readproof' %}
+            <div>
+                <div>
+                    <h3 class="{{ isOrange }}">Technical skills</h3>
+                </div>
+
+                <div class="skills">
+                    <ul>
+                        <li>HTML / CSS / JS</li>
+                        <li>PHP / Symfony</li>
+                        <li>SQL</li>
+                        <li>Vue.js / Angular</li>
+                    </ul>
+                    <ul>
+                        <li>WordPress</li>
+                        <li>Markdown</li>
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+
         <div>
             <div>
                 <h3 class="{{ isOrange }}">Soft skills</h3>

@@ -391,6 +391,9 @@
     #competences #competences-forme {
         top: -5rem;
     }
+    #readproof #competences #competences-forme {
+        top: 0;
+    }
 }
 
 @media (min-width: 320px) {
@@ -402,6 +405,9 @@
     }
     #competences #competences-macbook {
         width: 110%;
+    }
+    #readproof #competences #competences-macbook {
+        width: 70%;
     }
     #competences ul {
         padding-inline-start: 20px;
