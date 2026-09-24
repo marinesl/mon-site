@@ -28,7 +28,7 @@
                 <td>
                     <p>Groupe Gefor</p>
                     <p>Freelance &#149; <span class="{{ isOrange }}">de&nbsp;mars&nbsp;2026 à&nbsp;aujourd'hui</span></p>
-                    <p>Formatrice technique sur Laravel, PHP et&nbsp;développement mobile, auprès d'adultes en&nbsp;reconversion{% block gefor %}{% endblock %}.</p>
+                    <p>{% block gefor %}{% endblock %}</p>
                 </td>
                 <td class="bullet {{ isOrange }}">2026</td>
             </tr>
@@ -36,17 +36,9 @@
                 <td>
                     <p>Université Gustave Eiffel</p>
                     <p>Freelance &#149; <span class="{{ isOrange }}">de&nbsp;septembre&nbsp;2026 à&nbsp;aujourd'hui</span></p>
-                    <p>Formatrice technique sur PHP, SQL et&nbsp;SGBD auprès d'étudiants en&nbsp;Master&nbsp;2{% block gustave_eiffel %}{% endblock %}.</p>
+                    <p>{% block gustave_eiffel %}{% endblock %}</p>
                 </td>
                 <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <p>IIM Digital School</p>
-                    <p>Freelance &#149; <span class="{{ isOrange }}">de&nbsp;décembre&nbsp;2025 à&nbsp;juillet 2026</span></p>
-                    <p>{% block iim %}{% endblock %}</p>
-                </td>
-                <td class="bullet {{ isOrange }}">2025</td>
             </tr>
             <tr>
                 <td>
@@ -54,8 +46,18 @@
                     <p>Freelance &#149; <span class="{{ isOrange }}">de&nbsp;mars&nbsp;2025 à&nbsp;aujourd'hui</span></p>
                     <p>{% block imedi %}{% endblock %}</p>
                 </td>
-                <td></td>
+                <td class="bullet {{ isOrange }}">2025</td>
             </tr>
+            {% if baseRoute === 'readproof' %}
+                <tr>
+                    <td>
+                        <p>IIM Digital School</p>
+                        <p>Freelance &#149; <span class="{{ isOrange }}">de&nbsp;décembre&nbsp;2025 à&nbsp;juillet 2026</span></p>
+                        <p>{% block iim %}{% endblock %}</p>
+                    </td>
+                    <td></td>
+                </tr>
+            {% endif %}
             <tr>
                 <td>
                     <p>Qualisocial</p>
@@ -84,7 +86,7 @@
                 <td>
                     <p>Ils m'ont aussi fait confiance...</p>
                     <p></p>
-                    <p>CPAM Morbihan, Efrei Paris Panthéon - Assas Université</p>
+                    <p>IIM Digital School, CPAM Morbihan, Efrei Paris Panthéon - Assas Université</p>
                 </td>
                 <td></td>
             </tr>
