@@ -219,11 +219,13 @@ input[type=tel] {
     color: #373737;
     border: none;
     height: 25px;
+    border-radius: 8px;
 }
 
 textarea {
     color: #373737;
     border: none;
+    border-radius: 8px;
 }
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */

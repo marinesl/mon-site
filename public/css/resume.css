@@ -944,6 +944,7 @@
 #contact form .label-block label {
     float: none;
     display: block;
+    margin-bottom: 5px;
 }
 
 #contact form .btn {
