@@ -15,7 +15,7 @@
 
             <div>
                 <img src="{{ asset('picto/cv.svg') }}" alt="Un CV en filaire blanc">
-                <p>Pour échanger avec moi,<br>n’hésitez pas à me contacter&nbsp;:</p>
+                <p>Pour échanger avec moi,<br>n’hésitez pas à&nbsp;me&nbsp;contacter&nbsp;:</p>
                 <button class="btn"><a href="{{ path(baseRoute) }}#contact" title="Contact"> Contactez-moi ! </a></button>
             </div>
         </div>
@@ -58,22 +58,24 @@
                     <td></td>
                 </tr>
             {% endif %}
-            <tr>
-                <td>
-                    <p>Qualisocial</p>
-                    <p>Paris (75) &#149; <span class="{{ isOrange }}">de&nbsp;juin&nbsp;2024 à&nbsp;mars 2025</span></p>
-                    <p>{% block qualisocial %}{% endblock %}</p>
-                </td>
-                <td class="bullet {{ isOrange }}">2024</td>
-            </tr>
-            <tr>
-                <td>
-                    <p>eFlow</p>
-                    <p>Clichy (92) &#149; <span class="{{ isOrange }}">d'avril&nbsp;2023 à&nbsp;mai 2024</span></p>
-                    <p>{% block eflow %}{% endblock %}</p>
-                </td>
-                <td class="bullet {{ isOrange }}">2023</td>
-            </tr>
+            {% if baseRoute === 'dev' %}
+                <tr>
+                    <td>
+                        <p>Qualisocial</p>
+                        <p>Paris (75) &#149; <span class="{{ isOrange }}">de&nbsp;juin&nbsp;2024 à&nbsp;mars 2025</span></p>
+                        <p>{% block qualisocial %}{% endblock %}</p>
+                    </td>
+                    <td class="bullet {{ isOrange }}">2024</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>eFlow</p>
+                        <p>Clichy (92) &#149; <span class="{{ isOrange }}">d'avril&nbsp;2023 à&nbsp;mai 2024</span></p>
+                        <p>{% block eflow %}{% endblock %}</p>
+                    </td>
+                    <td class="bullet {{ isOrange }}">2023</td>
+                </tr>
+            {% endif %}
             <tr>
                 <td>
                     <p>CIMAYA</p>
@@ -86,7 +88,11 @@
                 <td>
                     <p>Ils m'ont aussi fait confiance...</p>
                     <p></p>
-                    <p>IIM Digital School, CPAM Morbihan, Efrei Paris Panthéon - Assas Université</p>
+                    {% if baseRoute === 'dev' %}
+                        <p>IIM&nbsp;Digital&nbsp;School&nbsp;(2025), CPAM&nbsp;Morbihan&nbsp;(2026), Efrei Paris&nbsp;Panthéon -&nbsp;Assas&nbsp;Université&nbsp;(2026)</p>
+                    {% else %}
+                        <p>Qualisocial&nbsp;(2024), eFlow&nbsp;(2023), CPAM&nbsp;Morbihan&nbsp;(2026), Efrei Paris&nbsp;Panthéon -&nbsp;Assas&nbsp;Université&nbsp;(2026)</p>
+                    {% endif %}
                 </td>
                 <td></td>
             </tr>
