@@ -19,11 +19,11 @@ h1 {
 }
 
 #projet .left {
-    width: 40%;
+    width: 50%;
 }
 
 #projet .right {
-    width: 60%;
+    width: 50%;
 }
 
 #projet > div:first-child img {

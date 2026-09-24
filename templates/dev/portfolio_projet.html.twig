@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="{{ asset('css/project.css') }}">
 {% endblock %}
 
-
 {% block body %}
 
     <div class="row">
@@ -26,7 +25,7 @@
         </div>
 
         <div>
-            <h1>{{ project['title'] }}</h1>
+            <h1>{{ project['title']|raw }}</h1>
         </div>
 
         <div id="projet">

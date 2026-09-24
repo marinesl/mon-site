@@ -15,11 +15,6 @@
     display: inline-block;
 }
 
-.filter-container .filter-item img,
-.portfolio.projet #projet > div:first-child img {
-    border: 1px solid #D9D9D9;
-}
-
 
 @media (min-width: 320px) {
     .filter-container .filter-item .filter-item-tag div,
@@ -61,7 +56,6 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: #41B591;
-    margin-top: 20px;
 }
 
 #filter hr {
@@ -94,17 +88,35 @@ h1 {
 
 /* Grid */
 .filter-container {
-    padding: 75px;
+    margin: auto auto 3rem;
     position: relative;
-    width: 100%;
+    width: 70%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
+    flex-direction: column;
     gap: 5rem;
+}
+
+.filter-container .filter-item {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.filter-container .filter-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.filter-container .filter-item > div {
+    width: 50%;
 }
 
 .filter-container .filter-item img {
     width: 100%;
+}
+
+.filter-container .filter-item:nth-child(even) > div:last-child > div {
+    text-align: right;
 }
 
 .filter-container .filter-item .filter-item-titre {
@@ -132,7 +144,7 @@ h1 {
     }
 
     .filter-container .filter-item {
-        width: 32rem !important;
+        /*width: 32rem !important;*/
     }
     .filter-container .filter-item .filter-item-titre {
         font-size: 30px;
@@ -141,26 +153,26 @@ h1 {
 }
 @media (min-width: 991px) {
     .filter-container .filter-item {
-        width: 24rem !important;
+        /*width: 24rem !important;*/
     }
 }
 @media (min-width: 1024px) {
     .filter-container .filter-item {
-        width: 26rem !important;
+        /*width: 26rem !important;*/
     }
 }
 @media (min-width: 1280px) {
     .filter-container .filter-item {
-        width: 32rem !important;
+        /*width: 32rem !important;*/
     }
 }
 @media (min-width: 1680px) {
     .filter-container .filter-item {
-        width: 28rem !important;
+        /*width: 28rem !important;*/
     }
 }
 @media (min-width: 1920px) {
     .filter-container .filter-item {
-        width: 32rem !important;
+        /*width: 32rem !important;*/
     }
 }

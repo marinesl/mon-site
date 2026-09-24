@@ -1,31 +1,60 @@
 {
-  "633301f5d5b8c": {
-    "token": "633301f5d5b8c",
-    "title": "Mon site internet et mon portfolio",
-    "description": "<p>Ce projet est personnel. L'objectif était d'avoir de la visibilité sur Internet et un moyen de montrer mes compétences.</p><p>Le site est un projet développé sous Symfony. Il était important pour moi d'utiliser cette technologie pour mettre en avant ma compétence principale. Il est doté d'un Back Office permettant de gérer les projets (ajout, modification, etc...) et les prises de contact dans le formulaire.</p><p>Les technologies utilisées :</p><ul><li>Back : Symfony et PHP</li><li>Front : Twig + HTML et CSS</li></ul><p>Les compétences supplémentaires :</p><ul><li>Gestion de projet</li></ul><p>Le site est responsive et fonctionnel sur les différents navigateurs.</p><p>Le webdesign a été réalisé par Pierre PINEAU.</p>",
-    "smallDescription": "L'objectif était d'avoir de la visibilité sur Internet et un moyen de montrer mes compétences.",
+  "633301h2u7w0a": {
+    "enabled": true,
+    "token": "633301h2u7w0a",
+    "title": "Association IMEDI",
+    "description": "<p>L'Association IMEDI, localisée à Bordeaux, propose des&nbsp;prestations d'interprétariat dans différents dialectes et&nbsp;langues dans des&nbsp;structures médicales, grâce à&nbsp;un&nbsp;réseau d'interprètes professionnels.</p><p>L'Association, submergée par les&nbsp;demandes d'interprétariat par tous les&nbsp;moyens de&nbsp;communication, souhaitait une&nbsp;plateforme pour que chaque acteur de&nbsp;la&nbsp;prestation (professionnels de&nbsp;santé, services économiques, interprètes et&nbsp;administrateurs) puisse gérer ses&nbsp;prestations avec fluidité et&nbsp;facilité.</p><p>Les&nbsp;technologies utilisées&nbsp;:</p><ul><li>Back : Symfony</li><li>Front : Vue.js / CSS</li></ul><p>Les compétences supplémentaires&nbsp;:</p><ul><li>Rédaction du&nbsp;cahier des&nbsp;charges</li><li>Gestion de projet</li><li>Web design</li><li>DevOps</li></ul><p>Le&nbsp;site est responsive et&nbsp;fonctionnel sur les&nbsp;différents navigateurs.</p>",
+    "smallDescription": "L'Association IMEDI propose des&nbsp;prestations d'interprétariat à&nbsp;des&nbsp;structures médicales.",
     "tags": [
       {
         "name": "symfony",
         "string": "Symfony"
       },
       {
-        "name": "php",
-        "string": "PHP"
+        "name": "vue-js",
+        "string": "Vue.js"
       },
       {
         "name": "html-css",
         "string": "HTML/CSS"
+      },
+      {
+        "name": "responsive",
+        "string": "Responsive"
+      }
+    ],
+    "projectLink": "https://demo.imedi-asso.fr/",
+    "githubLink": false
+  },
+  "633301f5d5b8c": {
+    "enabled": true,
+    "token": "633301f5d5b8c",
+    "title": "Mon site internet et&nbsp;mon&nbsp;portfolio",
+    "description": "<p>Ce projet est&nbsp;personnel. L'objectif était d'avoir de&nbsp;la&nbsp;visibilité sur Internet et&nbsp;un&nbsp;moyen de&nbsp;montrer mes&nbsp;compétences.</p><p>Le&nbsp;site est un&nbsp;projet développé sous Symfony. Il&nbsp;était important pour moi d'utiliser cette&nbsp;technologie pour mettre en&nbsp;avant ma&nbsp;compétence principale.</p><p>Les&nbsp;technologies utilisées&nbsp;:</p><ul><li>Back : Symfony</li><li>Front : Twig / HTML / CSS</li></ul><p>Le&nbsp;site est responsive et&nbsp;fonctionnel sur les&nbsp;différents navigateurs.</p><p>Le&nbsp;webdesign a&nbsp;été réalisé par Pierre&nbsp;PINEAU.</p>",
+    "smallDescription": "L'objectif était d'avoir de&nbsp;la&nbsp;visibilité sur Internet et&nbsp;un&nbsp;moyen de&nbsp;montrer mes&nbsp;compétences.",
+    "tags": [
+      {
+        "name": "symfony",
+        "string": "Symfony"
+      },
+      {
+        "name": "html-css",
+        "string": "HTML/CSS"
+      },
+      {
+        "name": "responsive",
+        "string": "Responsive"
       }
     ],
     "projectLink": "https://marinelancelin.fr/",
     "githubLink": "https://github.com/marinesl/mon-site"
   },
   "6333025ae704e": {
+    "enabled": true,
     "token": "6333025ae704e",
-    "title": "Site vitrine pour l'Atelier Boulette",
-    "description": "<p>Atelier Boulette est une entreprise de création d'objets mignons comme des portes clés, des pochettes, des totes bags, etc...</p><p>Ses services sont :</p><ul><li>Objets personnalisables</li><li>Cricut Maker</li><li>Réalisation sur commande</li></ul><p>Le site vitrine permet à l'Atelier Boulette de présenter ses compétences et ses produits, et ainsi donner la possibilité aux visiteurs de prendre contact pour des commandes.</p><p>Les technologies utilisées :</p><ul><li>Général : FullPage JS + HTML et CSS</li><li>Gestion du formulaire : PHP</li></ul><p>Les compétences supplémentaires :</p><ul><li>Gestion de projet</li></ul><p>Le site est responsive et fonctionnel sur les différents navigateurs.</p><p>Le webdesign a été réalisé par l'Atelier Boulette.</p>",
-    "smallDescription": "Atelier Boulette est une entreprise de création d'objets mignons (portes clés, pochettes, totes bags,...).",
+    "title": "Atelier Boulette",
+    "description": "<p>Atelier Boulette est une&nbsp;entreprise de&nbsp;création d'objets mignons comme des&nbsp;portes clés, des&nbsp;pochettes, des&nbsp;totes&nbsp;bags, etc.</p><p>Ses services sont&nbsp;:</p><ul><li>Objets personnalisables</li><li>Cricut Maker</li><li>Réalisation sur commande</li></ul><p>Le&nbsp;site vitrine permet à&nbsp;l'Atelier&nbsp;Boulette de&nbsp;présenter ses&nbsp;compétences et&nbsp;ses&nbsp;produits, et&nbsp;ainsi donner la&nbsp;possibilité aux&nbsp;visiteurs de&nbsp;prendre contact pour des&nbsp;commandes.</p><p>Les technologies utilisées&nbsp;:</p><ul><li>Général&nbsp;: FullPage JS / HTML / CSS</li><li>Gestion du formulaire&nbsp;: PHP</li></ul><p>Les compétences supplémentaires&nbsp;:</p><ul><li>Gestion de projet</li></ul><p>Le site est responsive et&nbsp;fonctionnel sur les&nbsp;différents navigateurs.</p><p>Le webdesign a&nbsp;été réalisé par l'Atelier&nbsp;Boulette.</p>",
+    "smallDescription": "Atelier Boulette est une&nbsp;entreprise de&nbsp;création d'objets mignons (portes clés, pochettes, totes&nbsp;bags, etc.).",
     "tags": [
       {
         "name": "php",
@@ -34,30 +63,40 @@
       {
         "name": "html-css",
         "string": "HTML/CSS"
+      },
+      {
+        "name": "responsive",
+        "string": "Responsive"
       }
     ],
     "projectLink": "https://atelierboulette.fr/",
     "githubLink": "https://github.com/marinesl/atelierboulette"
   },
   "6333027b7ca16": {
+    "enabled": true,
     "token": "6333027b7ca16",
-    "title": "Page de maintenance pour G2F Solutions",
-    "description": "<p>G2F SOLUTIONS RECONDITIONNEMENT regroupe toutes les étapes nécessaires à la remise en état de vos véhicules d’occasion grâce à leurs ateliers de mécanique et de carrosserie, mais aussi à leurs services de contrôle technique, de préparation et à son studio photos.</p><p>Le client souhaitait une simple page de maintenance pour annoncer l'arrivée du prochain site vitrine.</p><p>Les technologies utilisées :</p><ul><li>Général : HTML et CSS</li></ul><p>Les compétences supplémentaires :</p><ul><li>Gestion de projet</li></ul><p>Le site est responsive et fonctionnel sur les différents navigateurs.</p><p>Le webdesign a été réalisé par Pierre PINEAU.</p>",
-    "smallDescription": "G2F SOLUTIONS regroupe toutes les étapes nécessaires à la remise en état de vos véhicules d’occasion.",
+    "title": "G2F Solutions Reconditionnement",
+    "description": "<p>G2F SOLUTIONS RECONDITIONNEMENT regroupe toutes les&nbsp;étapes nécessaires à&nbsp;la&nbsp;remise en&nbsp;état de&nbsp;vos&nbsp;véhicules d’occasion grâce à&nbsp;leurs&nbsp;ateliers de&nbsp;mécanique et&nbsp;de&nbsp;carrosserie, mais aussi à&nbsp;leurs&nbsp;services de&nbsp;contrôle technique, de&nbsp;préparation et&nbsp;à&nbsp;son&nbsp;studio photos.</p><p>Le client souhaitait une&nbsp;simple page de&nbsp;maintenance pour annoncer l'arrivée du&nbsp;prochain site vitrine.</p><p>Les technologies utilisées&nbsp;:</p><ul><li>HTML / CSS</li></ul><p>Les compétences supplémentaires :</p><ul><li>Gestion de projet</li></ul><p>Le site est responsive et&nbsp;fonctionnel sur les&nbsp;différents navigateurs.</p><p>Le webdesign a&nbsp;été réalisé par Pierre&nbsp;PINEAU.</p>",
+    "smallDescription": "G2F SOLUTIONS regroupe toutes les&nbsp;étapes nécessaires à&nbsp;la&nbsp;remise en&nbsp;état de&nbsp;vos&nbsp;véhicules d’occasion.",
     "tags": [
       {
         "name": "html-css",
         "string": "HTML/CSS"
+      },
+      {
+        "name": "responsive",
+        "string": "Responsive"
       }
     ],
     "projectLink": "https://g2fsolutions.com/",
     "githubLink": false
   },
   "63330232bfcf0": {
+    "enabled": true,
     "token": "63330232bfcf0",
-    "title": "Annuaire interne pour les hôpitaux",
-    "description": "<p>Ce projet est un annuaire et une plateforme Back Office Administrateur pour les hôpitaux.</p><p>Les technologies utilisées :</p><ul><li>Front : HTML et CSS + Bootstrap</li><li>Back : PHP</li></ul><p>Ce projet sera prochainement refait sous Symfony.</p>",
-    "smallDescription": "Ce projet est un annuaire interne et une plateforme Back Office Administrateur pour les hôpitaux.",
+    "title": "Annuaire interne pour les&nbsp;hôpitaux",
+    "description": "<p>Ce projet est un&nbsp;annuaire et&nbsp;une&nbsp;plateforme Back&nbsp;Office pour les&nbsp;hôpitaux.</p><p>Les technologies utilisées :</p><ul><li>Front : HTML / CSS / Bootstrap</li><li>Back : PHP</li></ul><p>Ce projet sera prochainement refait sous Symfony.</p>",
+    "smallDescription": "Ce projet est un&nbsp;annuaire interne et&nbsp;une&nbsp;plateforme Back&nbsp;Office pour les&nbsp;hôpitaux.",
     "tags": [
       {
         "name": "php",
@@ -72,6 +111,7 @@
     "githubLink": "https://github.com/marinesl/annuaire-php"
   },
   "633301053a3d6": {
+    "enabled": false,
     "token": "633301053a3d6",
     "title": "Back Office pour la Gestion des formations",
     "description": "<p>Ce projet permet la gestion des formations des salariés de la Maison des Ligues. C'est une plateforme de connexion et d'inscription à différentes formations.</p><p>Les technologies utilisées :</p><ul><li>Front : HTML et CSS + Bootstrap</li><li>Back : PHP</li></ul><p>Ce projet sera prochainement refait sous Symfony.</p>",
@@ -90,6 +130,7 @@
     "githubLink": "https://github.com/marinesl/gestion-des-formations-php"
   },
   "6333014a9cca6": {
+    "enabled": false,
     "token": "6333014a9cca6",
     "title": "Back Office pour la Gestion des ligues",
     "description": "Ce projet permet la gestion des membres d'une association sportive. C'est une application simple de création, de modification des membres d'une association sportive, par les administrateurs des ligues.\n\nLes technologies utilisées :\n\nFront : HTML et CSS + Bootstrap\nBack : PHP\nCe projet sera prochainement refait sous Symfony.",
@@ -108,6 +149,7 @@
     "githubLink": "https://github.com/marinesl/gestion-des-ligues-php"
   },
   "633301a7588ed": {
+    "enabled": false,
     "token": "633301a7588ed",
     "title": "Site E-boutique de chaussures (fictif)",
     "description": "<p>Ce projet est une E-boutique avec des produits triés par catégorie et une création de compte par les visiteurs pour ajouter des produits à leur panier.</p><p>Les technologies utilisées :</p><ul><li>Front : HTML et CSS + Bootstrap</li><li>Back : PHP</li></ul><p>Ce projet sera prochainement refait sous Symfony.</p>",
